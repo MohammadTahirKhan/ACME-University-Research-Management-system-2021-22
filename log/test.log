@@ -1,0 +1,5 @@
+# Logfile created on 2022-02-22 12:47:27 +0000 by logger.rb/66358
+I, [2022-02-22T12:47:27.124816 #1094]  INFO -- : (0.000128s) PRAGMA foreign_keys = 1
+I, [2022-02-22T12:47:27.124904 #1094]  INFO -- : (0.000015s) PRAGMA case_sensitive_like = 1
+I, [2022-02-22T12:58:23.570852 #1110]  INFO -- : (0.000116s) PRAGMA foreign_keys = 1
+I, [2022-02-22T12:58:23.570971 #1110]  INFO -- : (0.000019s) PRAGMA case_sensitive_like = 1
