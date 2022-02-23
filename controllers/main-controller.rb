@@ -4,13 +4,13 @@ get "/login" do
     erb :login
 end
 
-#get "/home" do
-#    erb :home
-#end
+get "/home" do
+    erb :home
+end
 
-#get "/create_post" do
-#    erb :create_post
-#end
+get "/create_post" do
+    erb :create_post
+end
 
 #get "/moderator" do
 #    erb :moderator
