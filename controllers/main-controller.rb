@@ -7,6 +7,7 @@ end
 get "/home" do
     erb :home
 end
+<<<<<<< HEAD
 
 get "/create_post" do
     erb :create_post
@@ -61,3 +62,30 @@ end
 get "/profile" do
     erb :profile
 end
+=======
+
+get "/create_post" do
+    erb :create_post
+end
+
+get "/moderator" do
+    erb :moderator
+end
+
+get "/admin" do
+    erb :admin
+end
+
+get "/viewer" do
+    erb :viewer
+end
+
+get "/profile" do
+    erb :profile
+end
+
+get "/create_account" do
+    erb :create_account
+end
+
+>>>>>>> 7f9a5580353bfb4b2e90db5621e436f7dbb1b36f
