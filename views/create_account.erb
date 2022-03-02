@@ -1,26 +1,46 @@
 <html>
-<head>
-    <title>A Simple View</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-  <table class="ba"  width="100%"  border="0">
-  <tbody  heigth="100">
-     <tr>
-     <td width="42%"><img id="ta1" src="logo.png" width="150" height="150" alt=""/></td>
-	 <td><h>title</h></td>
-     </tr>
-  </tbody>
-  </table>
-  <center>
-     <br><br>
-     <form id="form1" name="form1" method="post">
-         E-mail&nbsp; &nbsp; &nbsp;
-         <input type="email" name="Email"><br><br><br><br><br>
-         username<input type="text" name="username"><br><br><br><br><br>
-         password<input type="password" name="password"><br><br><br>
-         <input type="submit" value="create" style="width:200px;height:30px;">
-     </form>
-  </center>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme | viewer</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+   <header>
+    <div class="logo">
+       <h>ACME</h>
+     </div>
+    </header>
+    <main>
+    <h1 id="create_account"> Create Account </h1>
+    <div id="create_account_area">
+    <form id="form1" name="form1" method="post">
+      <p>
+        <label for="from">User Name</label>
+        <input type="text" name="from" id="from" placeholder="NAME" required>
+      </p>
+      <p>
+          <label for="email">Email</label>
+          <input type="email" name="Email" id="Get_email" placeholder="EMAIL" required>
+      </p>
+      <p>
+          <label for="password">password</label>
+          <input type="text" name="password" id="password" placeholder="password" required>
+      </p>
+      <p>
+          <label for="institute">Institute</label>
+          <input type="text" name="institute" id="institute" placeholder="institute" required>
+      </p>
+      <p>
+          <input type="submit" name="submit" id="submit" value="Submit">
+          <input type="reset" id="reset">
+      </p>
+    </div>
+    <div>
+      <a id = "create_acc" href="/login">Login</a>
+    </div>
+    </main>
+  </body>
 </html>
+
