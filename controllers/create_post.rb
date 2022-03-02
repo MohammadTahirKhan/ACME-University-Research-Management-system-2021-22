@@ -42,4 +42,11 @@ post "/create_post" do
   @post = Post.new
   @post.load(params)
 
+  if @post.valid?
+    @post.save_changes
+    redirect "/home"
+  end
+
+  erb :create_post
+
 end

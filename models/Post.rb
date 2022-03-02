@@ -1,4 +1,4 @@
-class Post < sequel :: Model
+class Post < Sequel::Model
 
   def id 
     id
