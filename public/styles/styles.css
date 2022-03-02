@@ -142,7 +142,7 @@ main #login_area,
 
 main #submit,
 #reset,
-#login{
+#log_in{
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
@@ -161,7 +161,7 @@ main #create_acc {
 }
 
 main #submit:hover,
-#login:hover,
+#log_in:hover,
 #reset:hover,
 #create_acc:hover{
     color: rgb(61, 202, 245);
