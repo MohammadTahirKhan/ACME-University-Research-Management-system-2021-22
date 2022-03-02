@@ -27,4 +27,3 @@ end
 get "/create_account" do
     erb :create_account
 end
-

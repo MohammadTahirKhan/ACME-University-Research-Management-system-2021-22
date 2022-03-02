@@ -17,9 +17,14 @@ CREATE TABLE posts (
 
 -- Insert records of data into the database:
 
+<<<<<<< HEAD
 INSERT INTO test_users VALUES(1, "test_user1", "viewer", "University of Sheffield", "password");
 INSERT INTO test_users VALUES(2, "test_user2", "admin", "University of Manchester", "12345");
 
 
 INSERT INTO posts VALUES(1, "test_title1", "CS", "University of Sheffield", "link1");
 INSERT INTO posts VALUES(2, "test_title2", "ML", "University of Manchester", "link2");
+=======
+INSERT INTO users VALUES(1, "test_user1", "viewer", "University of Sheffield", "password");
+INSERT INTO users VALUES(2, "test_user2", "admin", "University of Manchester", "12345");
+>>>>>>> 7a1d9f86a0fd18fd8103920bdaa35a35fee3dc83

@@ -1,4 +1,92 @@
 <html>
+<<<<<<< HEAD
+
+  <head>
+    <title>GET Form Example</title>
+    <link rel="stylesheet" href="style/style.css">    
+  </head>
+
+  <body>
+    <h1>
+      Create a Post
+    </h1>
+
+    <form method="get" action="/process-get-form"> 
+
+      <!--Mandatory-->
+      <!--Start again here-->
+      <p> 
+        *Title: <br />
+        <input type="text" name="title" value="<%= h @title_field %>"/>
+        <% if @title_error %>
+          <br /><strong class="error"><%= @title_error %></strong>
+        <% end %>
+      </p>
+
+      <!--Mandatory-->
+      <p>
+        *Topic: <br />
+        <input type="text" name="topic" />
+      </p>
+
+      <!--Mandatory-->
+      <p>
+        *Institution or University: <br />
+        <input type="text" name="institution" />
+      </p>
+
+      <!--Mandatory-->
+      <p>
+        *Link to your paper: <br />
+        <input type="text" name="link" />
+      </p>
+
+      <p><input type="submit" value="Submit"></p>
+    </form>
+
+    <% if @form_was_submitted %>
+      <% if @submission_error %>
+        <p><strong class="error">Please correct the errors below</strong></p>
+      <% else %>
+        <p><strong class="success">Success!</strong></p>        
+      <% end %>
+    <% end %>
+
+  </body>
+
+</html>
+
+
+<!--<body>
+    <% if @form_was_submitted %>
+      <% if @submission_error %>
+        <p><strong class="error">Please correct the errors below</strong></p>
+      <% else %>
+        <p><strong class="success">Success!</strong></p>        
+      <% end %>
+    <% end %>
+
+    <form>
+
+      <p>
+        Field1: <input type="text" name="field1" value="<%= h @field1 %>" />
+        <% if @field1_error %>
+          <br /><strong class="error"><%= @field1_error %></strong>
+        <% end %>
+      </p>
+
+      <p>
+        Field2: <input type="text" name="field2" value="<%= h @field2 %>" />
+        <% if @field2_error %>
+          <br /><strong class="error"><%= @field2_error %></strong>
+        <% end %>
+      </p>
+
+      <p><input type="submit" value="Submit"></p>
+
+    </form>
+  </body>-->
+=======
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,3 +136,4 @@
     </footer>
 </body>
 </html>
+>>>>>>> 7f9a5580353bfb4b2e90db5621e436f7dbb1b36f
