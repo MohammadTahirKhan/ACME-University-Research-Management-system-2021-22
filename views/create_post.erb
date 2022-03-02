@@ -1,12 +1,48 @@
 <html>
-<<<<<<< HEAD
 
   <head>
-    <title>GET Form Example</title>
-    <link rel="stylesheet" href="style/style.css">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme | viewer</title>
+    <link rel="stylesheet" href="styles/styles.css"> 
   </head>
 
   <body>
+
+    <header>
+
+      <nav class="navbar">
+        <div class="logo">
+          <h>ACME</h>
+        </div>
+          <ul class="nav_menu">
+            <li>
+              <a href="/home" id="home">Home</a>
+            </li>
+            <li class="pagenow">
+              <a href="/create_post" id="post">Post</a>
+            </li>
+            <li>
+              <a href="/admin" id="Admin">Admin</a>
+            </li>
+            <li>
+              <a href="/moderator" id="moderator">Moderator</a>
+            </li>
+            <li>
+              <a href="/viewer" id="viewer">Viewer</a>
+            </li>
+            <li>
+              <a href="/profile" id="profile">Profile</a>
+            </li>
+            <li>
+              <a href="/login" id="login">Logout</a>
+            </li>
+
+          </ul>
+      </nav>
+    </header>
+
     <h1>
       Create a Post
     </h1>
@@ -52,88 +88,11 @@
       <% end %>
     <% end %>
 
+    <footer>
+      <p class="copyright">© com1001 Group34, 2021-22</p>
+      <p>Please note: This is a fictitious website and all the information written is completely fabricated.</p>
+    </footer>
+
   </body>
 
 </html>
-
-
-<!--<body>
-    <% if @form_was_submitted %>
-      <% if @submission_error %>
-        <p><strong class="error">Please correct the errors below</strong></p>
-      <% else %>
-        <p><strong class="success">Success!</strong></p>        
-      <% end %>
-    <% end %>
-
-    <form>
-
-      <p>
-        Field1: <input type="text" name="field1" value="<%= h @field1 %>" />
-        <% if @field1_error %>
-          <br /><strong class="error"><%= @field1_error %></strong>
-        <% end %>
-      </p>
-
-      <p>
-        Field2: <input type="text" name="field2" value="<%= h @field2 %>" />
-        <% if @field2_error %>
-          <br /><strong class="error"><%= @field2_error %></strong>
-        <% end %>
-      </p>
-
-      <p><input type="submit" value="Submit"></p>
-
-    </form>
-  </body>-->
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acme | viewer</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-   <header>
-
-        <nav class="navbar">
-            <div class="logo">
-                <h>ACME</h>
-            </div>
-            <ul class="nav_menu">
-                <li>
-                    <a href="/home" id="home">Home</a>
-                </li>
-                <li class="pagenow">
-                    <a href="/create_post" id="post">Post</a>
-                </li>
-                <li>
-                    <a href="/admin" id="Admin">Admin</a>
-                </li>
-                <li>
-                    <a href="/moderator" id="moderator">Moderator</a>
-                </li>
-                <li>
-                    <a href="/viewer" id="viewer">Viewer</a>
-                </li>
-                <li>
-                    <a href="/profile" id="profile">Profile</a>
-                </li>
-                <li>
-                    <a href="/login" id="login">Logout</a>
-                </li>
-
-            </ul>
-        </nav>
-    </header>
-    <main>
-    <p></p>
-    </main>
-     <footer>
-        <p class="copyright">© com1001 Group34, 2021-22</p>
-        <p>Please note: This is a fictitious website and all the information written is completely fabricated.</p>
-    </footer>
-</body>
-</html>
->>>>>>> 7f9a5580353bfb4b2e90db5621e436f7dbb1b36f
