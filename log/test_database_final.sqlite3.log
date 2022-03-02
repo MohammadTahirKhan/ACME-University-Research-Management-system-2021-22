@@ -1,0 +1,6 @@
+# Logfile created on 2022-03-02 12:14:11 +0000 by logger.rb/66358
+I, [2022-03-02T12:14:11.648285 #436]  INFO -- : (0.000176s) PRAGMA foreign_keys = 1
+I, [2022-03-02T12:14:11.648392 #436]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-02T12:14:11.648957 #436]  INFO -- : (0.000071s) SELECT sqlite_version()
+I, [2022-03-02T12:14:11.649145 #436]  INFO -- : (0.000033s) PRAGMA table_info('posts')
+E, [2022-03-02T12:14:11.649330 #436] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT * FROM `posts` LIMIT 0

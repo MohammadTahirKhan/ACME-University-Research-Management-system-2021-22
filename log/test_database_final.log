@@ -1,0 +1,11 @@
+# Logfile created on 2022-03-02 12:14:54 +0000 by logger.rb/66358
+I, [2022-03-02T12:14:54.240908 #440]  INFO -- : (0.000150s) PRAGMA foreign_keys = 1
+I, [2022-03-02T12:14:54.241050 #440]  INFO -- : (0.000044s) PRAGMA case_sensitive_like = 1
+I, [2022-03-02T12:14:54.241683 #440]  INFO -- : (0.000114s) SELECT sqlite_version()
+E, [2022-03-02T12:14:54.241888 #440] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-02T12:14:54.242137 #440] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-02T12:16:26.417002 #444]  INFO -- : (0.000208s) PRAGMA foreign_keys = 1
+I, [2022-03-02T12:16:26.417128 #444]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2022-03-02T12:16:26.417717 #444]  INFO -- : (0.000078s) SELECT sqlite_version()
+I, [2022-03-02T12:16:26.417901 #444]  INFO -- : (0.000030s) PRAGMA table_info('posts')
+E, [2022-03-02T12:16:26.418086 #444] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT * FROM `posts` LIMIT 0
