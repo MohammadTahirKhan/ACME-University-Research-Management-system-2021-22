@@ -1,7 +1,7 @@
 require "sinatra"
 
 get "/create_post" do
-  @post = Post.new
+  @posts = Post.new
   erb :create_post
 
   @title_field = params["title"]
@@ -39,11 +39,11 @@ get "/create_post" do
 end
 
 post "/create_post" do
-  @post = Post.new
-  @post.load(params)
+  @posts = Post.new
+  @posts.load(params)
 
-  if @post.valid?
-    @post.save_changes
+  if @posts.valid?
+    @posts.save_changes
     redirect "/home"
   end
 

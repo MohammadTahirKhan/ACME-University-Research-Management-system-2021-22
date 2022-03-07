@@ -19,3 +19,72 @@ I, [2022-03-03T10:57:31.388016 #242]  INFO -- : (0.000049s) PRAGMA case_sensitiv
 I, [2022-03-03T10:57:31.388720 #242]  INFO -- : (0.000122s) SELECT sqlite_version()
 E, [2022-03-03T10:57:31.388921 #242] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
 E, [2022-03-03T10:57:31.389196 #242] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T09:22:16.566556 #287]  INFO -- : (0.000130s) PRAGMA foreign_keys = 1
+I, [2022-03-07T09:22:16.566900 #287]  INFO -- : (0.000064s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T09:22:16.567619 #287]  INFO -- : (0.000122s) SELECT sqlite_version()
+E, [2022-03-07T09:22:16.567824 #287] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-07T09:22:16.568145 #287] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T09:28:43.347857 #291]  INFO -- : (0.000118s) PRAGMA foreign_keys = 1
+I, [2022-03-07T09:28:43.348009 #291]  INFO -- : (0.000048s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T09:28:43.348747 #291]  INFO -- : (0.000104s) SELECT sqlite_version()
+E, [2022-03-07T09:28:43.348974 #291] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-07T09:28:43.349260 #291] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T09:34:20.789183 #295]  INFO -- : (0.000124s) PRAGMA foreign_keys = 1
+I, [2022-03-07T09:34:20.789335 #295]  INFO -- : (0.000049s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T09:34:20.790018 #295]  INFO -- : (0.000109s) SELECT sqlite_version()
+E, [2022-03-07T09:34:20.790217 #295] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-07T09:34:20.790483 #295] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T12:32:38.631426 #135]  INFO -- : (0.000182s) PRAGMA foreign_keys = 1
+I, [2022-03-07T12:32:38.633707 #135]  INFO -- : (0.000076s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T12:32:38.634491 #135]  INFO -- : (0.000130s) SELECT sqlite_version()
+E, [2022-03-07T12:32:38.634703 #135] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-07T12:32:38.634984 #135] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T14:31:26.828227 #143]  INFO -- : (0.000219s) PRAGMA foreign_keys = 1
+I, [2022-03-07T14:31:26.828603 #143]  INFO -- : (0.000090s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T14:38:46.071140 #153]  INFO -- : (0.000159s) PRAGMA foreign_keys = 1
+I, [2022-03-07T14:38:46.071337 #153]  INFO -- : (0.000069s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T14:38:46.072674 #153]  INFO -- : (0.000215s) SELECT sqlite_version()
+E, [2022-03-07T14:38:46.073053 #153] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-07T14:38:46.073501 #153] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T14:42:02.424692 #158]  INFO -- : (0.000123s) PRAGMA foreign_keys = 1
+I, [2022-03-07T14:42:02.424871 #158]  INFO -- : (0.000066s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T14:42:02.425578 #158]  INFO -- : (0.000119s) SELECT sqlite_version()
+E, [2022-03-07T14:42:02.425807 #158] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-07T14:42:02.426098 #158] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T15:03:52.679956 #165]  INFO -- : (0.000124s) PRAGMA foreign_keys = 1
+I, [2022-03-07T15:03:52.680158 #165]  INFO -- : (0.000054s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T15:03:52.686589 #165]  INFO -- : (0.000138s) SELECT sqlite_version()
+E, [2022-03-07T15:03:52.686821 #165] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-07T15:03:52.687096 #165] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T15:19:29.713891 #178]  INFO -- : (0.000135s) PRAGMA foreign_keys = 1
+I, [2022-03-07T15:19:29.714060 #178]  INFO -- : (0.000048s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T15:19:29.714769 #178]  INFO -- : (0.000114s) SELECT sqlite_version()
+E, [2022-03-07T15:19:29.714973 #178] ERROR -- : SQLite3::NotADatabaseException: file is not a database: PRAGMA table_info('posts')
+E, [2022-03-07T15:19:29.715250 #178] ERROR -- : SQLite3::NotADatabaseException: file is not a database: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T16:45:21.345578 #477]  INFO -- : (0.000242s) PRAGMA foreign_keys = 1
+I, [2022-03-07T16:45:21.345969 #477]  INFO -- : (0.000032s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T16:45:21.346715 #477]  INFO -- : (0.000084s) SELECT sqlite_version()
+I, [2022-03-07T16:45:21.346945 #477]  INFO -- : (0.000043s) PRAGMA table_info('posts')
+E, [2022-03-07T16:45:21.347197 #477] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T16:45:52.876315 #481]  INFO -- : (0.000184s) PRAGMA foreign_keys = 1
+I, [2022-03-07T16:45:52.876442 #481]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T16:45:52.877038 #481]  INFO -- : (0.000068s) SELECT sqlite_version()
+I, [2022-03-07T16:45:52.877242 #481]  INFO -- : (0.000038s) PRAGMA table_info('posts')
+E, [2022-03-07T16:45:52.877440 #481] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T16:47:00.062399 #485]  INFO -- : (0.000187s) PRAGMA foreign_keys = 1
+I, [2022-03-07T16:47:00.062527 #485]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T16:51:07.291666 #535]  INFO -- : (0.000257s) PRAGMA foreign_keys = 1
+I, [2022-03-07T16:51:07.291837 #535]  INFO -- : (0.000031s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T16:51:07.292879 #535]  INFO -- : (0.000119s) SELECT sqlite_version()
+I, [2022-03-07T16:51:07.293185 #535]  INFO -- : (0.000059s) PRAGMA table_info('posts')
+E, [2022-03-07T16:51:07.293482 #535] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T16:54:04.392856 #539]  INFO -- : (0.000194s) PRAGMA foreign_keys = 1
+I, [2022-03-07T16:54:04.392996 #539]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T16:54:04.393679 #539]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2022-03-07T16:54:04.393885 #539]  INFO -- : (0.000043s) PRAGMA table_info('posts')
+E, [2022-03-07T16:54:04.394086 #539] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-07T16:54:46.004977 #545]  INFO -- : (0.000200s) PRAGMA foreign_keys = 1
+I, [2022-03-07T16:54:46.005167 #545]  INFO -- : (0.000030s) PRAGMA case_sensitive_like = 1
+I, [2022-03-07T16:54:46.005877 #545]  INFO -- : (0.000080s) SELECT sqlite_version()
+I, [2022-03-07T16:54:46.006096 #545]  INFO -- : (0.000040s) PRAGMA table_info('posts')
+E, [2022-03-07T16:54:46.006307 #545] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT * FROM `posts` LIMIT 0

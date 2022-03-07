@@ -1,4 +1,4 @@
-class User < sequel :: Model
+class User < Sequel::Model
 
   def id 
     id
@@ -23,8 +23,9 @@ class User < sequel :: Model
   def load(params)
     self.id =  params.fetch("id", "").strip
     self.username =  params.fetch("username", "").strip
-    self.id =  params.fetch("id", "").strip
-    self.id =  params.fetch("id", "").strip
-    self.id =  params.fetch("id", "").strip
+    self.user_type =  params.fetch("user_type", "").strip
+    self.institution =  params.fetch("institution", "").strip
+    self.password =  params.fetch("password", "").strip
+  end
 
 end

@@ -40,6 +40,28 @@
         </nav>
     </header>
     <main>
+     <% if @users.count > 0 %>
+    <table>
+      <tr>
+        <th>id</th>
+        <th>username</th>
+        <th>user_type</th>
+        <th>institution</th>
+        <th>password</th>
+      </tr>
+    <% @user.each do |user| %>
+      <tr>
+        <td><%=h User.name %></td>
+        <td><%=h User.username %></td>
+        <td><%=h User.user_type %></td>
+        <td><%=h User.institution %></td>
+        <td><%=h User.password %></td>
+      </tr>
+    <% end %> 
+    </table>
+  <% else %>
+    <p>The database is empty!</p>
+  <% end %>
     <p></p>
     </main>
      <footer>
