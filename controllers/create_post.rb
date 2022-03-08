@@ -2,7 +2,7 @@ require "sinatra"
 
 get "/create_post" do
   @posts = Post.new
-  erb :create_post
+  return erb :create_post
 
   @title_field = params["title"]
   @topic_field = params["topic"]
