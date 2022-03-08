@@ -43,19 +43,19 @@
      <% if @users.count > 0 %>
     <table>
       <tr>
-        <th>id</th>
-        <th>username</th>
-        <th>user_type</th>
-        <th>institution</th>
-        <th>password</th>
+        <th>Id</th>
+        <th>Username</th>
+        <th>User_type</th>
+        <th>Institution</th>
+        <th>Password</th>
       </tr>
-    <% @user.each do |user| %>
+    <% @users.each do |user|%>
       <tr>
-        <td><%=h User.name %></td>
-        <td><%=h User.username %></td>
-        <td><%=h User.user_type %></td>
-        <td><%=h User.institution %></td>
-        <td><%=h User.password %></td>
+        <td><%=h user.id %></td>
+        <td><%=h user.username %></td>
+        <td><%=h user.user_type %></td>
+        <td><%=h user.institution %></td>
+        <td><%=h user.password %></td>
       </tr>
     <% end %> 
     </table>

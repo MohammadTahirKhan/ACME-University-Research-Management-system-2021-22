@@ -123,3 +123,156 @@ I, [2022-03-08T10:36:28.926752 #179]  INFO -- : (0.000022s) PRAGMA case_sensitiv
 I, [2022-03-08T10:36:28.927381 #179]  INFO -- : (0.000071s) SELECT sqlite_version()
 I, [2022-03-08T10:36:28.927581 #179]  INFO -- : (0.000042s) PRAGMA table_info('posts')
 E, [2022-03-08T10:36:28.927777 #179] ERROR -- : SQLite3::SQLException: no such table: posts: SELECT * FROM `posts` LIMIT 0
+I, [2022-03-08T11:08:54.339684 #184]  INFO -- : (0.000196s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:08:54.339901 #184]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:08:54.340603 #184]  INFO -- : (0.000076s) SELECT sqlite_version()
+I, [2022-03-08T11:08:54.340929 #184]  INFO -- : (0.000165s) PRAGMA table_info('posts')
+I, [2022-03-08T11:08:54.341871 #184]  INFO -- : (0.000129s) PRAGMA table_info('users')
+I, [2022-03-08T11:09:09.546709 #195]  INFO -- : (0.000183s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:09:09.546844 #195]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:09:09.547485 #195]  INFO -- : (0.000088s) SELECT sqlite_version()
+I, [2022-03-08T11:09:09.547778 #195]  INFO -- : (0.000128s) PRAGMA table_info('posts')
+I, [2022-03-08T11:09:09.548835 #195]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2022-03-08T11:09:15.108632 #195]  INFO -- : (0.000177s) SELECT * FROM `users`
+I, [2022-03-08T11:09:41.371408 #195]  INFO -- : (0.000165s) SELECT * FROM `users`
+I, [2022-03-08T11:10:36.374573 #206]  INFO -- : (0.000200s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:10:36.374698 #206]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:10:36.375293 #206]  INFO -- : (0.000081s) SELECT sqlite_version()
+I, [2022-03-08T11:10:36.375614 #206]  INFO -- : (0.000161s) PRAGMA table_info('posts')
+I, [2022-03-08T11:10:36.376595 #206]  INFO -- : (0.000119s) PRAGMA table_info('users')
+I, [2022-03-08T11:10:41.869480 #206]  INFO -- : (0.000186s) SELECT * FROM `users`
+I, [2022-03-08T11:11:40.772726 #217]  INFO -- : (0.000175s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:11:40.772852 #217]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:11:40.773440 #217]  INFO -- : (0.000065s) SELECT sqlite_version()
+I, [2022-03-08T11:11:40.773725 #217]  INFO -- : (0.000130s) PRAGMA table_info('posts')
+I, [2022-03-08T11:11:40.774655 #217]  INFO -- : (0.000131s) PRAGMA table_info('users')
+I, [2022-03-08T11:11:47.639791 #217]  INFO -- : (0.000170s) SELECT * FROM `users`
+I, [2022-03-08T11:12:49.005009 #228]  INFO -- : (0.000172s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:12:49.005134 #228]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:12:49.005716 #228]  INFO -- : (0.000065s) SELECT sqlite_version()
+I, [2022-03-08T11:12:49.006004 #228]  INFO -- : (0.000124s) PRAGMA table_info('posts')
+I, [2022-03-08T11:12:49.006920 #228]  INFO -- : (0.000118s) PRAGMA table_info('users')
+I, [2022-03-08T11:12:54.210729 #228]  INFO -- : (0.000173s) SELECT * FROM `users`
+I, [2022-03-08T11:14:17.422578 #239]  INFO -- : (0.000240s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:14:17.422731 #239]  INFO -- : (0.000028s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:14:17.423568 #239]  INFO -- : (0.000093s) SELECT sqlite_version()
+I, [2022-03-08T11:14:17.423947 #239]  INFO -- : (0.000177s) PRAGMA table_info('posts')
+I, [2022-03-08T11:14:17.425343 #239]  INFO -- : (0.000198s) PRAGMA table_info('users')
+I, [2022-03-08T11:16:19.190198 #250]  INFO -- : (0.000186s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:16:19.190324 #250]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:16:19.191005 #250]  INFO -- : (0.000070s) SELECT sqlite_version()
+I, [2022-03-08T11:16:19.191312 #250]  INFO -- : (0.000129s) PRAGMA table_info('posts')
+I, [2022-03-08T11:16:19.192351 #250]  INFO -- : (0.000136s) PRAGMA table_info('users')
+I, [2022-03-08T11:16:23.201206 #250]  INFO -- : (0.000175s) SELECT * FROM `users`
+I, [2022-03-08T11:17:27.251960 #265]  INFO -- : (0.000185s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:17:27.252144 #265]  INFO -- : (0.000031s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:17:27.252794 #265]  INFO -- : (0.000069s) SELECT sqlite_version()
+I, [2022-03-08T11:17:27.253107 #265]  INFO -- : (0.000136s) PRAGMA table_info('posts')
+I, [2022-03-08T11:17:27.254019 #265]  INFO -- : (0.000119s) PRAGMA table_info('users')
+I, [2022-03-08T11:17:32.364278 #265]  INFO -- : (0.000296s) SELECT * FROM `users`
+I, [2022-03-08T11:18:38.888996 #276]  INFO -- : (0.000189s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:18:38.889126 #276]  INFO -- : (0.000023s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:18:38.889717 #276]  INFO -- : (0.000067s) SELECT sqlite_version()
+I, [2022-03-08T11:18:38.889999 #276]  INFO -- : (0.000129s) PRAGMA table_info('posts')
+I, [2022-03-08T11:18:38.890896 #276]  INFO -- : (0.000119s) PRAGMA table_info('users')
+I, [2022-03-08T11:18:46.523679 #276]  INFO -- : (0.000169s) SELECT * FROM `users`
+I, [2022-03-08T11:19:22.409512 #287]  INFO -- : (0.000190s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:19:22.409645 #287]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:19:22.410367 #287]  INFO -- : (0.000082s) SELECT sqlite_version()
+I, [2022-03-08T11:19:22.410699 #287]  INFO -- : (0.000144s) PRAGMA table_info('posts')
+I, [2022-03-08T11:19:22.411922 #287]  INFO -- : (0.000197s) PRAGMA table_info('users')
+I, [2022-03-08T11:19:27.078803 #287]  INFO -- : (0.000209s) SELECT * FROM `users`
+I, [2022-03-08T11:19:53.146594 #298]  INFO -- : (0.000179s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:19:53.146717 #298]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:19:53.147317 #298]  INFO -- : (0.000067s) SELECT sqlite_version()
+I, [2022-03-08T11:19:53.147598 #298]  INFO -- : (0.000125s) PRAGMA table_info('posts')
+I, [2022-03-08T11:19:53.148516 #298]  INFO -- : (0.000119s) PRAGMA table_info('users')
+I, [2022-03-08T11:19:59.474393 #298]  INFO -- : (0.000174s) SELECT * FROM `users`
+I, [2022-03-08T11:20:54.376941 #309]  INFO -- : (0.000171s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:20:54.377066 #309]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:20:54.377650 #309]  INFO -- : (0.000066s) SELECT sqlite_version()
+I, [2022-03-08T11:20:54.377928 #309]  INFO -- : (0.000125s) PRAGMA table_info('posts')
+I, [2022-03-08T11:20:54.378869 #309]  INFO -- : (0.000171s) PRAGMA table_info('users')
+I, [2022-03-08T11:23:37.328016 #321]  INFO -- : (0.000182s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:23:37.328192 #321]  INFO -- : (0.000025s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:23:37.328877 #321]  INFO -- : (0.000084s) SELECT sqlite_version()
+I, [2022-03-08T11:23:37.329165 #321]  INFO -- : (0.000125s) PRAGMA table_info('posts')
+I, [2022-03-08T11:23:37.330100 #321]  INFO -- : (0.000118s) PRAGMA table_info('users')
+I, [2022-03-08T11:23:50.594010 #321]  INFO -- : (0.000183s) SELECT * FROM `users`
+I, [2022-03-08T11:24:56.015530 #332]  INFO -- : (0.000182s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:24:56.015655 #332]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:24:56.016313 #332]  INFO -- : (0.000083s) SELECT sqlite_version()
+I, [2022-03-08T11:24:56.016599 #332]  INFO -- : (0.000130s) PRAGMA table_info('posts')
+I, [2022-03-08T11:24:56.017548 #332]  INFO -- : (0.000118s) PRAGMA table_info('users')
+I, [2022-03-08T11:25:28.701820 #343]  INFO -- : (0.000176s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:25:28.701947 #343]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:25:28.702602 #343]  INFO -- : (0.000072s) SELECT sqlite_version()
+I, [2022-03-08T11:25:28.702919 #343]  INFO -- : (0.000137s) PRAGMA table_info('posts')
+I, [2022-03-08T11:28:21.525234 #347]  INFO -- : (0.000174s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:28:21.525360 #347]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:28:21.525996 #347]  INFO -- : (0.000066s) SELECT sqlite_version()
+I, [2022-03-08T11:28:21.526327 #347]  INFO -- : (0.000157s) PRAGMA table_info('posts')
+I, [2022-03-08T11:28:21.527312 #347]  INFO -- : (0.000132s) PRAGMA table_info('users')
+I, [2022-03-08T11:28:26.880696 #347]  INFO -- : (0.000200s) SELECT * FROM `users`
+I, [2022-03-08T11:28:58.280996 #358]  INFO -- : (0.000171s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:28:58.281120 #358]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:28:58.281728 #358]  INFO -- : (0.000068s) SELECT sqlite_version()
+I, [2022-03-08T11:28:58.282008 #358]  INFO -- : (0.000127s) PRAGMA table_info('posts')
+I, [2022-03-08T11:28:58.282958 #358]  INFO -- : (0.000120s) PRAGMA table_info('users')
+I, [2022-03-08T11:29:02.747683 #358]  INFO -- : (0.000178s) SELECT * FROM `users`
+I, [2022-03-08T11:30:39.651722 #369]  INFO -- : (0.000173s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:30:39.651848 #369]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:30:39.652498 #369]  INFO -- : (0.000070s) SELECT sqlite_version()
+I, [2022-03-08T11:30:39.652786 #369]  INFO -- : (0.000130s) PRAGMA table_info('posts')
+I, [2022-03-08T11:30:39.653733 #369]  INFO -- : (0.000121s) PRAGMA table_info('users')
+I, [2022-03-08T11:30:45.846387 #369]  INFO -- : (0.000169s) SELECT * FROM `users`
+I, [2022-03-08T11:39:11.897114 #382]  INFO -- : (0.000173s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:39:11.897238 #382]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:39:11.897852 #382]  INFO -- : (0.000067s) SELECT sqlite_version()
+I, [2022-03-08T11:39:11.898146 #382]  INFO -- : (0.000125s) PRAGMA table_info('posts')
+I, [2022-03-08T11:39:11.899065 #382]  INFO -- : (0.000118s) PRAGMA table_info('users')
+I, [2022-03-08T11:39:16.301318 #382]  INFO -- : (0.000204s) SELECT * FROM `users`
+I, [2022-03-08T11:39:22.959353 #382]  INFO -- : (0.000166s) SELECT * FROM `users`
+I, [2022-03-08T11:39:24.152491 #382]  INFO -- : (0.000160s) SELECT * FROM `users`
+I, [2022-03-08T11:39:59.549462 #393]  INFO -- : (0.000187s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:39:59.549588 #393]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:39:59.550229 #393]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2022-03-08T11:39:59.550513 #393]  INFO -- : (0.000126s) PRAGMA table_info('posts')
+I, [2022-03-08T11:39:59.551410 #393]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2022-03-08T11:40:04.902683 #393]  INFO -- : (0.000173s) SELECT * FROM `users`
+I, [2022-03-08T11:40:31.868961 #404]  INFO -- : (0.000171s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:40:31.869087 #404]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:40:31.869681 #404]  INFO -- : (0.000067s) SELECT sqlite_version()
+I, [2022-03-08T11:40:31.869983 #404]  INFO -- : (0.000147s) PRAGMA table_info('posts')
+I, [2022-03-08T11:40:31.870872 #404]  INFO -- : (0.000125s) PRAGMA table_info('users')
+I, [2022-03-08T11:40:37.037689 #404]  INFO -- : (0.000172s) SELECT * FROM `users`
+I, [2022-03-08T11:40:42.427425 #404]  INFO -- : (0.000162s) SELECT * FROM `users`
+I, [2022-03-08T11:41:01.834091 #404]  INFO -- : (0.000160s) SELECT * FROM `users`
+I, [2022-03-08T11:41:02.943930 #404]  INFO -- : (0.000167s) SELECT * FROM `users`
+I, [2022-03-08T11:41:04.190586 #404]  INFO -- : (0.000162s) SELECT * FROM `users`
+I, [2022-03-08T11:42:13.069417 #415]  INFO -- : (0.000187s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:42:13.069556 #415]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:42:13.070229 #415]  INFO -- : (0.000092s) SELECT sqlite_version()
+I, [2022-03-08T11:42:13.070529 #415]  INFO -- : (0.000132s) PRAGMA table_info('posts')
+I, [2022-03-08T11:42:13.071472 #415]  INFO -- : (0.000119s) PRAGMA table_info('users')
+I, [2022-03-08T11:42:18.233270 #415]  INFO -- : (0.000180s) SELECT * FROM `users`
+I, [2022-03-08T11:42:25.085197 #415]  INFO -- : (0.000164s) SELECT * FROM `users`
+I, [2022-03-08T11:42:28.418396 #415]  INFO -- : (0.000184s) SELECT * FROM `users`
+I, [2022-03-08T11:42:42.696386 #426]  INFO -- : (0.000201s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:42:42.696508 #426]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:42:42.697116 #426]  INFO -- : (0.000073s) SELECT sqlite_version()
+I, [2022-03-08T11:42:42.697412 #426]  INFO -- : (0.000125s) PRAGMA table_info('posts')
+I, [2022-03-08T11:42:42.698297 #426]  INFO -- : (0.000118s) PRAGMA table_info('users')
+I, [2022-03-08T11:42:47.696267 #426]  INFO -- : (0.000176s) SELECT * FROM `users`
+I, [2022-03-08T11:43:20.301799 #437]  INFO -- : (0.000179s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:43:20.301928 #437]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:43:20.302585 #437]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2022-03-08T11:43:20.302872 #437]  INFO -- : (0.000130s) PRAGMA table_info('posts')
+I, [2022-03-08T11:43:20.303773 #437]  INFO -- : (0.000119s) PRAGMA table_info('users')
+I, [2022-03-08T11:43:25.409513 #437]  INFO -- : (0.000172s) SELECT * FROM `users`
+I, [2022-03-08T11:48:06.804399 #456]  INFO -- : (0.000171s) PRAGMA foreign_keys = 1
+I, [2022-03-08T11:48:06.804550 #456]  INFO -- : (0.000028s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T11:48:06.805182 #456]  INFO -- : (0.000079s) SELECT sqlite_version()
+I, [2022-03-08T11:48:06.805463 #456]  INFO -- : (0.000125s) PRAGMA table_info('posts')
+I, [2022-03-08T11:48:06.806361 #456]  INFO -- : (0.000118s) PRAGMA table_info('users')
+I, [2022-03-08T11:48:11.613117 #456]  INFO -- : (0.000192s) SELECT * FROM `users`

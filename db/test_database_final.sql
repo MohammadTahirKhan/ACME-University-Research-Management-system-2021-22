@@ -16,11 +16,15 @@ CREATE TABLE users (
 
 -- Insert records of data into the database:
 
-INSERT INTO posts VALUES(1,"Dominic", "Calvert-Lewin", "M", "Everton");
-INSERT INTO posts VALUES(2,"Sam", "Kerr", "F", "Chelsea");
+INSERT INTO posts VALUES(6,"Dominic", "Calvert-Lewin", "M", "Everton");
+INSERT INTO posts VALUES(7,"Sam", "Kerr", "F", "Chelsea");
 
 
 -- Insert records of data into the database:
 
 INSERT INTO users VALUES(1, "Dominic", "M", "uos","Everton");
 INSERT INTO users VALUES(2, "Sam", "abc", "sheffield", "Chelsea");
+INSERT INTO users VALUES(3, "abcd", "sadasd", "sajdaksjfn", "sakjh");
+INSERT INTO users VALUES(4, "wuqdh", "sabc", "jsjsj", "nsbd");
+INSERT INTO users VALUES(5, "jsakdh", "ksand", "zzz", "sjabd");
+
