@@ -40,6 +40,27 @@
         </nav>
     </header>
     <main>
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Topic</th>
+        <th>Institution</th>
+        <th>Link</th>
+      </tr>
+    <% @posts.each do |post|%>
+      <tr>
+        <td><%=h post.id %></td>
+        <td><%=h post.title %></td>
+        <td><%=h post.topic %></td>
+        <td><%=h post.institution %></td>
+        <td><%=h post.link %></td>
+      </tr>
+    <% end %> 
+    </table>
+  <% else %>
+    <p>The database is empty!</p>
+  <% end %>
     <p></p>
     </main>
      <footer>
