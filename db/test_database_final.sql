@@ -16,8 +16,8 @@ CREATE TABLE users (
 
 -- Insert records of data into the database:
 
-INSERT INTO posts VALUES(1, "Dominic", "Calvert-Lewin", "M", "Everton");
-INSERT INTO posts VALUES(2, "Sam", "Kerr", "F", "Chelsea");
+INSERT INTO posts VALUES(1,"Dominic", "Calvert-Lewin", "M", "Everton");
+INSERT INTO posts VALUES(2,"Sam", "Kerr", "F", "Chelsea");
 
 
 -- Insert records of data into the database:
