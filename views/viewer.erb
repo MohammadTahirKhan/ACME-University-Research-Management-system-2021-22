@@ -40,28 +40,29 @@
         </nav>
     </header>
     <main>
-    <table>
-      <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Topic</th>
-        <th>Institution</th>
-        <th>Link</th>
-      </tr>
-    <% @posts.each do |post|%>
-      <tr>
-        <td><%=h post.id %></td>
-        <td><%=h post.title %></td>
-        <td><%=h post.topic %></td>
-        <td><%=h post.institution %></td>
-        <td><%=h post.link %></td>
-      </tr>
-    <% end %> 
-    </table>
-  <% else %>
-    <p>The database is empty!</p>
-  <% end %>
-    <p></p>
+        <% if @posts.count > 0 %>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Topic</th>
+                    <th>Institution</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                <% @posts.each do |post|%>
+                    <td><%=h post.id %></td>
+                    <td><%=h post.title %></td>
+                    <td><%=h post.topic %></td>
+                    <td><%=h post.institution %></td>
+                    <td><%=h post.link %></td>
+                </tr>
+                <% end %> 
+            </table>
+            <% else %>
+                <p>The database is empty!</p>
+            <% end %>
+        <p></p>
     </main>
      <footer>
         <p class="copyright">© com1001 Group34, 2021-22</p>

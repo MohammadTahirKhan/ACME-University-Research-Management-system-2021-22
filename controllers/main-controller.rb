@@ -16,9 +16,6 @@ get "/admin" do
     erb :admin
 end
 
-get "/viewer" do
-    erb :viewer
-end
 
 get "/profile" do
     erb :profile
