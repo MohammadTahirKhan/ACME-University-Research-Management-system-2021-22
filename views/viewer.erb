@@ -41,8 +41,8 @@
     </header>
     <main>
         <% if @posts.count > 0 %>
-            <table>
-                <tr>
+            <table id="post_table">
+                <tr id="columns">
                     <th>ID</th>
                     <th>Title</th>
                     <th>Topic</th>
@@ -51,11 +51,11 @@
                 </tr>
                 <tr>
                 <% @posts.each do |post|%>
-                    <td><%=h post.id %></td>
-                    <td><%=h post.title %></td>
-                    <td><%=h post.topic %></td>
-                    <td><%=h post.institution %></td>
-                    <td><%=h post.link %></td>
+                    <td class="row"><%=h post.id %></td>
+                    <td class="row"><%=h post.title %></td>
+                    <td class="row"><%=h post.topic %></td>
+                    <td class="row"><%=h post.institution %></td>
+                    <td class="row"><%=h post.link %></td>
                 </tr>
                 <% end %> 
             </table>

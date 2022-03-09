@@ -40,7 +40,28 @@
         </nav>
     </header>
     <main>
-    <p></p>
+    <% if @users.count > 0 %>
+    <table id="user_table">
+      <tr id="columns">
+        <th>Id</th>
+        <th>Username</th>
+        <th>User_type</th>
+        <th>Institution</th>
+        <th>Password</th>
+      </tr>
+    <% @users.each do |user|%>
+        <tr>
+            <td class="row"><%=h user.id %></td>
+            <td class="row"><%=h user.username %></td>
+            <td class="row"><%=h user.user_type %></td>
+            <td class="row"><%=h user.institution %></td>
+            <td class="row"><%=h user.password %></td>
+        </tr>
+    <% end %> 
+    </table>
+    <% else %>
+        <p>The database is empty!</p>
+    <% end %>
     </main>
      <footer>
         <p class="copyright">© com1001 Group34, 2021-22</p>
