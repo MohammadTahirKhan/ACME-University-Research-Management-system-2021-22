@@ -40,7 +40,7 @@
         </nav>
     </header>
     <main>
-        <% if @users.count > 0 %>
+        <% if @posts.count > 0 %>
             <table>
                 <tr>
                     <th>ID</th>
@@ -51,11 +51,11 @@
                 </tr>
                 <tr>
                 <% @posts.each do |post|%>
-                    <td><%=h user.id %></td>
-                    <td><%=h user.title %></td>
-                    <td><%=h user.topic %></td>
-                    <td><%=h user.institution %></td>
-                    <td><%=h user.link %></td>
+                    <td><%=h post.id %></td>
+                    <td><%=h post.title %></td>
+                    <td><%=h post.topic %></td>
+                    <td><%=h post.institution %></td>
+                    <td><%=h post.link %></td>
                 </tr>
                 <% end %> 
             </table>
