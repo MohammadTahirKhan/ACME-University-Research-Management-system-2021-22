@@ -365,3 +365,9 @@ I, [2022-03-08T12:50:03.733258 #553]  INFO -- : (0.000111s) SELECT sqlite_versio
 I, [2022-03-08T12:50:03.733568 #553]  INFO -- : (0.000146s) PRAGMA table_info('posts')
 I, [2022-03-08T12:50:03.734546 #553]  INFO -- : (0.000128s) PRAGMA table_info('users')
 I, [2022-03-08T12:50:08.215638 #553]  INFO -- : (0.000180s) SELECT * FROM `posts`
+I, [2022-03-08T12:56:00.131623 #573]  INFO -- : (0.000183s) PRAGMA foreign_keys = 1
+I, [2022-03-08T12:56:00.131739 #573]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2022-03-08T12:56:00.132324 #573]  INFO -- : (0.000097s) SELECT sqlite_version()
+I, [2022-03-08T12:56:00.132578 #573]  INFO -- : (0.000104s) PRAGMA table_info('posts')
+I, [2022-03-08T12:56:00.133347 #573]  INFO -- : (0.000105s) PRAGMA table_info('users')
+I, [2022-03-08T12:56:03.586138 #573]  INFO -- : (0.000177s) SELECT * FROM `posts`
