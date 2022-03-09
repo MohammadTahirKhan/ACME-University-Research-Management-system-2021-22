@@ -1,21 +1,22 @@
 require "sinatra"
 
-get "/create_post" do
+post "/create_post" do
   @posts = Post.new
-  return erb :create_post
 
   @title_field = params["title"]
   @topic_field = params["topic"]
   @institution_field = params["institution"]
   @link_field = params["link"]
 
-  @form_was_submitted = !@title_field.nil? || !@topic_field.nil? || !@institution_field.nil? || !@link_field.nil?
+  @form_was_submitted = !@title_field.empty? && !@topic_field.empty? && !@institution_field.empty? && !@link_field.empty?
   @submission_error = nil
 
   @title_error = nil
   @topic_error = nil
   @institution_error = nil
   @link_error = nil
+
+  @posts.load(params)
 
   if @form_was_submitted
     # sanitise the values by removing whitespace
@@ -24,27 +25,20 @@ get "/create_post" do
     @institution_field.strip!
     @link_field.strip!
 
+    @posts.save_changes
+    redirect "/create_post"
+  else
     # now proceed to validation
     @title_error = "Please enter a value for title" if @title_field.empty?
     @topic_error = "Please enter a value for topic" if @topic_field.empty?
     @institution_error = "Please enter a value for institution" if @institution_field.empty?
     @link_error = "Please enter a value for link" if @link_field.empty?
 
-    @submission_error = "Please correct the errors below" unless 
-    @title_error.nil? && 
-    @topic_error.nil? && 
-    @institution_error.nil? && 
-    @link_error.nil?
-  end
-end
-
-post "/create_post" do
-  @posts = Post.new
-  @posts.load(params)
-
-  if @posts.valid?
-    @posts.save_changes
-    redirect "/home"
+    #@submission_error = "Please correct the errors above" unless 
+    #@title_error.nil? && 
+    #@topic_error.nil? && 
+    #@institution_error.nil? && 
+    #@link_error.nil?
   end
 
   erb :create_post

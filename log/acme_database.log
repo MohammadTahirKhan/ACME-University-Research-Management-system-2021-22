@@ -1,0 +1,201 @@
+# Logfile created on 2022-03-09 14:07:19 +0000 by logger.rb/66358
+I, [2022-03-09T14:07:19.320672 #341]  INFO -- : (0.000184s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:07:19.320770 #341]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:07:19.321289 #341]  INFO -- : (0.000068s) SELECT sqlite_version()
+I, [2022-03-09T14:07:19.321528 #341]  INFO -- : (0.000098s) PRAGMA table_info('posts')
+I, [2022-03-09T14:07:19.322253 #341]  INFO -- : (0.000105s) PRAGMA table_info('users')
+I, [2022-03-09T14:07:30.052154 #341]  INFO -- : (0.000166s) SELECT * FROM `users`
+I, [2022-03-09T14:08:00.452257 #341]  INFO -- : (0.000160s) SELECT * FROM `posts`
+I, [2022-03-09T14:16:07.803790 #355]  INFO -- : (0.000166s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:16:07.803892 #355]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:16:07.804364 #355]  INFO -- : (0.000057s) SELECT sqlite_version()
+I, [2022-03-09T14:16:07.804582 #355]  INFO -- : (0.000092s) PRAGMA table_info('posts')
+I, [2022-03-09T14:16:07.805285 #355]  INFO -- : (0.000097s) PRAGMA table_info('users')
+I, [2022-03-09T14:16:21.335328 #355]  INFO -- : (0.000039s) BEGIN
+I, [2022-03-09T14:16:21.335806 #355]  INFO -- : (0.000244s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'sxrdctfvyg', 'xdcgfvh', 'xdcfvgh', 'test')
+I, [2022-03-09T14:16:21.336038 #355]  INFO -- : (0.000095s) SELECT * FROM `posts` WHERE `id` = 8
+I, [2022-03-09T14:16:21.405295 #355]  INFO -- : (0.069168s) COMMIT
+I, [2022-03-09T14:16:23.297416 #355]  INFO -- : (0.000192s) SELECT * FROM `posts`
+I, [2022-03-09T14:19:56.810158 #369]  INFO -- : (0.000166s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:19:56.810262 #369]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:19:56.810747 #369]  INFO -- : (0.000057s) SELECT sqlite_version()
+I, [2022-03-09T14:19:56.811000 #369]  INFO -- : (0.000110s) PRAGMA table_info('posts')
+I, [2022-03-09T14:19:56.811732 #369]  INFO -- : (0.000095s) PRAGMA table_info('users')
+I, [2022-03-09T14:20:10.346593 #369]  INFO -- : (0.000038s) BEGIN
+I, [2022-03-09T14:20:10.347132 #369]  INFO -- : (0.000268s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'test 2', 'sdf', 'cfy', 'dtcfv')
+I, [2022-03-09T14:20:10.347383 #369]  INFO -- : (0.000117s) SELECT * FROM `posts` WHERE `id` = 9
+I, [2022-03-09T14:20:10.414880 #369]  INFO -- : (0.067414s) COMMIT
+I, [2022-03-09T14:20:12.017722 #369]  INFO -- : (0.000217s) SELECT * FROM `posts`
+I, [2022-03-09T14:20:26.677703 #369]  INFO -- : (0.000050s) BEGIN
+I, [2022-03-09T14:20:26.678155 #369]  INFO -- : (0.000213s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'test3', '', '', '')
+I, [2022-03-09T14:20:26.678401 #369]  INFO -- : (0.000110s) SELECT * FROM `posts` WHERE `id` = 10
+I, [2022-03-09T14:20:26.746935 #369]  INFO -- : (0.068414s) COMMIT
+I, [2022-03-09T14:20:28.697834 #369]  INFO -- : (0.000047s) BEGIN
+I, [2022-03-09T14:20:28.698267 #369]  INFO -- : (0.000195s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:20:28.698553 #369]  INFO -- : (0.000135s) SELECT * FROM `posts` WHERE `id` = 11
+I, [2022-03-09T14:20:28.765503 #369]  INFO -- : (0.066822s) COMMIT
+I, [2022-03-09T14:20:29.725149 #369]  INFO -- : (0.000235s) SELECT * FROM `posts`
+I, [2022-03-09T14:20:34.409464 #369]  INFO -- : (0.000034s) BEGIN
+I, [2022-03-09T14:20:34.409843 #369]  INFO -- : (0.000189s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:20:34.410039 #369]  INFO -- : (0.000083s) SELECT * FROM `posts` WHERE `id` = 12
+I, [2022-03-09T14:20:34.473117 #369]  INFO -- : (0.062996s) COMMIT
+I, [2022-03-09T14:20:34.641317 #369]  INFO -- : (0.000042s) BEGIN
+I, [2022-03-09T14:20:34.641765 #369]  INFO -- : (0.000225s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:20:34.642008 #369]  INFO -- : (0.000111s) SELECT * FROM `posts` WHERE `id` = 13
+I, [2022-03-09T14:20:34.710859 #369]  INFO -- : (0.068764s) COMMIT
+I, [2022-03-09T14:20:34.923291 #369]  INFO -- : (0.000040s) BEGIN
+I, [2022-03-09T14:20:34.923712 #369]  INFO -- : (0.000212s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:20:34.923944 #369]  INFO -- : (0.000107s) SELECT * FROM `posts` WHERE `id` = 14
+I, [2022-03-09T14:20:34.989233 #369]  INFO -- : (0.065205s) COMMIT
+I, [2022-03-09T14:20:36.454650 #369]  INFO -- : (0.000204s) SELECT * FROM `posts`
+I, [2022-03-09T14:25:18.478968 #382]  INFO -- : (0.000230s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:25:18.479092 #382]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:25:18.479777 #382]  INFO -- : (0.000081s) SELECT sqlite_version()
+I, [2022-03-09T14:25:18.480110 #382]  INFO -- : (0.000145s) PRAGMA table_info('posts')
+I, [2022-03-09T14:25:18.481189 #382]  INFO -- : (0.000142s) PRAGMA table_info('users')
+I, [2022-03-09T14:25:24.662300 #382]  INFO -- : (0.000277s) SELECT * FROM `posts`
+I, [2022-03-09T14:25:27.799722 #382]  INFO -- : (0.000041s) BEGIN
+I, [2022-03-09T14:25:27.800252 #382]  INFO -- : (0.000262s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:25:27.800488 #382]  INFO -- : (0.000095s) SELECT * FROM `posts` WHERE `id` = 15
+I, [2022-03-09T14:25:27.870208 #382]  INFO -- : (0.069628s) COMMIT
+I, [2022-03-09T14:25:29.367819 #382]  INFO -- : (0.000180s) SELECT * FROM `posts`
+I, [2022-03-09T14:32:14.502508 #394]  INFO -- : (0.000163s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:32:14.502593 #394]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:32:14.503070 #394]  INFO -- : (0.000057s) SELECT sqlite_version()
+I, [2022-03-09T14:32:14.503277 #394]  INFO -- : (0.000091s) PRAGMA table_info('posts')
+I, [2022-03-09T14:32:14.503956 #394]  INFO -- : (0.000106s) PRAGMA table_info('users')
+I, [2022-03-09T14:32:18.335710 #394]  INFO -- : (0.000189s) SELECT * FROM `posts`
+I, [2022-03-09T14:32:23.163035 #394]  INFO -- : (0.000053s) BEGIN
+I, [2022-03-09T14:32:23.163732 #394]  INFO -- : (0.000398s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:32:23.164018 #394]  INFO -- : (0.000115s) SELECT * FROM `posts` WHERE `id` = 16
+I, [2022-03-09T14:32:23.238981 #394]  INFO -- : (0.074866s) COMMIT
+I, [2022-03-09T14:32:24.898279 #394]  INFO -- : (0.000210s) SELECT * FROM `posts`
+I, [2022-03-09T14:32:33.186752 #394]  INFO -- : (0.000047s) BEGIN
+I, [2022-03-09T14:32:33.187224 #394]  INFO -- : (0.000230s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'test', '', '', '')
+I, [2022-03-09T14:32:33.187498 #394]  INFO -- : (0.000133s) SELECT * FROM `posts` WHERE `id` = 17
+I, [2022-03-09T14:32:33.250112 #394]  INFO -- : (0.062530s) COMMIT
+I, [2022-03-09T14:32:35.382918 #394]  INFO -- : (0.000188s) SELECT * FROM `posts`
+I, [2022-03-09T14:35:31.581753 #405]  INFO -- : (0.000162s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:35:31.581841 #405]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:35:31.582334 #405]  INFO -- : (0.000055s) SELECT sqlite_version()
+I, [2022-03-09T14:35:31.582563 #405]  INFO -- : (0.000093s) PRAGMA table_info('posts')
+I, [2022-03-09T14:35:31.583280 #405]  INFO -- : (0.000093s) PRAGMA table_info('users')
+I, [2022-03-09T14:35:37.211335 #405]  INFO -- : (0.000193s) SELECT * FROM `posts`
+I, [2022-03-09T14:35:52.938395 #405]  INFO -- : (0.000189s) SELECT * FROM `posts`
+I, [2022-03-09T14:37:21.242345 #416]  INFO -- : (0.000167s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:37:21.242441 #416]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:37:21.242927 #416]  INFO -- : (0.000056s) SELECT sqlite_version()
+I, [2022-03-09T14:37:21.243156 #416]  INFO -- : (0.000095s) PRAGMA table_info('posts')
+I, [2022-03-09T14:37:21.243868 #416]  INFO -- : (0.000105s) PRAGMA table_info('users')
+I, [2022-03-09T14:38:04.793369 #427]  INFO -- : (0.000163s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:38:04.793459 #427]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:38:04.793936 #427]  INFO -- : (0.000056s) SELECT sqlite_version()
+I, [2022-03-09T14:38:04.794164 #427]  INFO -- : (0.000094s) PRAGMA table_info('posts')
+I, [2022-03-09T14:38:04.794905 #427]  INFO -- : (0.000116s) PRAGMA table_info('users')
+I, [2022-03-09T14:38:08.433108 #427]  INFO -- : (0.000050s) BEGIN
+I, [2022-03-09T14:38:08.433699 #427]  INFO -- : (0.000289s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:38:08.434019 #427]  INFO -- : (0.000126s) SELECT * FROM `posts` WHERE `id` = 18
+I, [2022-03-09T14:38:08.498317 #427]  INFO -- : (0.064194s) COMMIT
+I, [2022-03-09T14:38:11.041573 #427]  INFO -- : (0.000193s) SELECT * FROM `posts`
+I, [2022-03-09T14:38:16.871765 #427]  INFO -- : (0.000044s) BEGIN
+I, [2022-03-09T14:38:16.872270 #427]  INFO -- : (0.000235s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'ygi', '', '', '')
+I, [2022-03-09T14:38:16.872540 #427]  INFO -- : (0.000121s) SELECT * FROM `posts` WHERE `id` = 19
+I, [2022-03-09T14:38:16.937557 #427]  INFO -- : (0.064920s) COMMIT
+I, [2022-03-09T14:38:52.852551 #438]  INFO -- : (0.000192s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:38:52.852660 #438]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:38:52.853211 #438]  INFO -- : (0.000059s) SELECT sqlite_version()
+I, [2022-03-09T14:38:52.853445 #438]  INFO -- : (0.000093s) PRAGMA table_info('posts')
+I, [2022-03-09T14:38:52.854116 #438]  INFO -- : (0.000101s) PRAGMA table_info('users')
+I, [2022-03-09T14:39:33.795044 #438]  INFO -- : (0.000259s) SELECT * FROM `posts`
+I, [2022-03-09T14:40:54.682088 #450]  INFO -- : (0.000234s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:40:54.682207 #450]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:40:54.682877 #450]  INFO -- : (0.000078s) SELECT sqlite_version()
+I, [2022-03-09T14:40:54.683183 #450]  INFO -- : (0.000143s) PRAGMA table_info('posts')
+I, [2022-03-09T14:40:54.684171 #450]  INFO -- : (0.000134s) PRAGMA table_info('users')
+I, [2022-03-09T14:41:04.144887 #450]  INFO -- : (0.000048s) BEGIN
+I, [2022-03-09T14:41:04.145457 #450]  INFO -- : (0.000278s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:41:04.145753 #450]  INFO -- : (0.000118s) SELECT * FROM `posts` WHERE `id` = 20
+I, [2022-03-09T14:41:04.206261 #450]  INFO -- : (0.060397s) COMMIT
+I, [2022-03-09T14:41:06.326192 #450]  INFO -- : (0.000048s) BEGIN
+I, [2022-03-09T14:41:06.326724 #450]  INFO -- : (0.000275s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, '', '', '', '')
+I, [2022-03-09T14:41:06.326963 #450]  INFO -- : (0.000091s) SELECT * FROM `posts` WHERE `id` = 21
+I, [2022-03-09T14:41:06.390294 #450]  INFO -- : (0.063247s) COMMIT
+I, [2022-03-09T14:41:08.067464 #450]  INFO -- : (0.000211s) SELECT * FROM `posts`
+I, [2022-03-09T14:42:36.902903 #461]  INFO -- : (0.000165s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:42:36.902999 #461]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:42:36.903455 #461]  INFO -- : (0.000056s) SELECT sqlite_version()
+I, [2022-03-09T14:42:36.903695 #461]  INFO -- : (0.000111s) PRAGMA table_info('posts')
+I, [2022-03-09T14:42:36.904362 #461]  INFO -- : (0.000090s) PRAGMA table_info('users')
+I, [2022-03-09T14:42:52.559546 #461]  INFO -- : (0.000044s) BEGIN
+I, [2022-03-09T14:42:52.560032 #461]  INFO -- : (0.000251s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'wer', 'wefd', 'wefd', '')
+I, [2022-03-09T14:42:52.560268 #461]  INFO -- : (0.000093s) SELECT * FROM `posts` WHERE `id` = 22
+I, [2022-03-09T14:42:52.625296 #461]  INFO -- : (0.064953s) COMMIT
+I, [2022-03-09T14:42:54.648121 #461]  INFO -- : (0.000201s) SELECT * FROM `posts`
+I, [2022-03-09T14:47:39.383478 #473]  INFO -- : (0.000907s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:47:39.383590 #473]  INFO -- : (0.000035s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:47:39.384036 #473]  INFO -- : (0.000066s) SELECT sqlite_version()
+I, [2022-03-09T14:47:39.384239 #473]  INFO -- : (0.000091s) PRAGMA table_info('posts')
+I, [2022-03-09T14:47:39.384881 #473]  INFO -- : (0.000092s) PRAGMA table_info('users')
+I, [2022-03-09T14:47:43.500881 #473]  INFO -- : (0.000038s) BEGIN
+I, [2022-03-09T14:47:43.501301 #473]  INFO -- : (0.000249s) INSERT INTO `posts` DEFAULT VALUES
+I, [2022-03-09T14:47:43.501530 #473]  INFO -- : (0.000084s) SELECT * FROM `posts` WHERE `id` = 23
+I, [2022-03-09T14:47:43.574493 #473]  INFO -- : (0.072867s) COMMIT
+I, [2022-03-09T14:47:45.628024 #473]  INFO -- : (0.000227s) SELECT * FROM `posts`
+I, [2022-03-09T14:47:48.720205 #473]  INFO -- : (0.000035s) BEGIN
+I, [2022-03-09T14:47:48.720526 #473]  INFO -- : (0.000169s) INSERT INTO `posts` DEFAULT VALUES
+I, [2022-03-09T14:47:48.720729 #473]  INFO -- : (0.000092s) SELECT * FROM `posts` WHERE `id` = 24
+I, [2022-03-09T14:47:48.786914 #473]  INFO -- : (0.066111s) COMMIT
+I, [2022-03-09T14:47:50.233985 #473]  INFO -- : (0.000332s) SELECT * FROM `posts`
+I, [2022-03-09T14:49:04.312275 #484]  INFO -- : (0.000164s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:49:04.312368 #484]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:49:04.312814 #484]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2022-03-09T14:49:04.313021 #484]  INFO -- : (0.000091s) PRAGMA table_info('posts')
+I, [2022-03-09T14:49:04.313680 #484]  INFO -- : (0.000092s) PRAGMA table_info('users')
+I, [2022-03-09T14:49:09.701992 #484]  INFO -- : (0.000223s) SELECT * FROM `posts`
+I, [2022-03-09T14:49:13.731302 #484]  INFO -- : (0.000261s) SELECT * FROM `posts`
+I, [2022-03-09T14:49:18.054082 #484]  INFO -- : (0.000213s) SELECT * FROM `posts`
+I, [2022-03-09T14:49:30.596857 #484]  INFO -- : (0.000040s) BEGIN
+I, [2022-03-09T14:49:30.597284 #484]  INFO -- : (0.000249s) INSERT INTO `posts` DEFAULT VALUES
+I, [2022-03-09T14:49:30.597522 #484]  INFO -- : (0.000092s) SELECT * FROM `posts` WHERE `id` = 25
+I, [2022-03-09T14:49:30.666284 #484]  INFO -- : (0.068679s) COMMIT
+I, [2022-03-09T14:49:32.977659 #484]  INFO -- : (0.000229s) SELECT * FROM `posts`
+I, [2022-03-09T14:49:51.991791 #484]  INFO -- : (0.000217s) SELECT * FROM `posts`
+I, [2022-03-09T14:52:00.164922 #496]  INFO -- : (0.000165s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:52:00.165004 #496]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:52:00.165464 #496]  INFO -- : (0.000055s) SELECT sqlite_version()
+I, [2022-03-09T14:52:00.165694 #496]  INFO -- : (0.000101s) PRAGMA table_info('posts')
+I, [2022-03-09T14:52:00.166351 #496]  INFO -- : (0.000104s) PRAGMA table_info('users')
+I, [2022-03-09T14:52:08.741802 #496]  INFO -- : (0.000224s) SELECT * FROM `posts`
+I, [2022-03-09T14:52:19.704042 #496]  INFO -- : (0.000043s) BEGIN
+I, [2022-03-09T14:52:19.704518 #496]  INFO -- : (0.000244s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'test', 'test', 'test', 'test')
+I, [2022-03-09T14:52:19.704746 #496]  INFO -- : (0.000086s) SELECT * FROM `posts` WHERE `id` = 26
+I, [2022-03-09T14:52:19.774847 #496]  INFO -- : (0.070022s) COMMIT
+I, [2022-03-09T14:52:21.173461 #496]  INFO -- : (0.000218s) SELECT * FROM `posts`
+I, [2022-03-09T14:54:10.865576 #507]  INFO -- : (0.000168s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:54:10.865667 #507]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:54:10.866129 #507]  INFO -- : (0.000054s) SELECT sqlite_version()
+I, [2022-03-09T14:54:10.866352 #507]  INFO -- : (0.000102s) PRAGMA table_info('posts')
+I, [2022-03-09T14:54:10.867078 #507]  INFO -- : (0.000096s) PRAGMA table_info('users')
+I, [2022-03-09T14:54:15.936172 #507]  INFO -- : (0.000238s) SELECT * FROM `posts`
+I, [2022-03-09T14:54:24.622482 #507]  INFO -- : (0.000317s) SELECT * FROM `posts`
+I, [2022-03-09T14:54:37.621591 #507]  INFO -- : (0.000040s) BEGIN
+I, [2022-03-09T14:54:37.622132 #507]  INFO -- : (0.000287s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'test2', 'test2', 'test2', 'test2')
+I, [2022-03-09T14:54:37.622393 #507]  INFO -- : (0.000104s) SELECT * FROM `posts` WHERE `id` = 27
+I, [2022-03-09T14:54:37.687542 #507]  INFO -- : (0.065054s) COMMIT
+I, [2022-03-09T14:54:39.153392 #507]  INFO -- : (0.000222s) SELECT * FROM `posts`
+I, [2022-03-09T14:54:52.407358 #507]  INFO -- : (0.000224s) SELECT * FROM `posts`
+I, [2022-03-09T14:55:12.093775 #507]  INFO -- : (0.000222s) SELECT * FROM `posts`
+I, [2022-03-09T14:56:56.899016 #519]  INFO -- : (0.000167s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:56:56.899114 #519]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:56:56.899602 #519]  INFO -- : (0.000056s) SELECT sqlite_version()
+I, [2022-03-09T14:56:56.899838 #519]  INFO -- : (0.000100s) PRAGMA table_info('posts')
+I, [2022-03-09T14:56:56.900539 #519]  INFO -- : (0.000108s) PRAGMA table_info('users')
+I, [2022-03-09T14:56:58.912876 #519]  INFO -- : (0.000164s) SELECT * FROM `users`
+I, [2022-03-09T14:57:28.848015 #530]  INFO -- : (0.000172s) PRAGMA foreign_keys = 1
+I, [2022-03-09T14:57:28.848111 #530]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-03-09T14:57:28.848632 #530]  INFO -- : (0.000059s) SELECT sqlite_version()
+I, [2022-03-09T14:57:28.848883 #530]  INFO -- : (0.000107s) PRAGMA table_info('posts')
+I, [2022-03-09T14:57:28.849591 #530]  INFO -- : (0.000092s) PRAGMA table_info('users')
+I, [2022-03-09T14:57:30.892996 #530]  INFO -- : (0.000161s) SELECT * FROM `users`
+I, [2022-03-09T14:57:51.707318 #530]  INFO -- : (0.000237s) SELECT * FROM `posts`
+I, [2022-03-09T14:58:11.955214 #530]  INFO -- : (0.000240s) SELECT * FROM `posts`

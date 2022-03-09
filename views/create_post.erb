@@ -48,7 +48,7 @@
       Create a Post
     </h1>
 
-    <form method="get" action="/home"> 
+    <form method="post" action="/create_post"> 
 
       <!--Mandatory-->
       <!--Start again here-->
@@ -64,18 +64,27 @@
       <p>
         *Topic: <br />
         <input type="text" name="topic" />
+        <% if @topic_error %>
+          <br /><strong class="error"><%= @topic_error %></strong>
+        <% end %>
       </p>
 
       <!--Mandatory-->
       <p>
         *Institution or University: <br />
         <input type="text" name="institution" />
+        <% if @institution_error %>
+          <br /><strong class="error"><%= @institution_error %></strong>
+        <% end %>
       </p>
 
       <!--Mandatory-->
       <p>
         *Link to your paper: <br />
         <input type="text" name="link" />
+        <% if @link_error %>
+          <br /><strong class="error"><%= @link_error %></strong>
+        <% end %>
       </p>
 
       <p><input type="submit" value="Submit"></p>
