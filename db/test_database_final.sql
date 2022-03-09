@@ -7,8 +7,8 @@ CREATE TABLE posts (
 );
 
 CREATE TABLE users (
-    id INTEGER PRIMARY KEY,
-    username TEXT,
+    id INTEGER,
+    username TEXT PRIMARY KEY,
     user_type TEXT,
     institution TEXT,
     password TEXT
