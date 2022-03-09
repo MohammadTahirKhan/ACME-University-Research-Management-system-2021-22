@@ -143,8 +143,8 @@ main #login_area,
 }
 
 main #submit,
-#reset,
-#log_in {
+#log_in,
+#reset {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: bold;
@@ -166,8 +166,8 @@ main #create_acc,
 }
 
 main #submit:hover,
-#log_in:hover,
 #reset:hover,
+#log_in:hover,
 #create_acc:hover,
 #forgot_pass:hover {
     color: rgb(61, 202, 245);
@@ -177,7 +177,6 @@ main #submit:hover,
 
 main .row, #columns {
     text-align: left;
-    margin: 15px;
     border: 1px black solid;
 }
 main #columns {
