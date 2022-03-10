@@ -30,6 +30,9 @@
           <% if @username_error %>
             <br /><strong class="error"><%= @username_error %></strong>
           <% end %>
+          <% if @username_validation_error %>
+            <br /><strong class="error"><%= @username_validation_error %></strong>
+          <% end %>
         </p>
 
         <!--Mandatory-->
