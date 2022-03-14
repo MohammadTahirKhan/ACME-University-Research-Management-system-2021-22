@@ -5,9 +5,6 @@ post "/create_account" do
 
   @username_field = params["username"]
   @email_field = params["email"]
-  # if DB[:users].where(user_type: nil)
-  #   @user_type_field = "Poster"
-  # end
   @institution_field = params["institution"]
   @password_field = params["password"]
 
@@ -21,14 +18,12 @@ post "/create_account" do
 
   @users.load(params)
 
-  if @form_was_submitted
+  if @form_was_submitted 
     # sanitise the values by removing whitespace
     @username_field.strip!
     @email_field.strip!
     @institution_field.strip!
     @password_field.strip!
-    # @user_type_field.strip!
-
     @users.save_changes
     redirect "/login"
   else
