@@ -22,9 +22,9 @@ INSERT INTO posts VALUES(7,"Sam", "Kerr", "F", "Chelsea");
 
 
 -- Insert records of data into the database:
-INSERT INTO users VALUES(1, "Dominic","dsf", "M", "uos","Everton");
-INSERT INTO users VALUES(2, "Sam", "abc","dsf", "sheffield", "Chelsea");
-INSERT INTO users VALUES(3, "abcd", "sadasd","dsf", "sajdaksjfn", "sakjh");
-INSERT INTO users VALUES(4, "wuqdh", "sabc","dsf", "jsjsj", "nsbd");
-INSERT INTO users VALUES(5, "jsakdh","dsf", "ksand", "zzz", "sjabd");
+INSERT INTO users VALUES(1, "admin1","dsf", "admin", "uos","admin1");
+INSERT INTO users VALUES(2, "admin2", "abc","admin", "sheffield", "admin2");
+INSERT INTO users VALUES(3, "moderator1", "sadasd","moderator", "sajdaksjfn", "moderator1");
+INSERT INTO users VALUES(4, "viewer1", "sabc","viewer", "jsjsj", "viewer1");
+INSERT INTO users VALUES(5, "poster1","dsf", "poster", "zzz", "poster1");
 

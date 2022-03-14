@@ -192,26 +192,21 @@ main .row {
 
 /**footer*/
 
-footer {
+
+footer{
     margin-top: 12px;
     padding: 12px;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
 }
 
-footer #footer_note {
-    font-size: 12px;
-    font-weight: bold;
-}
 
 @media (min-width: 600px) {
     footer {
         margin-top: 15px;
         padding: 12px;
         font-size: 12px;
-    }
-    footer #footer_note {
-        font-size: 12px;
+    
     }
 }
 
@@ -219,9 +214,6 @@ footer #footer_note {
     footer {
         margin-top: 15px;
         padding: 15px;
-        font-size: 15px;
-    }
-    footer #footer_note {
         font-size: 15px;
     }
 }
