@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logfile created on 2022-03-09 14:07:19 +0000 by logger.rb/66358
 I, [2022-03-09T14:07:19.320672 #341]  INFO -- : (0.000184s) PRAGMA foreign_keys = 1
 I, [2022-03-09T14:07:19.320770 #341]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
@@ -1101,3 +1102,24 @@ I, [2022-03-14T14:10:35.257393 #158]  INFO -- : (0.000098s) SELECT sqlite_versio
 I, [2022-03-14T14:10:35.257749 #158]  INFO -- : (0.000173s) PRAGMA table_info('posts')
 I, [2022-03-14T14:10:35.259449 #158]  INFO -- : (0.000224s) PRAGMA table_info('users')
 I, [2022-03-14T14:10:38.923542 #158]  INFO -- : (0.000277s) SELECT * FROM `users`
+=======
+# Logfile created on 2022-03-13 14:15:20 +0000 by logger.rb/66358
+I, [2022-03-13T14:15:20.361165 #303]  INFO -- : (0.000185s) PRAGMA foreign_keys = 1
+I, [2022-03-13T14:15:20.361242 #303]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2022-03-13T14:15:20.361769 #303]  INFO -- : (0.000066s) SELECT sqlite_version()
+I, [2022-03-13T14:15:20.362047 #303]  INFO -- : (0.000135s) PRAGMA table_info('posts')
+I, [2022-03-13T14:15:20.362788 #303]  INFO -- : (0.000098s) PRAGMA table_info('users')
+I, [2022-03-13T14:16:03.927869 #303]  INFO -- : (0.000139s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Joodsfg') LIMIT 1
+I, [2022-03-13T14:16:03.928106 #303]  INFO -- : (0.000021s) BEGIN
+I, [2022-03-13T14:16:03.928442 #303]  INFO -- : (0.000176s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Joodsfg', 'judesfg@gmail.com', '', 'University of Sheffield', 'Password')
+I, [2022-03-13T14:16:03.928626 #303]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE `id` = 12
+I, [2022-03-13T14:16:03.995856 #303]  INFO -- : (0.067146s) COMMIT
+I, [2022-03-13T14:16:12.004302 #303]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE (`username` = 'Joodsfg') LIMIT 1
+I, [2022-03-13T14:16:18.242875 #303]  INFO -- : (0.000211s) SELECT * FROM `users`
+I, [2022-03-13T14:16:28.207533 #303]  INFO -- : (0.000240s) SELECT * FROM `posts`
+I, [2022-03-13T14:16:35.004916 #303]  INFO -- : (0.000238s) SELECT * FROM `posts`
+I, [2022-03-13T14:16:37.960358 #303]  INFO -- : (0.000252s) SELECT * FROM `posts`
+I, [2022-03-13T14:16:42.234982 #303]  INFO -- : (0.000199s) SELECT * FROM `users`
+I, [2022-03-13T14:16:46.907447 #303]  INFO -- : (0.000190s) SELECT * FROM `users`
+I, [2022-03-13T14:16:55.764739 #303]  INFO -- : (0.000234s) SELECT * FROM `posts`
+>>>>>>> 6540594a8d590cd1ea0a0d6492755c46031cc446
