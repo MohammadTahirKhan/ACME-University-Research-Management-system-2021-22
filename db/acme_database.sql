@@ -7,8 +7,9 @@ CREATE TABLE posts (
 );
 
 CREATE TABLE users (
-    id INTEGER,
-    username TEXT PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
+    username TEXT,
+    email TEXT,
     user_type TEXT,
     institution TEXT,
     password TEXT
@@ -21,10 +22,9 @@ INSERT INTO posts VALUES(7,"Sam", "Kerr", "F", "Chelsea");
 
 
 -- Insert records of data into the database:
-
-INSERT INTO users VALUES(1, "Dominic", "M", "uos","Everton");
-INSERT INTO users VALUES(2, "Sam", "abc", "sheffield", "Chelsea");
-INSERT INTO users VALUES(3, "abcd", "sadasd", "sajdaksjfn", "sakjh");
-INSERT INTO users VALUES(4, "wuqdh", "sabc", "jsjsj", "nsbd");
-INSERT INTO users VALUES(5, "jsakdh", "ksand", "zzz", "sjabd");
+INSERT INTO users VALUES(1, "Dominic","dsf", "M", "uos","Everton");
+INSERT INTO users VALUES(2, "Sam", "abc","dsf", "sheffield", "Chelsea");
+INSERT INTO users VALUES(3, "abcd", "sadasd","dsf", "sajdaksjfn", "sakjh");
+INSERT INTO users VALUES(4, "wuqdh", "sabc","dsf", "jsjsj", "nsbd");
+INSERT INTO users VALUES(5, "jsakdh","dsf", "ksand", "zzz", "sjabd");
 

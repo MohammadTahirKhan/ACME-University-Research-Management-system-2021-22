@@ -15,34 +15,68 @@
         </div>
     </header>
     <main>
-        <h1 id="create_account"> Create Account </h1>
-        <div id="create_account_area">
-            <form id="form1" name="form1" method="post">
-                <p>
-                    <label for="from">User Name</label>
-                    <input type="text" name="from" id="from" placeholder="NAME" required>
-                </p>
-                <p>
-                    <label for="email">Email</label>
-                    <input type="email" name="Email" id="Get_email" placeholder="EMAIL" required>
-                </p>
-                <p>
-                    <label for="password">password</label>
-                    <input type="text" name="password" id="password" placeholder="password" required>
-                </p>
-                <p>
-                    <label for="institute">Institute</label>
-                    <input type="text" name="institute" id="institute" placeholder="institute" required>
-                </p>
-                <p>
-                    <input type="submit" name="submit" id="submit" value="Submit">
-                    <input type="reset" id="reset">
-                </p>
-                <p>
-                    <a id="create_acc" href="/login">Login</a>
-                </p>
-        </div>
+        <main>
+    <h1>
+      Create an Account
+    </h1>
+    <div id="create_account_area">
+      <form id ="form1" method="post" action="/create_account"> 
+
+        <!--Mandatory-->
+        <!--Start again here-->
+        <p> 
+          *Username: <br />
+          <input type="text" name="username" value="<%= h @username_field %>"/>
+          <% if @username_error %>
+            <br /><strong class="error"><%= @username_error %></strong>
+          <% end %>
+          <% if @username_validation_error %>
+            <br /><strong class="error"><%= @username_validation_error %></strong>
+          <% end %>
+        </p>
+
+        <!--Mandatory-->
+        <p>
+          *Email: <br />
+          <input type="text" name="email" />
+          <% if @email_error %>
+            <br /><strong class="error"><%= @email_error %></strong>
+         <% end %>
+        </p>
+
+        <!--Mandatory-->
+        <p>
+          *Institution or University: <br />
+          <input type="text" name="institution" />
+          <% if @institution_error %>
+            <br /><strong class="error"><%= @institution_error %></strong>
+         <% end %>
+        </p>
+
+        <!--Mandatory-->
+        <p>
+          *Password: <br />
+          <input type="text" name="password" />
+          <% if @password_error %>
+            <br /><strong class="error"><%= @password_error %></strong>
+          <% end %>
+        </p>
+
+        <p><input type="submit" value="Submit" id="submit"></p>
+      </form>
+
+      <% if @form_was_submitted %>
+        <% if @submission_error %>
+          <p><strong class="error">Please correct the errors below</strong></p>
+        <% else %>
+          <p><strong class="success">Success!</strong></p>        
+        <% end %>
+      <% end %>
+      </div>
     </main>
 </body>
 
 </html>
+
+
+ 

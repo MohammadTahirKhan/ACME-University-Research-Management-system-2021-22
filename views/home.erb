@@ -33,36 +33,14 @@
                     <a href="/profile" id="profile">Profile</a>
                 </li>
                 <li>
-                    <a href="/login" id="login">Logout</a>
+                    <a href="/logout" id="logout">Logout</a>
                 </li>
 
             </ul>
         </nav>
     </header>
     <main>
-     <% if @users.count > 0 %>
-    <table>
-      <tr>
-        <th>Id</th>
-        <th>Username</th>
-        <th>User_type</th>
-        <th>Institution</th>
-        <th>Password</th>
-      </tr>
-    <% @users.each do |user|%>
-      <tr>
-        <td><%=h user.id %></td>
-        <td><%=h user.username %></td>
-        <td><%=h user.user_type %></td>
-        <td><%=h user.institution %></td>
-        <td><%=h user.password %></td>
-      </tr>
-    <% end %> 
-    </table>
-  <% else %>
-    <p>The database is empty!</p>
-  <% end %>
-    <p></p>
+    
     </main>
      <footer>
         <p class="copyright">© com1001 Group34, 2021-22</p>

@@ -1,6 +1,6 @@
 require "sinatra"
 
-get "/home" do
+get "/admin" do
   @users = User.all
-  erb :home
+  erb :admin
 end

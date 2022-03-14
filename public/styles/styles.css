@@ -126,21 +126,25 @@ main {
 /** login */
 
 main #login_area,
-#create_account_area {
+#create_account_area,
+#create_post_area,
+#post_table,
+#user_table {
     width: 100%;
     background-color: rgb(25, 61, 102);
     color: white;
     margin-bottom: 50px;
     Width: 80%;
     margin: auto;
+    margin-top: 1rem;
     margin-bottom: 1em;
     overflow: hidden;
     border: rgb(17, 18, 22) 2px solid;
 }
 
 main #submit,
-#reset,
-#log_in {
+#log_in,
+#reset {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: bold;
@@ -162,8 +166,8 @@ main #create_acc,
 }
 
 main #submit:hover,
-#log_in:hover,
 #reset:hover,
+#log_in:hover,
 #create_acc:hover,
 #forgot_pass:hover {
     color: rgb(61, 202, 245);
@@ -171,6 +175,20 @@ main #submit:hover,
     transform: scale(1, 1);
 }
 
+main .row, #columns {
+    text-align: left;
+    border: 1px black solid;
+}
+main #columns {
+    margin-bottom: 1rem;
+    border-bottom: 1px black solid;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+main .row {
+    background-color: rgb(61, 121, 124);
+}
+
+}
 
 /**footer*/
 

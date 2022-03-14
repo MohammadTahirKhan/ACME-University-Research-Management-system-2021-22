@@ -17,25 +17,28 @@
     <main>
         <h1 id="log_in_"> Login </h1>
         <div id="login_area">
-            <form id="form1" name="form1" method="post">
+            <form id="form1" name="form1" method="post" action ="/login">
+                <% unless @error.nil? %>
+                <p><strong class="error"><%= @error %></strong></p>
+                <% end %>
+                <p>Username: <br /><input type="text" name="username" value="<%= @users.username %>"/></p>
+                <% if @users.errors.include?("username") %>
+                    <% @users.errors["username"].each do |error| %>
+                        <p class="error"><strong>Username <%= error %></strong></p>
+                    <% end %>
+                <% end %>
+                
+                <p>Password: <br /><input type="password" name="password" /></p>
+                <% if @users.errors.include?("password") %>
+                    <% @users.errors["password"].each do |error| %>
+                        <p class="error"><strong>Password <%= error %></strong></p>
+                    <% end %>
+                <% end %>
                 <p>
-                    <label for="from">User Name</label>
-                    <input type="text" name="from" id="from" placeholder="NAME" required>
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" id="reset">
                 </p>
-                <p>
-                    <label for="email">Email</label>
-                    <input type="email" name="Email" id="Get_email" placeholder="EMAIL" required>
-                </p>
-                <p>
-                    <label for="password">password</label>
-                    <input type="text" name="password" id="password" placeholder="password" required>
-                </p>
-                <p>
-                    <a id="log_in" href="/home">Login</a>
-                </p>
-                <p>
-                    <input type="reset" id="reset">
-                </p>
+            </form>
         </div>
         <div>
             <a id="create_acc" href="/create_account">Create Account</a>
