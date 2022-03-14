@@ -16,7 +16,7 @@ describe "Create Account Page" do
     DB.from("users").delete
   end
 
-  it "Checks that an error message is displayed" do 
+  it "Checks that the username error message is displayed" do 
     visit "/create_account"
     #username field 
     fill_in "email", with: "test_email"
@@ -32,7 +32,7 @@ describe "Create Account Page" do
     DB.from("users").delete
   end
 
-  it "Checks that an error message is displayed" do 
+  it "Checks that the error message is displayed" do 
     visit "/create_account"
     fill_in "username", with: "Test2"
     #email field
@@ -48,7 +48,7 @@ describe "Create Account Page" do
   DB.from("users").delete
   end
 
-  it "Checks that the account is not created and an error message is displayed" do 
+  it "Checks that a error message is displayed" do 
     visit "/create_account"
     fill_in "username", with: "Test2"
     fill_in "email", with: "test_email"
