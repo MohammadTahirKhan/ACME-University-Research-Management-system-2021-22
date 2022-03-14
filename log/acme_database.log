@@ -1123,3 +1123,37 @@ I, [2022-03-13T14:16:42.234982 #303]  INFO -- : (0.000199s) SELECT * FROM `users
 I, [2022-03-13T14:16:46.907447 #303]  INFO -- : (0.000190s) SELECT * FROM `users`
 I, [2022-03-13T14:16:55.764739 #303]  INFO -- : (0.000234s) SELECT * FROM `posts`
 >>>>>>> 6540594a8d590cd1ea0a0d6492755c46031cc446
+I, [2022-03-14T14:25:32.593582 #453]  INFO -- : (0.005236s) PRAGMA foreign_keys = 1
+I, [2022-03-14T14:25:32.593696 #453]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2022-03-14T14:25:32.595275 #453]  INFO -- : (0.000090s) SELECT sqlite_version()
+I, [2022-03-14T14:25:32.595586 #453]  INFO -- : (0.000135s) PRAGMA table_info('posts')
+I, [2022-03-14T14:25:32.598801 #453]  INFO -- : (0.001174s) PRAGMA table_info('users')
+I, [2022-03-14T14:36:30.595675 #457]  INFO -- : (0.000208s) PRAGMA foreign_keys = 1
+I, [2022-03-14T14:36:30.595776 #457]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2022-03-14T14:36:30.596303 #457]  INFO -- : (0.000067s) SELECT sqlite_version()
+I, [2022-03-14T14:36:30.597509 #457]  INFO -- : (0.000132s) PRAGMA table_info('posts')
+I, [2022-03-14T14:36:30.599348 #457]  INFO -- : (0.000128s) PRAGMA table_info('users')
+I, [2022-03-14T14:36:56.176250 #458]  INFO -- : (0.000186s) PRAGMA foreign_keys = 1
+I, [2022-03-14T14:36:56.176356 #458]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2022-03-14T14:36:56.176907 #458]  INFO -- : (0.000073s) SELECT sqlite_version()
+I, [2022-03-14T14:36:56.178183 #458]  INFO -- : (0.000141s) PRAGMA table_info('posts')
+I, [2022-03-14T14:36:56.180189 #458]  INFO -- : (0.000132s) PRAGMA table_info('users')
+I, [2022-03-14T14:36:56.558595 #458]  INFO -- : (0.003607s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25') LIMIT 1
+I, [2022-03-14T14:36:56.559073 #458]  INFO -- : (0.000034s) BEGIN
+I, [2022-03-14T14:36:56.559525 #458]  INFO -- : (0.000221s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25', 'test_email', '', 'UOS', 'abc')
+I, [2022-03-14T14:36:56.559788 #458]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE `id` = 10
+I, [2022-03-14T14:36:56.630187 #458]  INFO -- : (0.070307s) COMMIT
+I, [2022-03-14T14:36:56.633417 #458]  INFO -- : (0.000219s) SELECT * FROM `users`
+I, [2022-03-14T14:36:56.719143 #458]  INFO -- : (0.074076s) DELETE FROM `users` WHERE (1 = 1)
+I, [2022-03-14T14:46:20.190057 #460]  INFO -- : (0.000197s) PRAGMA foreign_keys = 1
+I, [2022-03-14T14:46:20.190181 #460]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2022-03-14T14:46:20.190847 #460]  INFO -- : (0.000088s) SELECT sqlite_version()
+I, [2022-03-14T14:46:20.191174 #460]  INFO -- : (0.000134s) PRAGMA table_info('posts')
+I, [2022-03-14T14:46:20.192097 #460]  INFO -- : (0.000133s) PRAGMA table_info('users')
+I, [2022-03-14T14:46:20.706817 #460]  INFO -- : (0.000245s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-14T14:46:20.707248 #460]  INFO -- : (0.000042s) BEGIN
+I, [2022-03-14T14:46:20.707923 #460]  INFO -- : (0.000340s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', '', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-14T14:46:20.708246 #460]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE `id` = 1
+I, [2022-03-14T14:46:20.780060 #460]  INFO -- : (0.071694s) COMMIT
+I, [2022-03-14T14:46:20.783275 #460]  INFO -- : (0.000153s) SELECT * FROM `users`
+I, [2022-03-14T14:46:20.868810 #460]  INFO -- : (0.070531s) DELETE FROM `users` WHERE (1 = 1)
