@@ -1560,3 +1560,14 @@ I, [2022-03-15T12:59:19.666145 #409]  INFO -- : (0.000135s) SELECT * FROM `posts
 I, [2022-03-15T12:59:19.842829 #409]  INFO -- : (0.000133s) SELECT * FROM `posts`
 I, [2022-03-15T12:59:20.416783 #409]  INFO -- : (0.000126s) SELECT * FROM `posts`
 >>>>>>> 3b10faff0a50cb81988e05ab40752858a7a2066a
+I, [2022-03-15T22:59:46.799116 #342]  INFO -- : (0.004522s) PRAGMA foreign_keys = 1
+I, [2022-03-15T22:59:46.799279 #342]  INFO -- : (0.000026s) PRAGMA case_sensitive_like = 1
+I, [2022-03-15T22:59:46.800001 #342]  INFO -- : (0.000088s) SELECT sqlite_version()
+I, [2022-03-15T22:59:46.800313 #342]  INFO -- : (0.000133s) PRAGMA table_info('posts')
+I, [2022-03-15T22:59:46.801377 #342]  INFO -- : (0.000149s) PRAGMA table_info('users')
+I, [2022-03-15T23:02:12.720237 #350]  INFO -- : (0.000218s) PRAGMA foreign_keys = 1
+I, [2022-03-15T23:02:12.720374 #350]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-03-15T23:02:12.720996 #350]  INFO -- : (0.000077s) SELECT sqlite_version()
+I, [2022-03-15T23:02:12.721326 #350]  INFO -- : (0.000137s) PRAGMA table_info('posts')
+I, [2022-03-15T23:02:12.722405 #350]  INFO -- : (0.000133s) PRAGMA table_info('users')
+I, [2022-03-15T23:02:28.056382 #350]  INFO -- : (0.000223s) SELECT * FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
