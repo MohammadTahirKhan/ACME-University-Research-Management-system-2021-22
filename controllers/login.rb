@@ -1,3 +1,5 @@
+require "sinatra"
+
 get "/" do
     redirect "/login" unless session[:logged_in]
     erb :home
