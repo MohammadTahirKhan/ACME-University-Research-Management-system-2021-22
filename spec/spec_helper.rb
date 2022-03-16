@@ -23,3 +23,10 @@ RSpec.configure do |config|
   config.include Capybara::DSL
   config.include Rack::Test::Methods
 end
+
+def login(username, password, type)
+  visit 'login'
+  fill_in 'username', with: username
+  fill_in 'password', with: password
+  click_button 'Submit'
+end
