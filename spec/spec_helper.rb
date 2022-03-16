@@ -30,3 +30,12 @@ def login(username, password, type)
   fill_in 'password', with: password
   click_button 'Submit'
 end
+
+def create_account(username, email, institution, password)
+  visit "/create_account"
+  fill_in "username", with: username
+  fill_in "email", with: email
+  fill_in "institution", with: institution
+  fill_in "password", with: password
+  click_button "Submit"
+end

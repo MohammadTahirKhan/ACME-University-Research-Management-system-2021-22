@@ -14,6 +14,9 @@ RSpec.describe 'Login Page' do
         end
 
         it 'cannot go back to login page without logging out' do
+            login("Dominic", "Everton", "type")
+            visit '/login'
+            expect (page).to have_content 'Welcome'
         end
 
         it 'shows an error when typing the wrong password' do
