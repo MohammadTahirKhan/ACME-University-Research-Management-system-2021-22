@@ -2277,3 +2277,54 @@ I, [2022-03-16T22:00:46.394483 #454]  INFO -- : (0.070451s) COMMIT
 I, [2022-03-16T22:00:47.604917 #454]  INFO -- : (0.000325s) SELECT * FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
 I, [2022-03-16T22:00:52.602929 #454]  INFO -- : (0.000231s) SELECT * FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
 I, [2022-03-16T22:07:35.510039 #454]  INFO -- : (0.000242s) SELECT * FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:24:00.403559 #530]  INFO -- : (0.000164s) PRAGMA foreign_keys = 1
+I, [2022-03-16T22:24:00.403695 #530]  INFO -- : (0.000023s) PRAGMA case_sensitive_like = 1
+I, [2022-03-16T22:24:00.404417 #530]  INFO -- : (0.000125s) SELECT sqlite_version()
+I, [2022-03-16T22:24:00.404909 #530]  INFO -- : (0.000283s) PRAGMA table_info('posts')
+I, [2022-03-16T22:24:00.406345 #530]  INFO -- : (0.000254s) PRAGMA table_info('users')
+I, [2022-03-16T22:24:01.080815 #530]  INFO -- : (0.000216s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-16T22:24:01.081189 #530]  INFO -- : (0.000027s) BEGIN
+I, [2022-03-16T22:24:01.081736 #530]  INFO -- : (0.000305s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-16T22:24:01.082029 #530]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE `id` = 2
+I, [2022-03-16T22:24:01.139708 #530]  INFO -- : (0.057556s) COMMIT
+I, [2022-03-16T22:24:01.142212 #530]  INFO -- : (0.000222s) SELECT * FROM `users`
+I, [2022-03-16T22:24:01.212859 #530]  INFO -- : (0.057477s) DELETE FROM `users` WHERE (1 = 1)
+I, [2022-03-16T22:24:01.220500 #530]  INFO -- : (0.000186s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-16T22:24:01.243780 #530]  INFO -- : (0.000208s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-16T22:24:01.260423 #530]  INFO -- : (0.000245s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-16T22:24:01.273794 #530]  INFO -- : (0.000145s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-16T22:24:01.289072 #530]  INFO -- : (0.000206s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-16T22:24:01.305652 #530]  INFO -- : (0.000044s) BEGIN
+I, [2022-03-16T22:24:01.306225 #530]  INFO -- : (0.000212s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-16T22:24:01.306507 #530]  INFO -- : (0.000115s) SELECT * FROM `posts` WHERE `id` = 1
+I, [2022-03-16T22:24:01.360994 #530]  INFO -- : (0.054377s) COMMIT
+I, [2022-03-16T22:24:01.369975 #530]  INFO -- : (0.000266s) SELECT * FROM `posts`
+I, [2022-03-16T22:24:01.435724 #530]  INFO -- : (0.055318s) DELETE FROM `posts` WHERE (1 = 1)
+I, [2022-03-16T22:24:01.537050 #530]  INFO -- : (0.000203s) SELECT * FROM `users`
+I, [2022-03-16T22:24:01.557440 #530]  INFO -- : (0.000200s) SELECT * FROM `posts`
+I, [2022-03-16T22:24:01.600994 #530]  INFO -- : (0.000206s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:24:01.601425 #530]  INFO -- : (0.000037s) BEGIN
+I, [2022-03-16T22:24:01.602073 #530]  INFO -- : (0.000345s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Dominic', 'domdom@gmail.com', 'poster', 'lsu', 'Everton')
+I, [2022-03-16T22:24:01.602467 #530]  INFO -- : (0.000175s) SELECT * FROM `users` WHERE `id` = 1
+I, [2022-03-16T22:24:01.659613 #530]  INFO -- : (0.057017s) COMMIT
+I, [2022-03-16T22:24:01.669025 #530]  INFO -- : (0.000287s) SELECT * FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:24:01.680786 #530]  INFO -- : (0.000167s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:24:01.681261 #530]  INFO -- : (0.000098s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:24:01.688954 #530]  INFO -- : (0.000220s) SELECT * FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:24:01.721413 #530]  INFO -- : (0.000152s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-16T22:24:01.750861 #530]  INFO -- : (0.000159s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'abc') LIMIT 1
+I, [2022-03-16T22:24:01.766588 #530]  INFO -- : (0.000165s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'abjzxncc') LIMIT 1
+I, [2022-03-16T22:24:01.771235 #530]  INFO -- : (0.000160s) SELECT * FROM `posts`
+I, [2022-03-16T22:24:01.772137 #530]  INFO -- : (0.000108s) SELECT * FROM `posts`
+I, [2022-03-16T22:24:01.776360 #530]  INFO -- : (0.000196s) SELECT * FROM `users`
+I, [2022-03-16T22:24:01.777253 #530]  INFO -- : (0.000115s) SELECT * FROM `users`
+I, [2022-03-16T22:24:01.790505 #530]  INFO -- : (0.000171s) SELECT * FROM `users`
+I, [2022-03-16T22:24:01.792266 #530]  INFO -- : (0.000122s) SELECT * FROM `posts`
+I, [2022-03-16T22:29:32.915653 #454]  INFO -- : (0.000149s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:29:32.916036 #454]  INFO -- : (0.000084s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:29:38.873537 #454]  INFO -- : (0.000136s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:29:38.873957 #454]  INFO -- : (0.000126s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:29:42.499531 #454]  INFO -- : (0.000138s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:29:42.499874 #454]  INFO -- : (0.000078s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:30:06.150207 #454]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
+I, [2022-03-16T22:32:58.149786 #454]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE (`username` = 'Dominic') LIMIT 1
