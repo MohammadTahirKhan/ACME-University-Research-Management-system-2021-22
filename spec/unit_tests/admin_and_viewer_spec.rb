@@ -21,6 +21,7 @@ RSpec.describe "Viewer page" do
 
       end
     end
+  end
 
     describe "Displays the users table" do
         it "displays a table when the database contains a user" do

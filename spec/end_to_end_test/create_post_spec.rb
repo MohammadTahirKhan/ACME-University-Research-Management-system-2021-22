@@ -2,7 +2,7 @@ require_relative "../spec_helper"
 
 describe "Create Post Page" do
   it "checks if a post is created" do
-    session[:logged_in] = true
+    #session[:logged_in] = true
     visit "/create_post"
     fill_in "title", with: "Test26_Title"
     fill_in "topic", with: "Test26_Topic"

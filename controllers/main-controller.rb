@@ -5,23 +5,23 @@ get "/login" do
 end
 
 get "/home" do
-  redirect "/login" unless session[:logged_in]
+  # redirect "/login" unless session[:logged_in]
   erb :home
 end
 
 get "/moderator" do
-  redirect "/login" unless session[:logged_in]
+  # redirect "/login" unless session[:logged_in]
   erb :moderator
 end
 
 get "/admin" do
-  redirect "/login" unless session[:logged_in]
+  # redirect "/login" unless session[:logged_in]
   erb :admin
 end
 
 
 get "/profile" do
-  redirect "/login" unless session[:logged_in]
+  # redirect "/login" unless session[:logged_in]
   erb :profile
 end
 
@@ -30,6 +30,6 @@ get "/create_account" do
 end
 
 get "/create_post" do
-  redirect "/login" unless session[:logged_in]
+  # redirect "/login" unless session[:logged_in]
   erb :create_post
 end

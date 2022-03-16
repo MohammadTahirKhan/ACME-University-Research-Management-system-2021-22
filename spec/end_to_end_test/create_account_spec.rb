@@ -10,7 +10,7 @@ describe "Create Account Page" do
   
 
   it "Checks if the account is created" do 
-    session[:logged_in] = true
+    #session[:logged_in] = true
     visit "/create_account"
     fill_in "username", with: "Test25_Username"
     fill_in "email", with: "Test25_Email"

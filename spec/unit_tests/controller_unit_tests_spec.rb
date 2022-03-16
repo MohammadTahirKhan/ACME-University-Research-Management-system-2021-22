@@ -3,7 +3,7 @@ require "rack/test"
 
 require_relative '../../app'
 
-RSpec.describe "Controllers" do
+RSpec.describe "testing if all the pages are displayed" do
   include Rack::Test::Methods
 
   def app

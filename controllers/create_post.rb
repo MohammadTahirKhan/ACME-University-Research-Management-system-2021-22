@@ -2,12 +2,13 @@ require "sinatra"
 
 post "/create_post" do
   @posts = Post.new
-
+  #reading in post input for creating a post.
   @title_field = params["title"]
   @topic_field = params["topic"]
   @institution_field = params["institution"]
   @link_field = params["link"]
 
+  #submit the form if the fields are not empty.
   @form_was_submitted = !@title_field.empty? && !@topic_field.empty? && !@institution_field.empty? && !@link_field.empty?
   @submission_error = nil
 

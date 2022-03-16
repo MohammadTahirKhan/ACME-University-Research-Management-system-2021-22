@@ -2,12 +2,13 @@ require "sinatra"
 require "sqlite3"
 post "/create_account" do
   @users = User.new
-
+  #reading in user input for creating an account.
   @username_field = params["username"]
   @email_field = params["email"]
   @institution_field = params["institution"]
   @password_field = params["password"]
 
+  #submit the form if the fields are not empty and the username is not already taken.
   @form_was_submitted = !@username_field.empty? && !@email_field.empty? && !@institution_field.empty? && !@password_field.empty?  && (DB[:users].where(username: @username_field)).count == 0
   @submission_error = nil
   @username_validation_error = nil
