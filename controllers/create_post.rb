@@ -34,12 +34,6 @@ post "/create_post" do
     @topic_error = "Please enter a value for topic" if @topic_field.empty?
     @institution_error = "Please enter a value for institution" if @institution_field.empty?
     @link_error = "Please enter a value for link" if @link_field.empty?
-
-    #@submission_error = "Please correct the errors above" unless 
-    #@title_error.nil? && 
-    #@topic_error.nil? && 
-    #@institution_error.nil? && 
-    #@link_error.nil?
   end
 
   erb :create_post

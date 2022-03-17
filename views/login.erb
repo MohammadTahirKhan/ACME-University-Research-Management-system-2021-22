@@ -19,7 +19,7 @@
         <div id="login_area">
             <form id="form1" name="form1" method="post" action ="/login">
                 <% unless @error.nil? %>
-                <p><strong class="error"><%= @error %></strong></p>
+                    <p><strong class="error"><%= @error %></strong></p>
                 <% end %>
                 <p>Username: <br /><input type="text" name="username" value="<%= @users.username %>"/></p>
                 <% if @users.errors.include?("username") %>

@@ -2,11 +2,11 @@ require_relative "../spec_helper"
 
 describe "Create Account Page" do
 
-    it "is accessible from the login page" do
-      visit "/login"
-      click_link "Create Account"
-      expect(page).to have_content "Create an Account"
-    end
+  it "is accessible from the login page" do
+    visit "/login"
+    click_link "Create Account"
+    expect(page).to have_content "Create an Account"
+  end
   
 
   it "Checks if the account is created" do 
@@ -51,7 +51,7 @@ describe "Create Account Page" do
     fill_in "password", with: "abc"
     click_button "Submit"
 
-  expect(page).to have_content "Please enter a value for email"
+    expect(page).to have_content "Please enter a value for email"
   end
 
   it "Checks that the institution error message is displayed" do 

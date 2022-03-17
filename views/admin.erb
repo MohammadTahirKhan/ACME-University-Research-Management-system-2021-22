@@ -8,7 +8,6 @@
 </head>
 <body>
    <header>
-
         <nav class="navbar">
             <div class="logo">
                 <h>ACME</h>
@@ -51,14 +50,14 @@
         <th>Password</th>
       </tr>
     <% @users.each do |user|%>
-        <tr>
-            <td class="row"><%=h user.id %></td>
-            <td class="row"><%=h user.username %></td>
-            <td class="row"><%=h user.email %></td>
-            <td class="row"><%=h user.user_type %></td>
-            <td class="row"><%=h user.institution %></td>
-            <td class="row"><%=h user.password %></td>
-        </tr>
+      <tr>
+        <td class="row"><%=h user.id %></td>
+        <td class="row"><%=h user.username %></td>
+        <td class="row"><%=h user.email %></td>
+        <td class="row"><%=h user.user_type %></td>
+        <td class="row"><%=h user.institution %></td>
+        <td class="row"><%=h user.password %></td>
+      </tr>
     <% end %> 
     </table>
     <% else %>

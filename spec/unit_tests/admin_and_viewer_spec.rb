@@ -23,28 +23,26 @@ RSpec.describe "Viewer page" do
     end
   end
 
-    describe "Displays the users table" do
-        it "displays a table when the database contains a user" do
-          get "/admin"
-          if ( User.all.count == 0) 
-            expect(last_response.body).to include("The database is empty!")
-          else 
-            expect(last_response.body).to include("Username")
-    
-          end
-        end
-#  Coverage tests
+  describe "Displays the users table" do
+    it "displays a table when the database contains a user" do
+      get "/admin"
+      if ( User.all.count == 0) 
+        expect(last_response.body).to include("The database is empty!")
+      else 
+        expect(last_response.body).to include("Username")
+      end
+    end
+
+#  Coverage check tests
     it "rejects the form when only title field is filled out" do
       get "/create_post", "title" => "Some Text"
-     expect(last_response.body).to include("Please")
-     
+      expect(last_response.body).to include("Please")
     end
 
     it "rejects the form when only institution field is filled out" do
       get "/create_post", "institution" => "Some Text"
       expect(last_response.body).to include("Please")
-     
     end
   
-end
+  end
 end

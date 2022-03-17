@@ -40,31 +40,30 @@ RSpec.describe "testing if all the pages are displayed" do
 
   describe "GET /admin" do
     it "has a status code of 200 (OK)" do
-        get "/admin" 
-        expect(last_response.status).to eq(200)
+      get "/admin" 
+      expect(last_response.status).to eq(200)
     end 
   end
 
   describe "GET /viewer" do
     it "has a status code of 200 (OK)" do
-        get "/viewer" 
-        expect(last_response.status).to eq(200)
+      get "/viewer" 
+      expect(last_response.status).to eq(200)
     end 
   end
 
   describe "GET /profile" do
     it "has a status code of 200 (OK)" do
-        get "/profile" 
-        expect(last_response.status).to eq(200)
+      get "/profile" 
+      expect(last_response.status).to eq(200)
     end 
   end
 
   describe "GET /create_account" do
     it "has a status code of 200 (OK)" do
-        get "/create_account" 
-        expect(last_response.status).to eq(200)
+      get "/create_account" 
+      expect(last_response.status).to eq(200)
     end 
   end
-
 
 end

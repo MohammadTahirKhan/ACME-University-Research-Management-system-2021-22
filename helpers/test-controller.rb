@@ -1,3 +1,3 @@
 get "/" do
-    erb :test-view
+  erb :test-view
 end

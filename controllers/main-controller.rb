@@ -1,7 +1,7 @@
 require "sinatra"
 
 get "/login" do
-    erb :login
+  erb :login
 end
 
 get "/home" do

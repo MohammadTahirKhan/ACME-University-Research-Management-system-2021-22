@@ -15,15 +15,12 @@
         </div>
     </header>
     <main>
-        <main>
     <h1>
       Create an Account
     </h1>
     <div id="create_account_area">
       <form id ="form1" method="post" action="/create_account"> 
 
-        <!--Mandatory-->
-        <!--Start again here-->
         <p> 
           *Username: <br />
           <input type="text" name="username" value="<%= h @username_field %>"/>
@@ -35,11 +32,11 @@
           <% end %>
         </p>
 
+        <!-- set the default user_type to poster for every account created -->
         <p>
           <input type="hidden" name="user_type" value="poster" />
         </p>
 
-        <!--Mandatory-->
         <p>
           *Email: <br />
           <input type="text" name="email" />
@@ -48,8 +45,6 @@
          <% end %>
         </p>
 
-
-        <!--Mandatory-->
         <p>
           *Institution or University: <br />
           <input type="text" name="institution" />
@@ -58,7 +53,6 @@
          <% end %>
         </p>
 
-        <!--Mandatory-->
         <p>
           *Password: <br />
           <input type="password" name="password" />
