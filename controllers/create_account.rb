@@ -9,8 +9,7 @@ post "/create_account" do
   @password_field = params["password"]
 
   #submit the form if the fields are not empty and the username is not already taken.
-  @form_was_submitted = !@username_field.empty? && !@email_field.empty? && !@institution_field.empty? && !@password_field.empty? 
-    && (DB[:users].where(username: @username_field)).count == 0
+  @form_was_submitted = !@username_field.empty? && !@email_field.empty? && !@institution_field.empty? && !@password_field.empty? && (DB[:users].where(username: @username_field)).count == 0
 
   @submission_error = nil
   @username_validation_error = nil

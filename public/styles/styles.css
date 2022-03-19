@@ -154,7 +154,8 @@ main #submit,
 }
 
 main #create_acc,
-#forgot_pass {
+#forgot_pass,
+#guest {
     color: rgb(12, 22, 53);
     background-color: aliceblue;
     border: 1px black;
@@ -169,7 +170,8 @@ main #submit:hover,
 #reset:hover,
 #log_in:hover,
 #create_acc:hover,
-#forgot_pass:hover {
+#forgot_pass:hover,
+#guest:hover {
     color: rgb(61, 202, 245);
     font-weight: bolder;
     transform: scale(1, 1);
