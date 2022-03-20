@@ -22,7 +22,7 @@ describe "Login Page" do
 
     visit "/home"
     expect(page).to have_content "Welcome"
-    DB.from("users").delete
+    (DB[:users].where(username: "Test25_Username")).delete 
   end
 
   it "will not login with no details" do

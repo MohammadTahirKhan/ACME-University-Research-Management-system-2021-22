@@ -24,7 +24,7 @@ describe "admin page" do
         expect(page).to have_content "Test25_Email"
         expect(page).to have_content "Test25_Institution"
         expect(page).to have_content "Test25_Password"
-        DB.from("users").delete
+        (DB[:users].where(username: "Test25_Username")).delete 
     end
 
     it "shows the record of the user according to the search" do
@@ -42,7 +42,7 @@ describe "admin page" do
         expect(page).to have_content "Test25_Email"
         expect(page).to have_content "Test25_Institution"
         expect(page).to have_content "Test25_Password"
-        DB.from("users").delete
+        (DB[:users].where(username: "Test25_Username")).delete 
     end
 
     it "gives an error if the user searched does not exist" do

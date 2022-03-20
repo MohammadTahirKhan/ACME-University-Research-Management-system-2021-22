@@ -24,7 +24,7 @@ describe "viewer page" do
         expect(page).to have_content "Test26_Topic"
         expect(page).to have_content "Test26_Institution"
         expect(page).to have_content "Test26_Link"
-        DB.from("posts").delete
+        (DB[:posts].where(title: "Test26_Title")).delete 
     end
 
     it "shows the record of the post according to the search" do
@@ -42,7 +42,7 @@ describe "viewer page" do
         expect(page).to have_content "Test26_Topic"
         expect(page).to have_content "Test26_Institution"
         expect(page).to have_content "Test26_Link"
-        DB.from("posts").delete
+        (DB[:posts].where(title: "Test26_Title")).delete 
     end
 
     it "gives an error if the post searched does not exist" do

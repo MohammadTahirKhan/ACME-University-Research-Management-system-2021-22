@@ -14,7 +14,7 @@ describe "Create Post Page" do
     expect(page).to have_content "Test26_Topic"
     expect(page).to have_content "Test26_Institution"
     expect(page).to have_content "Test26_Link"
-    DB.from("posts").delete
+    (DB[:posts].where(title: "Test26_Title")).delete 
   end
 
   it "will not create an account with no details" do

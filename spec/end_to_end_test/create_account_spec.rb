@@ -22,7 +22,7 @@ describe "Create Account Page" do
     expect(page).to have_content "Test25_Email"
     expect(page).to have_content "Test25_Institution"
     expect(page).to have_content "Test25_Password"
-    DB.from("users").delete
+    (DB[:users].where(username: "Test25_Username")).delete 
   end
 
   it "will not create an account with no details" do
@@ -91,5 +91,6 @@ describe "Create Account Page" do
     fill_in "password", with: "abc2"
     click_button "Submit"
     expect(page).to have_content "Sorry, This username is not available"
+    (DB[:users].where(username: "Test2")).delete 
   end
 end
