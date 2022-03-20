@@ -45,7 +45,7 @@ describe "viewer page" do
         DB.from("posts").delete
     end
 
-    it "gives an error if the user searched does not exist" do
+    it "gives an error if the post searched does not exist" do
         visit "/viewer"
         fill_in "post_search", with: "ashvcabms"
         click_button "Submit"
