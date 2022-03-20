@@ -10,7 +10,6 @@ describe "Create Account Page" do
   
 
   it "Checks if the account is created" do 
-    #session[:logged_in] = true
     visit "/create_account"
     fill_in "username", with: "Test25_Username"
     fill_in "email", with: "Test25_Email"
@@ -76,4 +75,21 @@ describe "Create Account Page" do
     expect(page).to have_content "Please enter a value for password"
   end
 
+  it "Checks that the username is taken error message is displayed" do 
+    visit "/create_account"
+    #username field 
+    fill_in "username", with: "Test2"
+    fill_in "email", with: "test_email"
+    fill_in "institution", with: "UOS"
+    fill_in "password", with: "abc"
+    click_button "Submit"
+
+    visit "/create_account"
+    fill_in "username", with: "Test2"
+    fill_in "email", with: "test_email2"
+    fill_in "institution", with: "UOS2"
+    fill_in "password", with: "abc2"
+    click_button "Submit"
+    expect(page).to have_content "Sorry, This username is not available"
+  end
 end

@@ -1,48 +1,83 @@
-# require_relative "../spec_helper"
+require_relative "../spec_helper"
 
-# RSpec.describe 'Login Page' do
-#     describe 'get/login' do 
-#         it 'is shown as the default page' do
-#             visit '/'
-#             expect (page).to have_content 'Login'
-#         end
+describe "Login Page" do
 
-#         it 'takes the viewer to their page' do
-#             create_account("Dominic", "domdom@gmail.com", "lsu", "Everton")
-#             login("Dominic", "Everton", "type")
-#             expect (page).to have_content 'Welcome'
+  it "is accessible from the logout page" do
+    visit "/logout"
+    click_link "Login again"
+    expect(page).to have_content "Login"
+  end
+  
+  it "Checks if the user is logged in" do 
+    visit "/create_account"
+    fill_in "username", with: "Test25_Username"
+    fill_in "email", with: "Test25_Email"
+    fill_in "institution", with: "Test25_Institution"
+    fill_in "password", with: "Test25_Password"
+    click_button "Submit"
 
-#         end
+    visit "/login"
+    fill_in "username", with: "Test25_Username"
+    fill_in "password", with: "Test25_Username"
 
-#         it 'cannot go back to login page without logging out' do
-#             create_account("Dominic", "domdom@gmail.com", "lsu", "Everton")
-#             login("Dominic", "Everton", "type")
-#             visit '/login'
-#             expect (page).to have_content 'Welcome'
-#         end
+    visit "/home"
+    expect(page).to have_content "Welcome"
+    DB.from("users").delete
+  end
 
-#         it 'shows an error when typing the wrong password' do
-#             create_account("Dominic", "domdom@gmail.com", "lsu", "Everton")
-#             login("Dominic", "Everton1", "type")
-#             expect (page).to have_content "Username/Password combination incorrect"
-#         end
+  it "will not login with no details" do
+    visit "/login"
+    click_button "Submit"
+    expect(page).to have_content "Login"
 
-#         it 'shows an error if password is empty' do
-#             create_account("Dominic", "domdom@gmail.com", "lsu", "Everton")
-#             login("Dominic", "", "type")
-#             expect (page).to have_content "Password cannot be empty"
-#         end
+  end
 
-#         it 'shows an error when logging in without a username' do
-#             create_account("Dominic", "domdom@gmail.com", "lsu", "Everton")
-#             login("", "Everton1", "type")
-#             expect (page).to have_content "Username cannot be empty"
-#         end
+  it "Checks that an error message is displayed" do 
+    visit "/login"
+    #username field 
+    fill_in "password", with: "abc"
+    click_button "Submit"
 
-#         it 'shows an error when credentials are not typed' do
-#             create_account("Dominic", "domdom@gmail.com", "lsu", "Everton")
-#             login("", "", "type")
-#             expect (page).to have_content "Username cannot be empty"
-#         end
-#    end
-# end
+    expect(page).to have_content "Please correct the information below"
+  end
+
+  it "Checks that an error message is displayed" do 
+    visit "/login"
+    #password field 
+    fill_in "username", with: "abc"
+    click_button "Submit"
+
+    expect(page).to have_content "Please correct the information below"
+  end
+
+  it "Checks that the username-password combination exists message is displayed" do 
+    visit "/login"
+    fill_in "username", with: "abjzxncc"
+    fill_in "password", with: "cxzjchde"
+    click_button "Submit"
+
+    expect(page).to have_content "Username/Password combination incorrect"
+  end
+
+  it "Checks if the username is empty" do 
+    visit "/login"
+    fill_in "password", with: "cxzjchde"
+    click_button "Submit"
+
+    expect(page).to have_content "Username cannot be empty"
+  end
+
+  it "Checks if the password is empty" do 
+    visit "/login"
+    click_button "Submit"
+
+    expect(page).to have_content "Password cannot be empty"
+  end
+
+  it "Checks if we can login as guest" do 
+    visit "/login"
+    click_link "Log in as guest"
+
+    expect(page).to have_content "Create a Post"
+  end
+end

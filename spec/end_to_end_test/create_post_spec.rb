@@ -1,8 +1,7 @@
 require_relative "../spec_helper"
 
 describe "Create Post Page" do
-  it "checks if a post is created" do
-    #session[:logged_in] = true
+  it "checks if a post is created" do 
     visit "/create_post"
     fill_in "title", with: "Test26_Title"
     fill_in "topic", with: "Test26_Topic"
@@ -16,7 +15,6 @@ describe "Create Post Page" do
     expect(page).to have_content "Test26_Institution"
     expect(page).to have_content "Test26_Link"
     DB.from("posts").delete
-    session.clear
   end
 
   it "will not create an account with no details" do
@@ -92,6 +90,12 @@ describe "Create Post Page" do
   it "can be accessed from the profile page" do
     visit "/profile"
     click_link "Post"
+    expect(page).to have_content "Create a Post"
+  end
+
+  it "can be accessed from the login as guest link" do
+    visit "/login"
+    click_link "Log in as guest"
     expect(page).to have_content "Create a Post"
   end
 end

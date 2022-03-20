@@ -1,7 +1,15 @@
 require "sinatra"
 
 get "/admin" do
-  # redirect "/login" unless session[:logged_in]
-  @users = User.all
+
+  @user_search = params.fetch("user_search", "").strip
+
+  # shows the result according to the search bar 
+  @users = if @user_search.empty?
+    User.all
+  else
+    User.where(Sequel.like(:username, "%#{@user_search}%"))
+  end
+
   erb :admin
 end

@@ -31,6 +31,13 @@
         </nav>
     </header>
     <main>
+
+    <form>
+        <p id="search_area">Search by University: 
+        <input type="text" id="search_area" name="post_search" value="<%= h @post_search %>"/>
+        <input type="submit" id="submit" value="Submit" /></p>
+    </form>
+
         <% if @posts.count > 0 %>
             <table id="post_table">
                 <tr id="columns">
@@ -52,6 +59,7 @@
             </table>
             <% else %>
                 <p>The database is empty!</p>
+                <p>There are no posts!</p>
             <% end %>
         <p></p>
     </main>
