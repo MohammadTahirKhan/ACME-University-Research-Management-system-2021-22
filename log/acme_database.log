@@ -281,3 +281,368 @@ I, [2022-03-20T18:16:59.272044 #458]  INFO -- : (0.000260s) SELECT * FROM `users
 I, [2022-03-20T18:16:59.273191 #458]  INFO -- : (0.000249s) SELECT * FROM `users`
 I, [2022-03-20T18:16:59.282268 #458]  INFO -- : (0.000233s) SELECT * FROM `users`
 I, [2022-03-20T18:16:59.284177 #458]  INFO -- : (0.000244s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:46.344648 #470]  INFO -- : (0.000192s) PRAGMA foreign_keys = 1
+I, [2022-03-20T18:18:46.344811 #470]  INFO -- : (0.000030s) PRAGMA case_sensitive_like = 1
+I, [2022-03-20T18:18:46.345641 #470]  INFO -- : (0.000094s) SELECT sqlite_version()
+I, [2022-03-20T18:18:46.346247 #470]  INFO -- : (0.000197s) PRAGMA table_info('posts')
+I, [2022-03-20T18:18:46.347736 #470]  INFO -- : (0.000227s) PRAGMA table_info('users')
+I, [2022-03-20T18:18:46.907199 #470]  INFO -- : (0.000274s) SELECT * FROM `users`
+I, [2022-03-20T18:18:46.923052 #470]  INFO -- : (0.000158s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-20T18:18:46.944895 #470]  INFO -- : (0.000158s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-20T18:18:46.945276 #470]  INFO -- : (0.000026s) BEGIN
+I, [2022-03-20T18:18:46.945967 #470]  INFO -- : (0.000415s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-20T18:18:46.946232 #470]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-20T18:18:47.019780 #470]  INFO -- : (0.073434s) COMMIT
+I, [2022-03-20T18:18:47.023796 #470]  INFO -- : (0.000248s) SELECT * FROM `users`
+I, [2022-03-20T18:18:47.110319 #470]  INFO -- : (0.065298s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-20T18:18:47.123408 #470]  INFO -- : (0.000187s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-20T18:18:47.123769 #470]  INFO -- : (0.000030s) BEGIN
+I, [2022-03-20T18:18:47.124326 #470]  INFO -- : (0.000267s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-20T18:18:47.124705 #470]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-20T18:18:47.185802 #470]  INFO -- : (0.060962s) COMMIT
+I, [2022-03-20T18:18:47.188989 #470]  INFO -- : (0.000335s) SELECT * FROM `users`
+I, [2022-03-20T18:18:47.196140 #470]  INFO -- : (0.000191s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-03-20T18:18:47.196547 #470]  INFO -- : (0.000192s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-03-20T18:18:47.281093 #470]  INFO -- : (0.067152s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-20T18:18:47.282907 #470]  INFO -- : (0.000273s) SELECT * FROM `users`
+I, [2022-03-20T18:18:47.288761 #470]  INFO -- : (0.000157s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-20T18:18:47.310318 #470]  INFO -- : (0.000164s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-20T18:18:47.310752 #470]  INFO -- : (0.000028s) BEGIN
+I, [2022-03-20T18:18:47.311370 #470]  INFO -- : (0.000310s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-20T18:18:47.311711 #470]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-20T18:18:47.379530 #470]  INFO -- : (0.067687s) COMMIT
+I, [2022-03-20T18:18:47.382888 #470]  INFO -- : (0.000351s) SELECT * FROM `users`
+I, [2022-03-20T18:18:47.476987 #470]  INFO -- : (0.067125s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-20T18:18:47.484444 #470]  INFO -- : (0.000194s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-20T18:18:47.496732 #470]  INFO -- : (0.000227s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-20T18:18:47.509447 #470]  INFO -- : (0.000156s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-20T18:18:47.521364 #470]  INFO -- : (0.000155s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-20T18:18:47.537832 #470]  INFO -- : (0.000152s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-20T18:18:47.550730 #470]  INFO -- : (0.000218s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-20T18:18:47.551156 #470]  INFO -- : (0.000033s) BEGIN
+I, [2022-03-20T18:18:47.551694 #470]  INFO -- : (0.000259s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test2', 'test_email', 'poster', 'UOS', 'abc')
+I, [2022-03-20T18:18:47.552036 #470]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-20T18:18:47.622500 #470]  INFO -- : (0.070324s) COMMIT
+I, [2022-03-20T18:18:47.637631 #470]  INFO -- : (0.000191s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-20T18:18:47.638180 #470]  INFO -- : (0.000113s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-20T18:18:47.718630 #470]  INFO -- : (0.076771s) DELETE FROM `users` WHERE (`username` = 'Test2')
+I, [2022-03-20T18:18:47.739666 #470]  INFO -- : (0.000058s) BEGIN
+I, [2022-03-20T18:18:47.740387 #470]  INFO -- : (0.000294s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-20T18:18:47.740778 #470]  INFO -- : (0.000160s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-20T18:18:47.811302 #470]  INFO -- : (0.070383s) COMMIT
+I, [2022-03-20T18:18:47.814695 #470]  INFO -- : (0.000343s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:47.913014 #470]  INFO -- : (0.074391s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-20T18:18:48.043028 #470]  INFO -- : (0.000297s) SELECT * FROM `users`
+I, [2022-03-20T18:18:48.059282 #470]  INFO -- : (0.000223s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:48.102559 #470]  INFO -- : (0.000247s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-20T18:18:48.103006 #470]  INFO -- : (0.000035s) BEGIN
+I, [2022-03-20T18:18:48.103537 #470]  INFO -- : (0.000241s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-20T18:18:48.103880 #470]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-20T18:18:48.170910 #470]  INFO -- : (0.066884s) COMMIT
+I, [2022-03-20T18:18:48.247837 #470]  INFO -- : (0.065019s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-20T18:18:48.297446 #470]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE (`username` = 'abjzxncc') LIMIT 1
+I, [2022-03-20T18:18:48.333756 #470]  INFO -- : (0.000258s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:48.340914 #470]  INFO -- : (0.000190s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-20T18:18:48.361480 #470]  INFO -- : (0.000044s) BEGIN
+I, [2022-03-20T18:18:48.362022 #470]  INFO -- : (0.000245s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-20T18:18:48.362318 #470]  INFO -- : (0.000115s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-20T18:18:48.430598 #470]  INFO -- : (0.068060s) COMMIT
+I, [2022-03-20T18:18:48.433716 #470]  INFO -- : (0.000265s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:48.518523 #470]  INFO -- : (0.069787s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-20T18:18:48.540378 #470]  INFO -- : (0.000068s) BEGIN
+I, [2022-03-20T18:18:48.541331 #470]  INFO -- : (0.000429s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-20T18:18:48.541935 #470]  INFO -- : (0.000220s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-20T18:18:48.608584 #470]  INFO -- : (0.066456s) COMMIT
+I, [2022-03-20T18:18:48.611795 #470]  INFO -- : (0.000258s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:48.618173 #470]  INFO -- : (0.000192s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%Test26_Institution%' ESCAPE '\') LIMIT 1
+I, [2022-03-20T18:18:48.618711 #470]  INFO -- : (0.000192s) SELECT * FROM `posts` WHERE (`institution` LIKE '%Test26_Institution%' ESCAPE '\')
+I, [2022-03-20T18:18:48.702991 #470]  INFO -- : (0.071112s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-20T18:18:48.704631 #470]  INFO -- : (0.000202s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:48.710330 #470]  INFO -- : (0.000155s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-20T18:18:48.716118 #470]  INFO -- : (0.000203s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:48.717667 #470]  INFO -- : (0.000333s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:48.722816 #470]  INFO -- : (0.000283s) SELECT * FROM `users`
+I, [2022-03-20T18:18:48.724015 #470]  INFO -- : (0.000235s) SELECT * FROM `users`
+I, [2022-03-20T18:18:48.733753 #470]  INFO -- : (0.000233s) SELECT * FROM `users`
+I, [2022-03-20T18:18:48.735534 #470]  INFO -- : (0.000216s) SELECT * FROM `posts`
+I, [2022-03-20T18:18:51.477669 #471]  INFO -- : (0.000254s) PRAGMA foreign_keys = 1
+I, [2022-03-20T18:18:51.477851 #471]  INFO -- : (0.000030s) PRAGMA case_sensitive_like = 1
+I, [2022-03-20T18:18:51.478780 #471]  INFO -- : (0.000109s) SELECT sqlite_version()
+I, [2022-03-20T18:18:51.479245 #471]  INFO -- : (0.000210s) PRAGMA table_info('posts')
+I, [2022-03-20T18:18:51.480805 #471]  INFO -- : (0.000190s) PRAGMA table_info('users')
+I, [2022-03-20T18:19:04.127515 #482]  INFO -- : (0.000235s) PRAGMA foreign_keys = 1
+I, [2022-03-20T18:19:04.127677 #482]  INFO -- : (0.000027s) PRAGMA case_sensitive_like = 1
+I, [2022-03-20T18:19:04.128532 #482]  INFO -- : (0.000102s) SELECT sqlite_version()
+I, [2022-03-20T18:19:04.128933 #482]  INFO -- : (0.000174s) PRAGMA table_info('posts')
+I, [2022-03-20T18:19:04.130295 #482]  INFO -- : (0.000176s) PRAGMA table_info('users')
+I, [2022-03-20T18:19:31.984710 #482]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-03-20T18:19:33.873000 #482]  INFO -- : (0.000204s) SELECT * FROM `users`
+I, [2022-03-20T18:19:38.698712 #482]  INFO -- : (0.000190s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:26.769524 #230]  INFO -- : (0.001482s) PRAGMA foreign_keys = 1
+I, [2022-03-21T09:01:26.776548 #230]  INFO -- : (0.000038s) PRAGMA case_sensitive_like = 1
+I, [2022-03-21T09:01:26.777353 #230]  INFO -- : (0.000094s) SELECT sqlite_version()
+I, [2022-03-21T09:01:26.777708 #230]  INFO -- : (0.000171s) PRAGMA table_info('posts')
+I, [2022-03-21T09:01:26.778913 #230]  INFO -- : (0.000200s) PRAGMA table_info('users')
+I, [2022-03-21T09:01:27.519907 #230]  INFO -- : (0.000275s) SELECT * FROM `users`
+I, [2022-03-21T09:01:27.543144 #230]  INFO -- : (0.000156s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T09:01:27.569413 #230]  INFO -- : (0.000201s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T09:01:27.569769 #230]  INFO -- : (0.000028s) BEGIN
+I, [2022-03-21T09:01:27.570276 #230]  INFO -- : (0.000254s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T09:01:27.570586 #230]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T09:01:27.634053 #230]  INFO -- : (0.063353s) COMMIT
+I, [2022-03-21T09:01:27.637866 #230]  INFO -- : (0.000244s) SELECT * FROM `users`
+I, [2022-03-21T09:01:27.719373 #230]  INFO -- : (0.063221s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T09:01:27.728563 #230]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T09:01:27.728856 #230]  INFO -- : (0.000023s) BEGIN
+I, [2022-03-21T09:01:27.729218 #230]  INFO -- : (0.000178s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T09:01:27.729444 #230]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T09:01:27.790857 #230]  INFO -- : (0.061313s) COMMIT
+I, [2022-03-21T09:01:27.793111 #230]  INFO -- : (0.000237s) SELECT * FROM `users`
+I, [2022-03-21T09:01:27.797952 #230]  INFO -- : (0.000122s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T09:01:27.798245 #230]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-03-21T09:01:27.872645 #230]  INFO -- : (0.063067s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T09:01:27.874180 #230]  INFO -- : (0.000236s) SELECT * FROM `users`
+I, [2022-03-21T09:01:27.879501 #230]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T09:01:27.896337 #230]  INFO -- : (0.000152s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T09:01:27.896610 #230]  INFO -- : (0.000023s) BEGIN
+I, [2022-03-21T09:01:27.896982 #230]  INFO -- : (0.000189s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T09:01:27.897208 #230]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T09:01:27.959419 #230]  INFO -- : (0.062112s) COMMIT
+I, [2022-03-21T09:01:27.961610 #230]  INFO -- : (0.000232s) SELECT * FROM `users`
+I, [2022-03-21T09:01:28.035564 #230]  INFO -- : (0.057409s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T09:01:28.041197 #230]  INFO -- : (0.000149s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-21T09:01:28.051310 #230]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-21T09:01:28.060998 #230]  INFO -- : (0.000145s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T09:01:28.070869 #230]  INFO -- : (0.000145s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T09:01:28.084183 #230]  INFO -- : (0.000148s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T09:01:28.094824 #230]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T09:01:28.095117 #230]  INFO -- : (0.000023s) BEGIN
+I, [2022-03-21T09:01:28.095553 #230]  INFO -- : (0.000182s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test2', 'test_email', 'poster', 'UOS', 'abc')
+I, [2022-03-21T09:01:28.095782 #230]  INFO -- : (0.000094s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T09:01:28.155612 #230]  INFO -- : (0.059726s) COMMIT
+I, [2022-03-21T09:01:28.165763 #230]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T09:01:28.166166 #230]  INFO -- : (0.000085s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T09:01:28.232721 #230]  INFO -- : (0.063938s) DELETE FROM `users` WHERE (`username` = 'Test2')
+I, [2022-03-21T09:01:28.247121 #230]  INFO -- : (0.000043s) BEGIN
+I, [2022-03-21T09:01:28.247610 #230]  INFO -- : (0.000198s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T09:01:28.247872 #230]  INFO -- : (0.000107s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T09:01:28.311233 #230]  INFO -- : (0.063257s) COMMIT
+I, [2022-03-21T09:01:28.313561 #230]  INFO -- : (0.000193s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:28.396282 #230]  INFO -- : (0.065304s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T09:01:28.481853 #230]  INFO -- : (0.000239s) SELECT * FROM `users`
+I, [2022-03-21T09:01:28.493352 #230]  INFO -- : (0.000193s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:28.527320 #230]  INFO -- : (0.000151s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T09:01:28.527602 #230]  INFO -- : (0.000022s) BEGIN
+I, [2022-03-21T09:01:28.527964 #230]  INFO -- : (0.000175s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T09:01:28.528206 #230]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T09:01:28.598279 #230]  INFO -- : (0.069967s) COMMIT
+I, [2022-03-21T09:01:28.671266 #230]  INFO -- : (0.065532s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T09:01:28.702368 #230]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE (`username` = 'abjzxncc') LIMIT 1
+I, [2022-03-21T09:01:28.725134 #230]  INFO -- : (0.000354s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:28.729814 #230]  INFO -- : (0.000145s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T09:01:28.743389 #230]  INFO -- : (0.000042s) BEGIN
+I, [2022-03-21T09:01:28.743846 #230]  INFO -- : (0.000199s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T09:01:28.744111 #230]  INFO -- : (0.000109s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T09:01:28.814698 #230]  INFO -- : (0.070485s) COMMIT
+I, [2022-03-21T09:01:28.817095 #230]  INFO -- : (0.000199s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:28.913561 #230]  INFO -- : (0.086668s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T09:01:28.922336 #230]  INFO -- : (0.000043s) BEGIN
+I, [2022-03-21T09:01:28.922793 #230]  INFO -- : (0.000194s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T09:01:28.923049 #230]  INFO -- : (0.000106s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T09:01:29.036116 #230]  INFO -- : (0.112962s) COMMIT
+I, [2022-03-21T09:01:29.038346 #230]  INFO -- : (0.000194s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:29.042892 #230]  INFO -- : (0.000130s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%Test26_Institution%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T09:01:29.043164 #230]  INFO -- : (0.000125s) SELECT * FROM `posts` WHERE (`institution` LIKE '%Test26_Institution%' ESCAPE '\')
+I, [2022-03-21T09:01:29.164868 #230]  INFO -- : (0.111511s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T09:01:29.166614 #230]  INFO -- : (0.000253s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:29.171707 #230]  INFO -- : (0.000140s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T09:01:29.176382 #230]  INFO -- : (0.000173s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:29.177178 #230]  INFO -- : (0.000131s) SELECT * FROM `posts`
+I, [2022-03-21T09:01:29.210532 #230]  INFO -- : (0.000273s) SELECT * FROM `users`
+I, [2022-03-21T09:01:29.211437 #230]  INFO -- : (0.000172s) SELECT * FROM `users`
+I, [2022-03-21T09:01:29.220891 #230]  INFO -- : (0.000236s) SELECT * FROM `users`
+I, [2022-03-21T09:01:29.222507 #230]  INFO -- : (0.000215s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:21.059137 #133]  INFO -- : (0.000216s) PRAGMA foreign_keys = 1
+I, [2022-03-21T13:04:21.065987 #133]  INFO -- : (0.000026s) PRAGMA case_sensitive_like = 1
+I, [2022-03-21T13:04:21.066779 #133]  INFO -- : (0.000086s) SELECT sqlite_version()
+I, [2022-03-21T13:04:21.067100 #133]  INFO -- : (0.000151s) PRAGMA table_info('posts')
+I, [2022-03-21T13:04:21.068128 #133]  INFO -- : (0.000130s) PRAGMA table_info('users')
+I, [2022-03-21T13:04:30.702953 #144]  INFO -- : (0.000159s) PRAGMA foreign_keys = 1
+I, [2022-03-21T13:04:30.703210 #144]  INFO -- : (0.000141s) PRAGMA case_sensitive_like = 1
+I, [2022-03-21T13:04:30.704018 #144]  INFO -- : (0.000124s) SELECT sqlite_version()
+I, [2022-03-21T13:04:30.704484 #144]  INFO -- : (0.000195s) PRAGMA table_info('posts')
+I, [2022-03-21T13:04:30.706029 #144]  INFO -- : (0.000279s) PRAGMA table_info('users')
+I, [2022-03-21T13:04:31.562589 #144]  INFO -- : (0.000337s) SELECT * FROM `users`
+I, [2022-03-21T13:04:31.581022 #144]  INFO -- : (0.000156s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:04:31.611242 #144]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T13:04:31.611608 #144]  INFO -- : (0.000025s) BEGIN
+I, [2022-03-21T13:04:31.612120 #144]  INFO -- : (0.000250s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T13:04:31.612373 #144]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:04:31.734787 #144]  INFO -- : (0.122295s) COMMIT
+I, [2022-03-21T13:04:31.738592 #144]  INFO -- : (0.000303s) SELECT * FROM `users`
+I, [2022-03-21T13:04:31.816864 #144]  INFO -- : (0.059207s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T13:04:31.827199 #144]  INFO -- : (0.000160s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T13:04:31.827512 #144]  INFO -- : (0.000024s) BEGIN
+I, [2022-03-21T13:04:31.827943 #144]  INFO -- : (0.000203s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T13:04:31.828221 #144]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:04:31.883632 #144]  INFO -- : (0.055298s) COMMIT
+I, [2022-03-21T13:04:31.885845 #144]  INFO -- : (0.000231s) SELECT * FROM `users`
+I, [2022-03-21T13:04:31.890591 #144]  INFO -- : (0.000139s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:04:31.890877 #144]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-03-21T13:04:31.958986 #144]  INFO -- : (0.060640s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T13:04:31.960439 #144]  INFO -- : (0.000222s) SELECT * FROM `users`
+I, [2022-03-21T13:04:31.965449 #144]  INFO -- : (0.000125s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:04:31.986580 #144]  INFO -- : (0.000153s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T13:04:31.986857 #144]  INFO -- : (0.000022s) BEGIN
+I, [2022-03-21T13:04:31.987223 #144]  INFO -- : (0.000180s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T13:04:31.987448 #144]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:04:32.046181 #144]  INFO -- : (0.058631s) COMMIT
+I, [2022-03-21T13:04:32.048514 #144]  INFO -- : (0.000238s) SELECT * FROM `users`
+I, [2022-03-21T13:04:32.120161 #144]  INFO -- : (0.057973s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T13:04:32.125767 #144]  INFO -- : (0.000145s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-21T13:04:32.135628 #144]  INFO -- : (0.000145s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-21T13:04:32.148856 #144]  INFO -- : (0.000151s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:04:32.158699 #144]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:04:32.168537 #144]  INFO -- : (0.000148s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:04:32.178967 #144]  INFO -- : (0.000145s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:04:32.179236 #144]  INFO -- : (0.000022s) BEGIN
+I, [2022-03-21T13:04:32.179602 #144]  INFO -- : (0.000176s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test2', 'test_email', 'poster', 'UOS', 'abc')
+I, [2022-03-21T13:04:32.179837 #144]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:04:32.246131 #144]  INFO -- : (0.066192s) COMMIT
+I, [2022-03-21T13:04:32.256133 #144]  INFO -- : (0.000148s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:04:32.256529 #144]  INFO -- : (0.000083s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:04:32.325494 #144]  INFO -- : (0.063162s) DELETE FROM `users` WHERE (`username` = 'Test2')
+I, [2022-03-21T13:04:32.339880 #144]  INFO -- : (0.000043s) BEGIN
+I, [2022-03-21T13:04:32.340365 #144]  INFO -- : (0.000200s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T13:04:32.340625 #144]  INFO -- : (0.000105s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T13:04:32.413014 #144]  INFO -- : (0.072285s) COMMIT
+I, [2022-03-21T13:04:32.415559 #144]  INFO -- : (0.000194s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:32.500782 #144]  INFO -- : (0.070612s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T13:04:32.559715 #144]  INFO -- : (0.000237s) SELECT * FROM `users`
+I, [2022-03-21T13:04:32.574085 #144]  INFO -- : (0.000253s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:32.614413 #144]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T13:04:32.614728 #144]  INFO -- : (0.000024s) BEGIN
+I, [2022-03-21T13:04:32.615140 #144]  INFO -- : (0.000199s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T13:04:32.616165 #144]  INFO -- : (0.000866s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:04:32.679366 #144]  INFO -- : (0.063078s) COMMIT
+I, [2022-03-21T13:04:32.757027 #144]  INFO -- : (0.064521s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T13:04:32.802629 #144]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE (`username` = 'abjzxncc') LIMIT 1
+I, [2022-03-21T13:04:32.825264 #144]  INFO -- : (0.000191s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:32.830526 #144]  INFO -- : (0.000212s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:04:32.846699 #144]  INFO -- : (0.000047s) BEGIN
+I, [2022-03-21T13:04:32.847204 #144]  INFO -- : (0.000208s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T13:04:32.847524 #144]  INFO -- : (0.000127s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T13:04:32.913367 #144]  INFO -- : (0.065722s) COMMIT
+I, [2022-03-21T13:04:32.915905 #144]  INFO -- : (0.000203s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:32.990568 #144]  INFO -- : (0.064179s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T13:04:32.999234 #144]  INFO -- : (0.000041s) BEGIN
+I, [2022-03-21T13:04:32.999675 #144]  INFO -- : (0.000195s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T13:04:32.999931 #144]  INFO -- : (0.000106s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T13:04:33.062206 #144]  INFO -- : (0.062171s) COMMIT
+I, [2022-03-21T13:04:33.064606 #144]  INFO -- : (0.000188s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:33.069161 #144]  INFO -- : (0.000126s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%Test26_Institution%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:04:33.069439 #144]  INFO -- : (0.000126s) SELECT * FROM `posts` WHERE (`institution` LIKE '%Test26_Institution%' ESCAPE '\')
+I, [2022-03-21T13:04:33.153957 #144]  INFO -- : (0.073891s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T13:04:33.155528 #144]  INFO -- : (0.000188s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:33.161196 #144]  INFO -- : (0.000193s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:04:33.166333 #144]  INFO -- : (0.000205s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:33.167252 #144]  INFO -- : (0.000132s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:33.177770 #144]  INFO -- : (0.000312s) SELECT * FROM `users`
+I, [2022-03-21T13:04:33.179273 #144]  INFO -- : (0.000289s) SELECT * FROM `users`
+I, [2022-03-21T13:04:33.192209 #144]  INFO -- : (0.000233s) SELECT * FROM `users`
+I, [2022-03-21T13:04:33.194139 #144]  INFO -- : (0.000169s) SELECT * FROM `posts`
+I, [2022-03-21T13:04:49.702906 #147]  INFO -- : (0.000182s) PRAGMA foreign_keys = 1
+I, [2022-03-21T13:04:49.703031 #147]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-03-21T13:04:49.703771 #147]  INFO -- : (0.000070s) SELECT sqlite_version()
+I, [2022-03-21T13:04:49.704049 #147]  INFO -- : (0.000123s) PRAGMA table_info('posts')
+I, [2022-03-21T13:04:49.705018 #147]  INFO -- : (0.000126s) PRAGMA table_info('users')
+I, [2022-03-21T13:05:05.224152 #147]  INFO -- : (0.000200s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-03-21T13:05:07.163321 #147]  INFO -- : (0.000331s) SELECT * FROM `users`
+I, [2022-03-21T13:05:22.628754 #147]  INFO -- : (0.000173s) SELECT * FROM `posts`
+I, [2022-03-21T13:05:37.368405 #147]  INFO -- : (0.000169s) SELECT * FROM `posts`
+I, [2022-03-21T13:05:54.569570 #147]  INFO -- : (0.000164s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-03-21T13:05:56.088815 #147]  INFO -- : (0.000169s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:51.817938 #155]  INFO -- : (0.000297s) PRAGMA foreign_keys = 1
+I, [2022-03-21T13:56:51.826855 #155]  INFO -- : (0.000077s) PRAGMA case_sensitive_like = 1
+I, [2022-03-21T13:56:51.828018 #155]  INFO -- : (0.000127s) SELECT sqlite_version()
+I, [2022-03-21T13:56:51.828524 #155]  INFO -- : (0.000255s) PRAGMA table_info('posts')
+I, [2022-03-21T13:56:51.830195 #155]  INFO -- : (0.000282s) PRAGMA table_info('users')
+I, [2022-03-21T13:56:52.825085 #155]  INFO -- : (0.000300s) SELECT * FROM `users`
+I, [2022-03-21T13:56:52.856442 #155]  INFO -- : (0.000181s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:56:52.891002 #155]  INFO -- : (0.000174s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T13:56:52.891366 #155]  INFO -- : (0.000029s) BEGIN
+I, [2022-03-21T13:56:52.892056 #155]  INFO -- : (0.000399s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T13:56:52.892355 #155]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:56:53.019522 #155]  INFO -- : (0.127016s) COMMIT
+I, [2022-03-21T13:56:53.024062 #155]  INFO -- : (0.000309s) SELECT * FROM `users`
+I, [2022-03-21T13:56:53.121871 #155]  INFO -- : (0.075101s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T13:56:53.133040 #155]  INFO -- : (0.000172s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T13:56:53.133355 #155]  INFO -- : (0.000027s) BEGIN
+I, [2022-03-21T13:56:53.133793 #155]  INFO -- : (0.000212s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T13:56:53.134083 #155]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:56:53.205252 #155]  INFO -- : (0.071051s) COMMIT
+I, [2022-03-21T13:56:53.208014 #155]  INFO -- : (0.000283s) SELECT * FROM `users`
+I, [2022-03-21T13:56:53.214046 #155]  INFO -- : (0.000167s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:56:53.214434 #155]  INFO -- : (0.000189s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-03-21T13:56:53.299313 #155]  INFO -- : (0.071338s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T13:56:53.301161 #155]  INFO -- : (0.000326s) SELECT * FROM `users`
+I, [2022-03-21T13:56:53.307938 #155]  INFO -- : (0.000174s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:56:53.328431 #155]  INFO -- : (0.000175s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T13:56:53.328756 #155]  INFO -- : (0.000031s) BEGIN
+I, [2022-03-21T13:56:53.329193 #155]  INFO -- : (0.000210s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T13:56:53.329469 #155]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:56:53.399878 #155]  INFO -- : (0.070291s) COMMIT
+I, [2022-03-21T13:56:53.402645 #155]  INFO -- : (0.000328s) SELECT * FROM `users`
+I, [2022-03-21T13:56:53.499148 #155]  INFO -- : (0.076047s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T13:56:53.505954 #155]  INFO -- : (0.000172s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-21T13:56:53.518284 #155]  INFO -- : (0.000169s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-03-21T13:56:53.530606 #155]  INFO -- : (0.000176s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:56:53.542634 #155]  INFO -- : (0.000169s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:56:53.559200 #155]  INFO -- : (0.000176s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:56:53.572248 #155]  INFO -- : (0.000169s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:56:53.572567 #155]  INFO -- : (0.000027s) BEGIN
+I, [2022-03-21T13:56:53.573022 #155]  INFO -- : (0.000228s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test2', 'test_email', 'poster', 'UOS', 'abc')
+I, [2022-03-21T13:56:53.573294 #155]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:56:53.636990 #155]  INFO -- : (0.063578s) COMMIT
+I, [2022-03-21T13:56:53.651143 #155]  INFO -- : (0.000168s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:56:53.651622 #155]  INFO -- : (0.000101s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-03-21T13:56:53.723250 #155]  INFO -- : (0.064941s) DELETE FROM `users` WHERE (`username` = 'Test2')
+I, [2022-03-21T13:56:53.752606 #155]  INFO -- : (0.000049s) BEGIN
+I, [2022-03-21T13:56:53.754179 #155]  INFO -- : (0.001217s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T13:56:53.754538 #155]  INFO -- : (0.000160s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T13:56:53.813811 #155]  INFO -- : (0.059154s) COMMIT
+I, [2022-03-21T13:56:53.818583 #155]  INFO -- : (0.000263s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:53.915090 #155]  INFO -- : (0.064945s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T13:56:53.986541 #155]  INFO -- : (0.000338s) SELECT * FROM `users`
+I, [2022-03-21T13:56:54.000297 #155]  INFO -- : (0.000229s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:54.041857 #155]  INFO -- : (0.000177s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-03-21T13:56:54.042196 #155]  INFO -- : (0.000028s) BEGIN
+I, [2022-03-21T13:56:54.042715 #155]  INFO -- : (0.000213s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', 'Test25_Institution', 'Test25_Password')
+I, [2022-03-21T13:56:54.043009 #155]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-03-21T13:56:54.110139 #155]  INFO -- : (0.067008s) COMMIT
+I, [2022-03-21T13:56:54.176579 #155]  INFO -- : (0.057314s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-03-21T13:56:54.216142 #155]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE (`username` = 'abjzxncc') LIMIT 1
+I, [2022-03-21T13:56:54.242975 #155]  INFO -- : (0.000230s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:54.249057 #155]  INFO -- : (0.000175s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:56:54.266697 #155]  INFO -- : (0.000052s) BEGIN
+I, [2022-03-21T13:56:54.267258 #155]  INFO -- : (0.000241s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T13:56:54.267595 #155]  INFO -- : (0.000148s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T13:56:54.351823 #155]  INFO -- : (0.084101s) COMMIT
+I, [2022-03-21T13:56:54.354689 #155]  INFO -- : (0.000240s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:54.433999 #155]  INFO -- : (0.066986s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T13:56:54.444840 #155]  INFO -- : (0.000048s) BEGIN
+I, [2022-03-21T13:56:54.445364 #155]  INFO -- : (0.000227s) INSERT INTO `posts` (`id`, `title`, `topic`, `institution`, `link`) VALUES (NULL, 'Test26_Title', 'Test26_Topic', 'Test26_Institution', 'Test26_Link')
+I, [2022-03-21T13:56:54.445679 #155]  INFO -- : (0.000133s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-03-21T13:56:54.515556 #155]  INFO -- : (0.069755s) COMMIT
+I, [2022-03-21T13:56:54.518589 #155]  INFO -- : (0.000279s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:54.524789 #155]  INFO -- : (0.000175s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%Test26_Institution%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:56:54.525130 #155]  INFO -- : (0.000154s) SELECT * FROM `posts` WHERE (`institution` LIKE '%Test26_Institution%' ESCAPE '\')
+I, [2022-03-21T13:56:54.608994 #155]  INFO -- : (0.069695s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-03-21T13:56:54.610882 #155]  INFO -- : (0.000265s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:54.617223 #155]  INFO -- : (0.000157s) SELECT count(*) AS 'count' FROM `posts` WHERE (`institution` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-03-21T13:56:54.623029 #155]  INFO -- : (0.000221s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:54.624115 #155]  INFO -- : (0.000180s) SELECT * FROM `posts`
+I, [2022-03-21T13:56:54.636086 #155]  INFO -- : (0.000291s) SELECT * FROM `users`
+I, [2022-03-21T13:56:54.637402 #155]  INFO -- : (0.000219s) SELECT * FROM `users`
+I, [2022-03-21T13:56:54.649474 #155]  INFO -- : (0.000288s) SELECT * FROM `users`
+I, [2022-03-21T13:56:54.651578 #155]  INFO -- : (0.000195s) SELECT * FROM `posts`
