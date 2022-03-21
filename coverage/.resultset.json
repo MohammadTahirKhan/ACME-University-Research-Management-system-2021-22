@@ -36,7 +36,8 @@
           1,
           null,
           null,
-          1
+          1,
+          null
         ]
       },
       "/home/codio/workspace/project/models/post.rb": {
@@ -289,6 +290,6 @@
         ]
       }
     },
-    "timestamp": 1647871014
+    "timestamp": 1647871177
   }
 }
