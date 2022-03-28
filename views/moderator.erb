@@ -24,6 +24,9 @@
                     <a href="/moderator" id="moderator">Moderator</a>
                 </li>
                 <li>
+                     <a href="/viewer" id="viewer">Viewer</a>
+                </li>
+                <li>
                     <a href="/logout" id="logout">Logout</a>
                 </li>
 
@@ -31,7 +34,54 @@
         </nav>
     </header>
     <main>
-    <p></p>
+
+    <form>
+        <p id="search_area">Search by University: 
+        <input type="text" id="search_area" name="post_search" value="<%= h @post_search %>"/>
+        <input type="submit" id="submit" value="Submit" /></p>
+    </form>
+
+        <% if @posts.count > 0 %>
+            <table id="post_table">
+                <tr id="columns">
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Topic</th>
+                    <th>Institution</th>
+                    <th>Link</th>
+                    <th calss="butn_col"></th>
+                    <th calss="butn_col"></th>
+                    
+
+
+                </tr>
+                <tr>
+                <% @posts.each do |post|%>
+                    <td class="row"><%=h post.id %></td>
+                    <td class="row"><%=h post.title %></td>
+                    <td class="row"><%=h post.topic %></td>
+                    <td class="row"><%=h post.institution %></td>
+                    <td class="row"><%=h post.link %></td>
+                     <td class="butn_row">
+                    <form method="post">
+                        <input type="hidden" name="id" value="<%= post.id %>" /> 
+                        <input type="submit" id="approve" value="Approve" />
+                    </form>
+                    </td>
+                    <td class="butn_row"> 
+                    <form method="post" action="/delete">
+                        <input type="hidden" name="id" value="<%= post.id %>" />
+                        <input type="submit" id="disapprove" value="Disapprove" />
+                    </form>
+                    </td>
+                </tr>
+                <% end %> 
+            </table>
+            <% else %>
+                <p>The database is empty!</p>
+                <p>There are no posts!</p>
+            <% end %>
+        <p></p>
     </main>
      <footer>
         <p class="copyright">© com1001 Group34, 2021-22</p>

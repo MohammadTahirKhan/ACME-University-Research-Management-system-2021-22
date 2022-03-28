@@ -9,7 +9,7 @@ describe "Create Post Page" do
     fill_in "link", with: "Test26_Link"
     click_button "Submit"
 
-    visit "/viewer"
+    visit "/moderator"
     expect(page).to have_content "Test26_Title"
     expect(page).to have_content "Test26_Topic"
     expect(page).to have_content "Test26_Institution"

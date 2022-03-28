@@ -10,6 +10,6 @@ get "/admin" do
   else
     User.where(Sequel.like(:username, "%#{@user_search}%"))
   end
-
+  
   erb :admin
 end

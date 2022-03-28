@@ -8,9 +8,9 @@ get "/home" do
   erb :home
 end
 
-get "/moderator" do
-  erb :moderator
-end
+# get "/moderator" do
+#   erb :moderator
+# end
 
 get "/admin" do
   erb :admin

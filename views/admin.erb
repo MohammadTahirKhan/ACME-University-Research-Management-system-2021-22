@@ -22,6 +22,12 @@
                 <li class="pagenow">
                     <a href="/admin" id="Admin">Admin</a>
                 </li>
+                 <li>
+                     <a href="/moderator" id="moderator">Moderator</a>
+                </li>
+                <li>
+                     <a href="/viewer" id="viewer">Viewer</a>
+                </li>
                 <li>
                     <a href="/logout" id="logout">Logout</a>
                 </li>
@@ -36,6 +42,7 @@
         <input type="text" id="search_area" name="user_search" value="<%= h @user_search %>"/>
         <input type="submit" id="submit" value="Submit" /></p>
     </form>
+
 
     <% if @users.count > 0 %>
     <table id="user_table">
