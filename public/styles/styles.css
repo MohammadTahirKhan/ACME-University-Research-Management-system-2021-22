@@ -71,9 +71,6 @@ header .nav_menu a:hover {
     transform: scale(1, 1);
 }
 
-header .pagenow a {
-    color: rgb(218, 93, 93);
-}
 
 header .logo {
     margin: 0 auto;
@@ -129,9 +126,7 @@ main #login_area,
 #create_account_area,
 #create_post_area,
 #post_table,
-#user_table,
-#mod,
-#view {
+#user_table {
     width: 100%;
     background-color: rgb(25, 61, 102);
     color: white;
@@ -154,7 +149,7 @@ main #submit,
 #log_in,
 #reset,
 #approve,
-#disapprove {
+#disapprove{
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: bold;
@@ -163,12 +158,14 @@ main #submit,
     text-align: center;
 }
 
+
 #approve {
     color: aliceblue;
     background-color: rgb(3, 179, 3);
     margin-top: 10px;
     margin-right: 0;
     padding-right: 0;
+    text-align: center;
 }
 
 #disapprove {
@@ -177,7 +174,17 @@ main #submit,
     margin-top: 10px;
     margin-right: 0;
     padding-right: 0;
-    /* margin-left: 50px; */
+    text-align: center;
+}
+#acc_change {
+    color: rgb(44, 113, 170);
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-right: 0;
+    padding-right: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 main #approve:hover,
@@ -189,7 +196,10 @@ main #approve:hover,
 
 main #create_acc,
 #forgot_pass,
-#guest {
+#guest,
+#mod,
+#view,
+#adm {
     color: rgb(12, 22, 53);
     background-color: aliceblue;
     border: 1px black;
@@ -205,7 +215,11 @@ main #submit:hover,
 #log_in:hover,
 #create_acc:hover,
 #forgot_pass:hover,
-#guest:hover {
+#guest:hover,
+#mod:hover,
+#view:hover,
+#adm:hover,
+#acc_change:hover  {
     color: rgb(61, 202, 245);
     font-weight: bolder;
     transform: scale(1, 1);
@@ -224,7 +238,7 @@ main .butn_row, .butn_columns {
 }
 
 main #columns, #butn_columns {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     border-bottom: 1px black solid;
     background-color: rgba(0, 0, 0, 0.699);
 }

@@ -20,5 +20,18 @@ class User < Sequel::Model
     !other_user.nil? && other_user.password == password
   end
 
-  
+  def is_viewer?
+    other_user = User.first(username: username)
+    !other_user.nil? && other_user.password == password && other_user.user_type == "viewer"
+  end
+
+  def is_moderator?
+    other_user = User.first(username: username)
+    !other_user.nil? && other_user.password == password && other_user.user_type == "moderator"
+  end
+
+  def is_admin?
+    other_user = User.first(username: username)
+    !other_user.nil? && other_user.password == password && other_user.user_type == "admin"
+  end
 end

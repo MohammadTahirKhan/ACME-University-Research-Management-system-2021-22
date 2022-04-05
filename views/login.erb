@@ -1,20 +1,4 @@
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acme | viewer</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <h>ACME</h>
-        </div>
-    </header>
-    <main>
+<%= erb :"common/header" %>
         <h1 id="log_in_"> Login </h1>
         <div id="login_area">
             <form id="form1" name="form1" method="post" action ="/login">
@@ -46,7 +30,4 @@
             <a id="guest" href="/create_post">Log in as guest</a>
         </div>
         
-    </main>
-</body>
-
-</html>
+<%= erb :"common/footer" %>

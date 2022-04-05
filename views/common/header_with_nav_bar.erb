@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme | viewer</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+   <header>
+
+        <nav class="navbar">
+            <div class="logo">
+                <h>ACME</h>
+            </div>
+            <ul class="nav_menu">
+                <% if session[:logged_in]==true %>
+                    <li>
+                        <a href="/home" id="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/create_post" id="post">Post</a>
+                    </li>
+                    <% if session[:is_admin]==true %>
+                        <li>
+                        <a href="/admin" id="Admin">Admin</a>
+                        </li>
+                        <li>
+                            <a href="/moderator" id="moderator">Moderator</a>
+                        </li>
+                    <% end %>
+                    <% if session[:is_moderator]==true %>
+                        <li>
+                            <a href="/moderator" id="moderator">Moderator</a>
+                        </li>
+                    <% end %>
+                    <li>
+                        <a href="/viewer" id="viewer">Viewer</a>
+                    </li>
+                    <li>
+                        <a href="/profile" id="profile">Profile</a>
+                    </li>
+                    <li>
+                        <a href="/logout" id="logout">Logout</a>
+                    </li>
+                <% else %>
+                    <li>
+                        <a href="/home" id="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/create_post" id="post">Post</a>
+                    </li>
+                    <li>
+                        <a href="/viewer" id="viewer">Viewer</a>
+                    </li>
+                    <li>
+                        <a href="/logout" id="logout">Logout</a>
+                    </li>
+                <% end %>
+
+            </ul>
+        </nav>
+    </header>
+    <main>

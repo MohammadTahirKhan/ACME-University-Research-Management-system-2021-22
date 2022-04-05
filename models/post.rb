@@ -1,6 +1,7 @@
 class Post < Sequel::Model
 
   def load(params)
+    self.poster_name =  params.fetch("poster_name", "").strip
     self.id =  params.fetch("id", "").strip
     self.title =  params.fetch("title", "").strip
     self.topic =  params.fetch("topic", "").strip

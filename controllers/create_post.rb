@@ -27,6 +27,7 @@ post "/create_post" do
     @link_field.strip!
 
     @posts.save_changes
+
     redirect "/create_post"
   else
     # now proceed to validation

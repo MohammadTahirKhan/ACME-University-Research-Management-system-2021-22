@@ -1,4 +1,5 @@
 CREATE TABLE posts (
+    poster_name text,
     id INTEGER PRIMARY KEY,
     title TEXT,
     topic TEXT,
@@ -18,11 +19,11 @@ CREATE TABLE users (
 
 -- Insert records of data into the database:
 
-INSERT INTO posts VALUES(1,"computer science", "computer science", "university of sheffield", "abc.abc.abc", "Approved");
-INSERT INTO posts VALUES(2,"software engineering", "software engineering", "university of sheffield", "bcd.bcd.bcd", "Approved");
-INSERT INTO posts VALUES(3,"AI", "AI", "university of oxford", "cde.cde.cde" , "Approved");
-INSERT INTO posts VALUES(4,"Web and Internet technology", "web development", "university of sheffield", "bcd.bcd.d", "Approved");
-INSERT INTO posts VALUES(5,"Physics", "quantum physics", "university of oxford", "cde.cd.cde" , "Approved");
+-- INSERT INTO posts VALUES(1,"computer science", "computer science", "university of sheffield", "abc.abc.abc", "Approved");
+-- INSERT INTO posts VALUES(2,"software engineering", "software engineering", "university of sheffield", "bcd.bcd.bcd", "Approved");
+-- INSERT INTO posts VALUES(3,"AI", "AI", "university of oxford", "cde.cde.cde" , "Approved");
+-- INSERT INTO posts VALUES(4,"Web and Internet technology", "web development", "university of sheffield", "bcd.bcd.d", "Approved");
+-- INSERT INTO posts VALUES(5,"Physics", "quantum physics", "university of oxford", "cde.cd.cde" , "Approved");
 
 
 -- Insert records of data into the database:

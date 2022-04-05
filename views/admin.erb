@@ -1,42 +1,6 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acme | viewer</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-   <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h>ACME</h>
-            </div>
-            <ul class="nav_menu">
-                <li>
-                    <a href="/home" id="home">Home</a>
-                </li>
-                <li>
-                    <a href="/create_post" id="post">Post</a>
-                </li>
-                <li class="pagenow">
-                    <a href="/admin" id="Admin">Admin</a>
-                </li>
-                 <li>
-                     <a href="/moderator" id="moderator">Moderator</a>
-                </li>
-                <li>
-                     <a href="/viewer" id="viewer">Viewer</a>
-                </li>
-                <li>
-                    <a href="/logout" id="logout">Logout</a>
-                </li>
+<%= erb :"common/header_with_nav_bar" %>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-
+    <h1>Admin page :</h1>
     <form>
         <p id="search_area">Search by username: 
         <input type="text" id="search_area" name="user_search" value="<%= h @user_search %>"/>
@@ -53,6 +17,8 @@
         <th>User_type</th>
         <th>Institution</th>
         <th>Password</th>
+        <th colspan=4>change account type to:</th>
+
       </tr>
     <% @users.each do |user|%>
       <tr>
@@ -62,6 +28,31 @@
         <td class="row"><%=h user.user_type %></td>
         <td class="row"><%=h user.institution %></td>
         <td class="row"><%=h user.password %></td>
+        <td class="butn_row">
+        
+        <form method="post" action="edit_mod">
+            <input type="hidden" name="id" value="<%= user.id %>" /> 
+            <input type="submit" id="acc_change" value="moderator" />
+        </form>
+        </td>
+        <td class="butn_row">
+        <form method="post" action="edit_admin">
+            <input type="hidden" name="id" value="<%= user.id %>" /> 
+            <input type="submit" id="acc_change" value="admin" />
+        </form>
+        </td>
+        <td class="butn_row">
+        <form method="post" action="edit_view">
+            <input type="hidden" name="id" value="<%= user.id %>" /> 
+            <input type="submit" id="acc_change" value="viewer" />
+        </form>
+        </td>
+        <td class="butn_row">
+        <form method="post" action="edit_poster">
+            <input type="hidden" name="id" value="<%= user.id %>" /> 
+            <input type="submit" id="acc_change" value="poster" />
+        </form>
+        </td>
       </tr>
     <% end %> 
     </table>
@@ -69,10 +60,5 @@
         <p>The database is empty!</p>
         <p>There are no users!</p>
     <% end %>
-    </main>
-     <footer>
-        <p class="copyright">© com1001 Group34, 2021-22</p>
-        <p>Please note: This is a fictitious website and all the information written is completely fabricated.</p>
-    </footer>
-</body>
-</html>
+    
+    <%= erb :"common/footer" %>
