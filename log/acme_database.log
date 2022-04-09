@@ -10506,3 +10506,228 @@ I, [2022-04-05T16:25:14.916323 #267]  INFO -- : (0.000027s) BEGIN
 I, [2022-04-05T16:25:14.916818 #267]  INFO -- : (0.000248s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 2)
 I, [2022-04-05T16:25:14.997965 #267]  INFO -- : (0.081006s) COMMIT
 I, [2022-04-05T16:25:16.912825 #267]  INFO -- : (0.000181s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-05T16:28:08.538341 #291]  INFO -- : (0.000192s) PRAGMA foreign_keys = 1
+I, [2022-04-05T16:28:08.538485 #291]  INFO -- : (0.000038s) PRAGMA case_sensitive_like = 1
+I, [2022-04-05T16:28:08.539081 #291]  INFO -- : (0.000072s) SELECT sqlite_version()
+I, [2022-04-05T16:28:08.539384 #291]  INFO -- : (0.000145s) PRAGMA table_info('posts')
+I, [2022-04-05T16:28:08.540498 #291]  INFO -- : (0.000129s) PRAGMA table_info('users')
+I, [2022-04-05T16:28:16.171749 #291]  INFO -- : (0.000170s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-05T16:28:16.172094 #291]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-05T16:28:16.172433 #291]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-05T16:28:16.172660 #291]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-05T16:28:17.791726 #291]  INFO -- : (0.000300s) SELECT * FROM `users`
+I, [2022-04-05T16:28:22.087807 #291]  INFO -- : (0.000227s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-05T16:28:27.286043 #291]  INFO -- : (0.000155s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-05T16:28:28.895187 #291]  INFO -- : (0.000180s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-05T16:28:53.927486 #291]  INFO -- : (0.000184s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-05T16:28:53.927796 #291]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-05T16:28:53.928027 #291]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-05T16:28:53.928257 #291]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-05T16:28:58.148482 #291]  INFO -- : (0.000236s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-09T16:17:21.723733 #254]  INFO -- : (0.004618s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:17:21.728110 #254]  INFO -- : (0.000031s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:17:21.729063 #254]  INFO -- : (0.000105s) SELECT sqlite_version()
+I, [2022-04-09T16:17:21.729396 #254]  INFO -- : (0.000159s) PRAGMA table_info('posts')
+I, [2022-04-09T16:17:21.730715 #254]  INFO -- : (0.000143s) PRAGMA table_info('users')
+I, [2022-04-09T16:17:32.347235 #254]  INFO -- : (0.000178s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:17:32.347575 #254]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:17:32.347908 #254]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:17:32.348130 #254]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:19:00.891732 #267]  INFO -- : (0.000195s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:19:00.891864 #267]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:19:00.892561 #267]  INFO -- : (0.000076s) SELECT sqlite_version()
+I, [2022-04-09T16:19:00.892914 #267]  INFO -- : (0.000158s) PRAGMA table_info('posts')
+I, [2022-04-09T16:19:00.894086 #267]  INFO -- : (0.000131s) PRAGMA table_info('users')
+I, [2022-04-09T16:19:49.474390 #271]  INFO -- : (0.000185s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:19:49.474579 #271]  INFO -- : (0.000026s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:19:49.475220 #271]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2022-04-09T16:19:49.475537 #271]  INFO -- : (0.000159s) PRAGMA table_info('posts')
+I, [2022-04-09T16:19:49.476649 #271]  INFO -- : (0.000130s) PRAGMA table_info('users')
+I, [2022-04-09T16:20:01.049666 #271]  INFO -- : (0.000176s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:20:01.050017 #271]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:20:01.050358 #271]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:20:01.050637 #271]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:21:10.707196 #282]  INFO -- : (0.000183s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:21:10.707323 #282]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:21:10.707918 #282]  INFO -- : (0.000069s) SELECT sqlite_version()
+I, [2022-04-09T16:21:10.708232 #282]  INFO -- : (0.000155s) PRAGMA table_info('posts')
+I, [2022-04-09T16:21:10.709358 #282]  INFO -- : (0.000129s) PRAGMA table_info('users')
+I, [2022-04-09T16:21:24.196316 #282]  INFO -- : (0.000172s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:21:24.196660 #282]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:21:24.197034 #282]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:21:24.197263 #282]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:22:17.464205 #293]  INFO -- : (0.000187s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:22:17.464336 #293]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:22:17.465153 #293]  INFO -- : (0.000078s) SELECT sqlite_version()
+I, [2022-04-09T16:22:17.465498 #293]  INFO -- : (0.000162s) PRAGMA table_info('posts')
+I, [2022-04-09T16:22:17.466801 #293]  INFO -- : (0.000150s) PRAGMA table_info('users')
+I, [2022-04-09T16:22:25.875684 #293]  INFO -- : (0.000172s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:22:25.876023 #293]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:22:25.876333 #293]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:22:25.876542 #293]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:23:27.652977 #304]  INFO -- : (0.000350s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:23:27.653142 #304]  INFO -- : (0.000029s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:23:27.653922 #304]  INFO -- : (0.000088s) SELECT sqlite_version()
+I, [2022-04-09T16:23:27.654284 #304]  INFO -- : (0.000165s) PRAGMA table_info('posts')
+I, [2022-04-09T16:23:27.655730 #304]  INFO -- : (0.000212s) PRAGMA table_info('users')
+I, [2022-04-09T16:23:37.078362 #304]  INFO -- : (0.000181s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:23:37.078723 #304]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:23:37.079039 #304]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:23:37.079245 #304]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:24:55.157111 #315]  INFO -- : (0.000199s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:24:55.157265 #315]  INFO -- : (0.000028s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:24:55.157916 #315]  INFO -- : (0.000076s) SELECT sqlite_version()
+I, [2022-04-09T16:24:55.158272 #315]  INFO -- : (0.000172s) PRAGMA table_info('posts')
+I, [2022-04-09T16:24:55.159465 #315]  INFO -- : (0.000130s) PRAGMA table_info('users')
+I, [2022-04-09T16:25:08.911552 #315]  INFO -- : (0.000165s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:25:08.911875 #315]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:25:08.912184 #315]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:25:08.912386 #315]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:26:36.605445 #326]  INFO -- : (0.000189s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:26:36.605575 #326]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:26:36.606215 #326]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2022-04-09T16:26:36.606589 #326]  INFO -- : (0.000211s) PRAGMA table_info('posts')
+I, [2022-04-09T16:26:36.607748 #326]  INFO -- : (0.000130s) PRAGMA table_info('users')
+I, [2022-04-09T16:26:46.465595 #326]  INFO -- : (0.000173s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:26:46.465904 #326]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:26:46.466215 #326]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:26:46.466420 #326]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:29:24.482201 #338]  INFO -- : (0.000207s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:29:24.482359 #338]  INFO -- : (0.000029s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:29:24.483187 #338]  INFO -- : (0.000082s) SELECT sqlite_version()
+I, [2022-04-09T16:29:24.483549 #338]  INFO -- : (0.000192s) PRAGMA table_info('posts')
+I, [2022-04-09T16:29:24.484753 #338]  INFO -- : (0.000146s) PRAGMA table_info('users')
+I, [2022-04-09T16:29:34.231635 #338]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:29:34.231991 #338]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:29:34.232382 #338]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:29:34.232618 #338]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:30:15.980147 #349]  INFO -- : (0.000185s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:30:15.980272 #349]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:30:15.981043 #349]  INFO -- : (0.000071s) SELECT sqlite_version()
+I, [2022-04-09T16:30:15.981367 #349]  INFO -- : (0.000151s) PRAGMA table_info('posts')
+I, [2022-04-09T16:30:15.982592 #349]  INFO -- : (0.000155s) PRAGMA table_info('users')
+I, [2022-04-09T16:30:24.273710 #349]  INFO -- : (0.000220s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:30:24.274143 #349]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:30:24.274563 #349]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:30:24.274784 #349]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:32:11.855835 #360]  INFO -- : (0.000257s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:32:11.856001 #360]  INFO -- : (0.000029s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:32:11.856851 #360]  INFO -- : (0.000102s) SELECT sqlite_version()
+I, [2022-04-09T16:32:11.857302 #360]  INFO -- : (0.000225s) PRAGMA table_info('posts')
+I, [2022-04-09T16:32:11.859020 #360]  INFO -- : (0.000193s) PRAGMA table_info('users')
+I, [2022-04-09T16:32:22.598032 #360]  INFO -- : (0.000233s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:32:22.598503 #360]  INFO -- : (0.000180s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:32:22.598931 #360]  INFO -- : (0.000140s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:32:22.599212 #360]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:32:48.035191 #371]  INFO -- : (0.000185s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:32:48.035353 #371]  INFO -- : (0.000024s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:32:48.036009 #371]  INFO -- : (0.000076s) SELECT sqlite_version()
+I, [2022-04-09T16:32:48.036358 #371]  INFO -- : (0.000158s) PRAGMA table_info('posts')
+I, [2022-04-09T16:32:48.037533 #371]  INFO -- : (0.000130s) PRAGMA table_info('users')
+I, [2022-04-09T16:33:01.849210 #371]  INFO -- : (0.000345s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:33:01.849628 #371]  INFO -- : (0.000151s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:33:01.850084 #371]  INFO -- : (0.000157s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:33:01.850358 #371]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:34:57.541594 #383]  INFO -- : (0.000207s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:34:57.541729 #383]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:34:57.542334 #383]  INFO -- : (0.000072s) SELECT sqlite_version()
+I, [2022-04-09T16:34:57.542676 #383]  INFO -- : (0.000155s) PRAGMA table_info('posts')
+I, [2022-04-09T16:34:57.543783 #383]  INFO -- : (0.000129s) PRAGMA table_info('users')
+I, [2022-04-09T16:35:05.783665 #394]  INFO -- : (0.000179s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:35:05.783789 #394]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:35:05.784385 #394]  INFO -- : (0.000067s) SELECT sqlite_version()
+I, [2022-04-09T16:35:05.784689 #394]  INFO -- : (0.000151s) PRAGMA table_info('posts')
+I, [2022-04-09T16:35:05.785820 #394]  INFO -- : (0.000126s) PRAGMA table_info('users')
+I, [2022-04-09T16:35:16.464150 #394]  INFO -- : (0.000171s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:35:16.464462 #394]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:35:16.464816 #394]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:35:16.465192 #394]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:37:29.750196 #405]  INFO -- : (0.000175s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:37:29.750319 #405]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:37:29.750929 #405]  INFO -- : (0.000068s) SELECT sqlite_version()
+I, [2022-04-09T16:37:29.751231 #405]  INFO -- : (0.000146s) PRAGMA table_info('posts')
+I, [2022-04-09T16:37:29.752345 #405]  INFO -- : (0.000128s) PRAGMA table_info('users')
+I, [2022-04-09T16:37:41.113377 #405]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:37:41.113746 #405]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:37:41.114072 #405]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:37:41.114284 #405]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:40:57.530471 #416]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:40:57.530598 #416]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:40:57.531200 #416]  INFO -- : (0.000067s) SELECT sqlite_version()
+I, [2022-04-09T16:40:57.531502 #416]  INFO -- : (0.000144s) PRAGMA table_info('posts')
+I, [2022-04-09T16:40:57.532616 #416]  INFO -- : (0.000127s) PRAGMA table_info('users')
+I, [2022-04-09T16:41:06.169694 #416]  INFO -- : (0.000170s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:41:06.170008 #416]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:41:06.170321 #416]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:41:06.170558 #416]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:42:45.342345 #427]  INFO -- : (0.000184s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:42:45.342503 #427]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:42:45.343116 #427]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2022-04-09T16:42:45.343419 #427]  INFO -- : (0.000143s) PRAGMA table_info('posts')
+I, [2022-04-09T16:42:45.344569 #427]  INFO -- : (0.000130s) PRAGMA table_info('users')
+I, [2022-04-09T16:42:55.643509 #427]  INFO -- : (0.000173s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:42:55.643817 #427]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:42:55.644129 #427]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:42:55.644331 #427]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:43:57.074191 #439]  INFO -- : (0.000176s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:43:57.074317 #439]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:43:57.074990 #439]  INFO -- : (0.000068s) SELECT sqlite_version()
+I, [2022-04-09T16:43:57.075298 #439]  INFO -- : (0.000151s) PRAGMA table_info('posts')
+I, [2022-04-09T16:43:57.076426 #439]  INFO -- : (0.000130s) PRAGMA table_info('users')
+I, [2022-04-09T16:44:19.895235 #449]  INFO -- : (0.000189s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:44:19.895362 #449]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:44:19.896012 #449]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2022-04-09T16:44:19.896363 #449]  INFO -- : (0.000167s) PRAGMA table_info('posts')
+I, [2022-04-09T16:44:19.897711 #449]  INFO -- : (0.000129s) PRAGMA table_info('users')
+I, [2022-04-09T16:44:30.016982 #449]  INFO -- : (0.000171s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:44:30.017460 #449]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:44:30.017770 #449]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:44:30.017995 #449]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:45:07.755817 #460]  INFO -- : (0.000257s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:45:07.755970 #460]  INFO -- : (0.000024s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:45:07.756589 #460]  INFO -- : (0.000071s) SELECT sqlite_version()
+I, [2022-04-09T16:45:07.756896 #460]  INFO -- : (0.000151s) PRAGMA table_info('posts')
+I, [2022-04-09T16:45:07.758146 #460]  INFO -- : (0.000127s) PRAGMA table_info('users')
+I, [2022-04-09T16:45:11.098177 #460]  INFO -- : (0.000224s) SELECT * FROM `users`
+I, [2022-04-09T16:46:56.055456 #471]  INFO -- : (0.000179s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:46:56.055583 #471]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:46:56.056218 #471]  INFO -- : (0.000069s) SELECT sqlite_version()
+I, [2022-04-09T16:46:56.056550 #471]  INFO -- : (0.000156s) PRAGMA table_info('posts')
+I, [2022-04-09T16:46:56.057728 #471]  INFO -- : (0.000131s) PRAGMA table_info('users')
+I, [2022-04-09T16:47:02.682236 #471]  INFO -- : (0.000178s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:47:02.682577 #471]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:47:02.682895 #471]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:47:02.683098 #471]  INFO -- : (0.000094s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:47:04.161571 #471]  INFO -- : (0.000219s) SELECT * FROM `users`
+I, [2022-04-09T16:48:36.504989 #483]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:48:36.505133 #483]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:48:36.505750 #483]  INFO -- : (0.000069s) SELECT sqlite_version()
+I, [2022-04-09T16:48:36.506049 #483]  INFO -- : (0.000144s) PRAGMA table_info('posts')
+I, [2022-04-09T16:48:36.507207 #483]  INFO -- : (0.000128s) PRAGMA table_info('users')
+I, [2022-04-09T16:48:45.293030 #483]  INFO -- : (0.000235s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:48:45.293488 #483]  INFO -- : (0.000157s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:48:45.293966 #483]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:48:45.294262 #483]  INFO -- : (0.000143s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:48:52.142274 #483]  INFO -- : (0.000206s) SELECT * FROM `users`
+I, [2022-04-09T16:48:56.828274 #483]  INFO -- : (0.000158s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-09T16:48:59.031019 #483]  INFO -- : (0.000183s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-09T16:49:03.232204 #483]  INFO -- : (0.000193s) SELECT * FROM `users`
+I, [2022-04-09T16:49:42.141936 #495]  INFO -- : (0.000187s) PRAGMA foreign_keys = 1
+I, [2022-04-09T16:49:42.142075 #495]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2022-04-09T16:49:42.142780 #495]  INFO -- : (0.000085s) SELECT sqlite_version()
+I, [2022-04-09T16:49:42.143162 #495]  INFO -- : (0.000199s) PRAGMA table_info('posts')
+I, [2022-04-09T16:49:42.144460 #495]  INFO -- : (0.000200s) PRAGMA table_info('users')
+I, [2022-04-09T16:49:51.127293 #495]  INFO -- : (0.000209s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:49:51.127636 #495]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:49:51.127969 #495]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:49:51.128206 #495]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-09T16:49:54.691159 #495]  INFO -- : (0.000200s) SELECT * FROM `users`
+I, [2022-04-09T16:49:56.026669 #495]  INFO -- : (0.000156s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-09T16:49:57.208294 #495]  INFO -- : (0.000220s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-09T16:49:58.199927 #495]  INFO -- : (0.000196s) SELECT * FROM `users`
+I, [2022-04-09T16:50:18.719663 #495]  INFO -- : (0.000168s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-04-09T16:50:18.719929 #495]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-04-09T16:50:18.720131 #495]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-04-09T16:50:18.720367 #495]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-04-09T16:50:21.079476 #495]  INFO -- : (0.000190s) SELECT * FROM `users`
+I, [2022-04-09T16:50:28.668561 #495]  INFO -- : (0.000231s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
