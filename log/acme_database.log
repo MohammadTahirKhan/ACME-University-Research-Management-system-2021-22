@@ -10731,3 +10731,83 @@ I, [2022-04-09T16:50:18.720131 #495]  INFO -- : (0.000095s) SELECT * FROM `users
 I, [2022-04-09T16:50:18.720367 #495]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
 I, [2022-04-09T16:50:21.079476 #495]  INFO -- : (0.000190s) SELECT * FROM `users`
 I, [2022-04-09T16:50:28.668561 #495]  INFO -- : (0.000231s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T11:29:21.648397 #286]  INFO -- : (0.000198s) PRAGMA foreign_keys = 1
+I, [2022-04-26T11:29:21.648481 #286]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2022-04-26T11:29:21.648944 #286]  INFO -- : (0.000065s) SELECT sqlite_version()
+I, [2022-04-26T11:29:21.649172 #286]  INFO -- : (0.000105s) PRAGMA table_info('posts')
+I, [2022-04-26T11:29:21.649981 #286]  INFO -- : (0.000096s) PRAGMA table_info('users')
+I, [2022-04-26T11:29:39.115397 #286]  INFO -- : (0.000172s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-26T11:29:39.115707 #286]  INFO -- : (0.000091s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-26T11:29:39.115963 #286]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-26T11:29:39.116115 #286]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-04-26T11:29:43.652765 #286]  INFO -- : (0.000185s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T11:30:55.967696 #286]  INFO -- : (0.000172s) SELECT * FROM `users`
+I, [2022-04-26T11:30:56.515651 #286]  INFO -- : (0.000145s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T11:30:57.273178 #286]  INFO -- : (0.000165s) SELECT * FROM `users`
+I, [2022-04-26T11:31:20.725945 #286]  INFO -- : (0.000148s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T11:32:41.099715 #286]  INFO -- : (0.000150s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T11:33:25.609109 #286]  INFO -- : (0.000045s) BEGIN
+I, [2022-04-26T11:33:25.609676 #286]  INFO -- : (0.000306s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `link`, `approved`) VALUES ('admin', NULL, 'fsfa', 'fasfasf', 'asfasf', 'fasfa', 'Not Approved')
+I, [2022-04-26T11:33:25.609918 #286]  INFO -- : (0.000099s) SELECT * FROM `posts` WHERE `id` = 3
+I, [2022-04-26T11:33:25.675022 #286]  INFO -- : (0.065023s) COMMIT
+I, [2022-04-26T11:33:27.337122 #286]  INFO -- : (0.000199s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T11:33:32.804232 #286]  INFO -- : (0.000173s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T11:33:36.498114 #286]  INFO -- : (0.000177s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T11:33:37.682792 #286]  INFO -- : (0.000184s) SELECT * FROM `posts` WHERE `id` = '3'
+I, [2022-04-26T11:33:37.683116 #286]  INFO -- : (0.000020s) BEGIN
+I, [2022-04-26T11:33:37.683455 #286]  INFO -- : (0.000156s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 3)
+I, [2022-04-26T11:33:37.750148 #286]  INFO -- : (0.066600s) COMMIT
+I, [2022-04-26T11:33:40.089314 #286]  INFO -- : (0.000173s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T11:45:48.682222 #303]  INFO -- : (0.000796s) PRAGMA foreign_keys = 1
+I, [2022-04-26T11:45:48.682312 #303]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2022-04-26T11:45:48.682812 #303]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2022-04-26T11:45:48.683024 #303]  INFO -- : (0.000101s) PRAGMA table_info('posts')
+I, [2022-04-26T11:45:48.683839 #303]  INFO -- : (0.000100s) PRAGMA table_info('users')
+I, [2022-04-26T11:50:34.955647 #314]  INFO -- : (0.000169s) PRAGMA foreign_keys = 1
+I, [2022-04-26T11:50:34.955743 #314]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2022-04-26T11:50:34.956213 #314]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2022-04-26T11:50:34.956450 #314]  INFO -- : (0.000105s) PRAGMA table_info('posts')
+I, [2022-04-26T11:50:34.957329 #314]  INFO -- : (0.000101s) PRAGMA table_info('users')
+I, [2022-04-26T11:50:38.764610 #314]  INFO -- : (0.000174s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T11:52:10.495032 #325]  INFO -- : (0.000170s) PRAGMA foreign_keys = 1
+I, [2022-04-26T11:52:10.495106 #325]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2022-04-26T11:52:10.495583 #325]  INFO -- : (0.000056s) SELECT sqlite_version()
+I, [2022-04-26T11:52:10.495821 #325]  INFO -- : (0.000114s) PRAGMA table_info('posts')
+I, [2022-04-26T11:52:10.496709 #325]  INFO -- : (0.000095s) PRAGMA table_info('users')
+I, [2022-04-26T11:52:44.107258 #336]  INFO -- : (0.000210s) PRAGMA foreign_keys = 1
+I, [2022-04-26T11:52:44.107354 #336]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-04-26T11:52:44.107818 #336]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2022-04-26T11:52:44.108046 #336]  INFO -- : (0.000108s) PRAGMA table_info('posts')
+I, [2022-04-26T11:52:44.108882 #336]  INFO -- : (0.000096s) PRAGMA table_info('users')
+I, [2022-04-26T11:56:36.637536 #347]  INFO -- : (0.000299s) PRAGMA foreign_keys = 1
+I, [2022-04-26T11:56:36.637691 #347]  INFO -- : (0.000023s) PRAGMA case_sensitive_like = 1
+I, [2022-04-26T11:56:36.638573 #347]  INFO -- : (0.000103s) SELECT sqlite_version()
+I, [2022-04-26T11:56:36.639010 #347]  INFO -- : (0.000187s) PRAGMA table_info('posts')
+I, [2022-04-26T11:56:36.640548 #347]  INFO -- : (0.000183s) PRAGMA table_info('users')
+I, [2022-04-26T11:56:43.130251 #347]  INFO -- : (0.000243s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T11:58:02.380373 #359]  INFO -- : (0.000177s) PRAGMA foreign_keys = 1
+I, [2022-04-26T11:58:02.380468 #359]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2022-04-26T11:58:02.380929 #359]  INFO -- : (0.000052s) SELECT sqlite_version()
+I, [2022-04-26T11:58:02.381151 #359]  INFO -- : (0.000106s) PRAGMA table_info('posts')
+I, [2022-04-26T11:58:02.381964 #359]  INFO -- : (0.000100s) PRAGMA table_info('users')
+I, [2022-04-26T11:58:05.181750 #359]  INFO -- : (0.000179s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T12:01:08.036413 #372]  INFO -- : (0.000199s) PRAGMA foreign_keys = 1
+I, [2022-04-26T12:01:08.036522 #372]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2022-04-26T12:01:08.037071 #372]  INFO -- : (0.000069s) SELECT sqlite_version()
+I, [2022-04-26T12:01:08.037348 #372]  INFO -- : (0.000136s) PRAGMA table_info('posts')
+I, [2022-04-26T12:01:08.038337 #372]  INFO -- : (0.000131s) PRAGMA table_info('users')
+I, [2022-04-26T12:01:13.922460 #372]  INFO -- : (0.000168s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T12:01:14.996590 #372]  INFO -- : (0.000156s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T12:01:20.748971 #372]  INFO -- : (0.000154s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T12:01:32.371094 #372]  INFO -- : (0.000039s) BEGIN
+I, [2022-04-26T12:01:32.371641 #372]  INFO -- : (0.000283s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `link`, `approved`) VALUES ('admin', NULL, 'fasfasf', 'fasfasfaf', 'asfafas', 'fasfasfasfasfafasfa', 'Not Approved')
+I, [2022-04-26T12:01:32.371888 #372]  INFO -- : (0.000101s) SELECT * FROM `posts` WHERE `id` = 1
+I, [2022-04-26T12:01:32.436441 #372]  INFO -- : (0.064469s) COMMIT
+I, [2022-04-26T12:01:34.220351 #372]  INFO -- : (0.000164s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T12:01:41.651322 #372]  INFO -- : (0.000171s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-04-26T12:01:45.221152 #372]  INFO -- : (0.000179s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-04-26T12:02:16.016649 #372]  INFO -- : (0.000164s) SELECT * FROM `posts` WHERE `id` = '1'
+I, [2022-04-26T12:02:16.016983 #372]  INFO -- : (0.000020s) BEGIN
+I, [2022-04-26T12:02:16.017402 #372]  INFO -- : (0.000239s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 1)
+I, [2022-04-26T12:02:16.091397 #372]  INFO -- : (0.073897s) COMMIT
+I, [2022-04-26T12:02:17.561387 #372]  INFO -- : (0.000176s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')

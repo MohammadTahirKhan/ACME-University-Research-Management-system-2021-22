@@ -5,7 +5,8 @@ CREATE TABLE posts (
     topic TEXT,
     institution TEXT,
     link TEXT,
-    approved TEXT
+    approved TEXT,
+    content LONGTEXT
 );
 
 CREATE TABLE users (

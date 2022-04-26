@@ -42,6 +42,14 @@
           <% end %>
         </p>
 
+         <p>
+          *Content: <br />
+          <textarea name="link" maxlength = "1000" rows = 10></textarea>
+          <% if @link_error %>
+            <br /><strong class="error"><%= @link_error %></strong>
+          <% end %>
+        </p>
+
         <% if session[:logged_in] == true %>
           <p>
             <input type="hidden" name="poster_name" value="<%= session[:username] %>" />
