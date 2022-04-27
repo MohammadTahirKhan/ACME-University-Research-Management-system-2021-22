@@ -6,7 +6,9 @@ class User < Sequel::Model
     self.email =  params.fetch("email", "").strip
     self.user_type =  params.fetch("user_type", "").strip
     self.institution =  params.fetch("institution", "").strip
-    self.password =  params.fetch("password", "").strip
+    self.password = params.fetch("password", "").strip
+    self.suspended = params.fetch("suspended", "").strip
+    self.password_reset = params.fetch("password_reset", "").strip
   end
 
   def validate
@@ -33,5 +35,10 @@ class User < Sequel::Model
   def is_admin?
     other_user = User.first(username: username)
     !other_user.nil? && other_user.password == password && other_user.user_type == "admin"
+  end
+
+  def not_suspended?
+    other_user = User.first(username: username)
+    !other_user.nil? && other_user.password == password && other_user.suspended == "N"
   end
 end

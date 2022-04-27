@@ -47,8 +47,23 @@ post "/edit_view" do
   erb :confirmation
 end
 
+post "/suspend_user" do
+  id = params["id"]
+  
+  user = User[id]
+  user.update(:suspended => "Y")
 
+  erb :confirmation
+end
 
+post "/restore_user" do
+  id = params["id"]
+  
+  user = User[id]
+  user.update(:suspended => "N")
+
+  erb :confirmation
+end
 
 get "/admin" do
 

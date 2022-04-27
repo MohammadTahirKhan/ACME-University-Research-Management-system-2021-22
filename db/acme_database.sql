@@ -1,3 +1,6 @@
+DROP TABLE posts;
+DROP TABLE users;
+
 CREATE TABLE posts (
     poster_name text,
     id INTEGER PRIMARY KEY,
@@ -16,7 +19,9 @@ CREATE TABLE users (
     email TEXT,
     user_type TEXT,
     institution TEXT,
-    password TEXT
+    password TEXT,
+    suspended TEXT,
+    password_reset TEXT
 );
 
 -- Insert records of data into the database:
@@ -29,9 +34,10 @@ CREATE TABLE users (
 
 
 -- Insert records of data into the database:
-INSERT INTO users VALUES(1, "admin","abc@sheffield.ac.uk", "admin", "UOS","admin");
-INSERT INTO users VALUES(2, "reporter1","bce@sheffield.ac.uk", "poster", "UOS", "reporter1");
-INSERT INTO users VALUES(3, "reporter2","ced@sheffield.ac.uk", "poster", "UOS", "reporter2");
-INSERT INTO users VALUES(4, "moderator", "def@sheffield.ac.uk","moderator", "UOS", "moderator");
-INSERT INTO users VALUES(5, "viewer1", "sab@sheffield.ac.uk","viewer", "UOS", "viewer1");
-INSERT INTO users VALUES(6, "viewer2","dsf@sheffield.ac.uk", "viewer", "UOS", "viewer2");
+INSERT INTO users VALUES(1, "admin","abc@sheffield.ac.uk", "admin", "UOS","admin","N","N");
+INSERT INTO users VALUES(2, "reporter1","bce@sheffield.ac.uk", "poster", "UOS", "reporter1","N","N");
+INSERT INTO users VALUES(3, "reporter2","ced@sheffield.ac.uk", "poster", "UOS", "reporter2","N","Y");
+INSERT INTO users VALUES(4, "moderator", "def@sheffield.ac.uk","moderator", "UOS", "moderator","N","N");
+INSERT INTO users VALUES(5, "viewer1", "sab@sheffield.ac.uk","viewer", "UOS", "viewer1","N","Y");
+INSERT INTO users VALUES(6, "viewer2","dsf@sheffield.ac.uk", "viewer", "UOS", "viewer2","N","N");
+INSERT INTO users VALUES(7, "suspended","suspend@sheffield.ac.uk","poster","UOS","suspended","Y","Y");

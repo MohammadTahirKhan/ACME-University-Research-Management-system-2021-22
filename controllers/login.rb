@@ -20,27 +20,31 @@ post "/login" do
   #otherwise return appropriate errors
   if @users.valid?
     if @users.exist?
-      session[:logged_in] = true
-      # @user_details = User.where(Sequel.like(:username, params["username"]))
-      # @user_email = User.select(:email).where(Sequel.like(:username, @users.username))
-      session[:username] = @users.username
-      session[:user] = @users.email
-      session[:institution] = @users.institution
-      session[:password] = @users.password
+      if @users.not_suspended?
+        session[:logged_in] = true
+        # @user_details = User.where(Sequel.like(:username, params["username"]))
+        # @user_email = User.select(:email).where(Sequel.like(:username, @users.username))
+        session[:username] = @users.username
+        session[:user] = @users.email
+        session[:institution] = @users.institution
+        session[:password] = @users.password
+        
+        if @users.is_admin?
+          session[:is_admin] = true
+        end
       
-      if @users.is_admin?
-        session[:is_admin] = true
-      end
+        if @users.is_moderator?
+          session[:is_moderator] = true
+        end
+      
+        if @users.is_viewer?
+          session[:is_viewer] = true
+        end
     
-      if @users.is_moderator?
-        session[:is_moderator] = true
+        redirect "/"
+      else
+        @error = "User is suspended"
       end
-    
-      if @users.is_viewer?
-        session[:is_viewer] = true
-      end
-  
-      redirect "/"
     else
       @error = "Username/Password combination incorrect"
     end

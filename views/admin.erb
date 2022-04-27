@@ -1,6 +1,9 @@
 <%= erb :"common/header_with_nav_bar" %>
 
     <h1>Admin page :</h1>
+
+  <p><a href="/password_reset" id="mod">Go To Password Reset Page</a></p>
+    
     <form>
         <p id="search_area">Search by username: 
         <input type="text" id="search_area" name="user_search" value="<%= h @user_search %>"/>
@@ -16,8 +19,10 @@
         <th>email</th>
         <th>User_type</th>
         <th>Institution</th>
-        <th>Password</th>
         <th colspan=4>change account type to:</th>
+        <th>Suspended</th>
+        <th></th>
+
 
       </tr>
     <% @users.each do |user|%>
@@ -27,7 +32,6 @@
         <td class="row"><%=h user.email %></td>
         <td class="row"><%=h user.user_type %></td>
         <td class="row"><%=h user.institution %></td>
-        <td class="row"><%=h user.password %></td>
         <td class="butn_row">
         
         <form method="post" action="edit_mod">
@@ -53,6 +57,24 @@
             <input type="submit" id="acc_change" value="poster" />
         </form>
         </td>
+
+        <td class="row"><%=h user.suspended %></td>
+        <% if user.suspended == "N" %>
+        <td class="butn_row">
+        <form method="post" action="suspend_user">
+            <input type="hidden" name="id" value="<%= user.id %>" /> 
+            <input type="submit" id="acc_change" value="suspend" />
+        </form>
+        </td>
+        <%else%>
+        <td class="butn_row">
+        <form method="post" action="restore_user">
+            <input type="hidden" name="id" value="<%= user.id %>" /> 
+            <input type="submit" id="acc_change" value="restore" />
+        </form>
+        </td>
+        <%end%>
+
       </tr>
     <% end %> 
     </table>
