@@ -21,14 +21,15 @@
 
 
                 </tr>
-                <tr>
+               
                 <% @posts.each do |post|%>
+                 <tr>
                     <td class="row"><%=h post.id %></td>
                     <td class="row"><%=h post.title %></td>
                     <td class="row"><%=h post.topic %></td>
                     <td class="row"><%=h post.institution %></td>
                     <td class="row"><%=h post.link %></td>
-                    <td class="row"><%=h post.content %></td>
+                   
                      <td class="butn_row">
                     <form method="post">
                         <input type="hidden" name="id" value="<%= post.id %>" /> 
@@ -41,6 +42,9 @@
                         <input type="submit" id="disapprove" value="Disapprove" />
                     </form>
                     </td>
+                </tr>
+                <tr>
+                     <td class="row"><%=h post.content %></td>
                 </tr>
                 <% end %> 
             </table>

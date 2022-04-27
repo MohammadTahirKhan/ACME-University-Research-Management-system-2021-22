@@ -7,15 +7,17 @@ post "/create_post" do
   @topic_field = params["topic"]
   @institution_field = params["institution"]
   @link_field = params["link"]
+  @content_field = params["content"]
 
   #submit the form if the fields are not empty.
-  @form_was_submitted = !@title_field.empty? && !@topic_field.empty? && !@institution_field.empty? && !@link_field.empty?
+  @form_was_submitted = !@title_field.empty? && !@topic_field.empty? && !@institution_field.empty? && !@link_field.empty? && !@content_field.empty?
   @submission_error = nil
 
   @title_error = nil
   @topic_error = nil
   @institution_error = nil
   @link_error = nil
+  @content_error = nil
 
   @posts.load(params)
 
@@ -25,6 +27,7 @@ post "/create_post" do
     @topic_field.strip!
     @institution_field.strip!
     @link_field.strip!
+    @content_field.strip!
 
     @posts.save_changes
 
@@ -35,6 +38,7 @@ post "/create_post" do
     @topic_error = "Please enter a value for topic" if @topic_field.empty?
     @institution_error = "Please enter a value for institution" if @institution_field.empty?
     @link_error = "Please enter a value for link" if @link_field.empty?
+    @content_error = "Please enter a value for content" if @content_field.empty?
   end
 
   erb :create_post
