@@ -378,24 +378,7 @@
           1,
           null,
           1,
-          0,
-          null,
-          null,
-          1,
           3,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          2,
           null,
           null,
           1,
@@ -445,6 +428,23 @@
           null
         ]
       },
+      "/home/codio/workspace/project/controllers/profile.rb": {
+        "lines": [
+          1,
+          null,
+          2,
+          null,
+          null,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          2,
+          null
+        ]
+      },
       "/home/codio/workspace/project/controllers/viewer.rb": {
         "lines": [
           1,
@@ -465,6 +465,6 @@
         ]
       }
     },
-    "timestamp": 1649175737
+    "timestamp": 1650972141
   }
 }

@@ -25,4 +25,35 @@
     </table>
     <% end %>
 
+     <h1> Your Posts: </h1>
+
+     <% if @posts.count > 0 %>
+     <table id="post_table">
+      <tr id="columns">
+          <th>Posted by:</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Topic</th>
+          <th>Institution</th>
+          <th>Link</th>
+      </tr>
+    
+      <% @posts.each do |post|%>
+       <% if post.poster_name == session[:username] %>
+      <tr>
+          <td class="row"><%=h post.poster_name %></td>
+          <td class="row"><%=h post.id %></td>
+          <td class="row"><%=h post.title %></td>
+          <td class="row"><%=h post.topic %></td>
+          <td class="row"><%=h post.institution %></td>
+          <td class="row"><a href="<%=h post.link %>"><%=h post.link %></td>
+      </tr>
+      <tr>
+          <td colspan=6><%=h post.content %></td>
+      </tr> 
+      <% end %>  
+    <% end %> 
+    </table>
+    <% end %>
+
     <%= erb :"common/footer" %>

@@ -25,12 +25,12 @@
                     <td class="row"><%=h post.title %></td>
                     <td class="row"><%=h post.topic %></td>
                     <td class="row"><%=h post.institution %></td>
-                    <td class="row"><%=h post.link %></td>
+                    <td class="row"><a href="<%=h post.link %>"><%=h post.link %></td>
                      
                    
                 </tr>
                 <tr>
-                    <td class=""><%=h post.content %></td>
+                    <td colspan=6><%=h post.content %></td>
                 </tr> 
                 <% end %> 
             </table>
