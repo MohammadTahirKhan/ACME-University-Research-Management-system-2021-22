@@ -9,26 +9,24 @@
 
         <% if @posts.count > 0 %>
             <table id="post_table">
+            <% @posts.each do |post|%>
                 <tr id="columns">
                     <th>ID</th>
                     <th>Title</th>
                     <th>Topic</th>
                     <th>Institution</th>
+                    <th>Sponsor</th>
                     <th>Link</th>
-                    <th calss="butn_col"></th>
-                    <th calss="butn_col"></th>
-                    
-
-
+                    <th class="butn_col"></th>
+                    <th class="butn_col"></th>
                 </tr>
-               
-                <% @posts.each do |post|%>
                  <tr>
                     <td class="row"><%=h post.id %></td>
                     <td class="row"><%=h post.title %></td>
                     <td class="row"><%=h post.topic %></td>
                     <td class="row"><%=h post.institution %></td>
-                    <td class="row"><%=h post.link %></td>
+                    <td class="row"><%=h post.sponsor %></td>
+                    <td class="row"><a href="<%=h post.link %>"><%=h post.link %></td>
                    
                      <td class="butn_row">
                     <form method="post">
@@ -44,7 +42,7 @@
                     </td>
                 </tr>
                 <tr>
-                     <td class="row"><%=h post.content %></td>
+                     <td colspan=6 class="content_col"><%=h post.content %></td>
                 </tr>
                 <% end %> 
             </table>

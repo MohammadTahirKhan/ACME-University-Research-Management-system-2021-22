@@ -28,6 +28,7 @@
 
      <h1> Your Posts: </h1>
 
+    <% @posts.each do |post|%>
      <% if @posts.count > 0 %>
      <table id="post_table">
       <tr id="columns">
@@ -39,7 +40,6 @@
           <th>Link</th>
       </tr>
     
-      <% @posts.each do |post|%>
        <% if post.poster_name == session[:username] %>
       <tr>
           <td class="row"><%=h post.poster_name %></td>
