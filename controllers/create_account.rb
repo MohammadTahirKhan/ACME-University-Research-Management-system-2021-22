@@ -26,6 +26,7 @@ post "/create_account" do
     @email_field.strip!
     @institution_field.strip!
     @password_field.strip!
+    @users.suspended = "N"
     @users.save_changes
     redirect "/login"
   else
