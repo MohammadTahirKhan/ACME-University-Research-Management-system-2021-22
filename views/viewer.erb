@@ -9,7 +9,7 @@
     </form>
 
         <% if @posts.count > 0 %>
-        <% @posts.each do |post|%>
+            <% @posts.each do |post|%>
             <table id="post_table">
                 <tr id="columns">
                     <th>Posted by:</th>
@@ -30,8 +30,12 @@
                     <td class="row"><%=h post.institution %></td>
                     <td class="row"><%=h post.sponsor %></td>
                     <td class="row"><a href="<%=h post.link %>"><%=h post.link %></td>
-                     
-                   
+                    <% if session[:is_moderator]==true%>
+                        <td><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                    <% end %>
+                    <% if session[:is_admin]==true%>
+                        <td><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                    <% end %>
                 </tr>
                 <tr>
                     <td colspan=6 class="content_col"><%=h post.content %></td>

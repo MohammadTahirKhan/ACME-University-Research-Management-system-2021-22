@@ -1,0 +1,66 @@
+<% @subtitle = "Edit Player" %>
+<%= erb :"common/header_with_nav_bar" %>
+
+<% if @post.nil? %>
+
+    <p class="error"><strong>Unknown post</strong></p>
+
+<% else %>    
+
+    <% unless @post.errors.size.zero? %>
+        <p><strong class="error">Please correct the errors below:</strong></p>
+    <% end %>
+
+    <form method="post">
+        <input type="hidden" name="id" value="<%= @post.id %>" />
+        `<p class="label">Title</p>
+        <p class="field"><input type="text" name="title" value="<%= h @post.title %>" /></p>
+        <% if @post.errors.include?("title") %>
+            <% @post.errors["title"].each do |error| %>
+                <p class="error"><strong>Title <%= error %></strong></p>
+            <% end %>
+        <% end %>
+
+        <p class="label">Topic</p>
+        <p class="field"><input type="text" name="topic" value="<%= h @post.topic %>" /></p>
+        <% if @post.errors.include?("topic") %>
+            <% @post.errors["topic"].each do |error| %>
+                <p class="error"><strong>Topic <%= error %></strong></p>
+            <% end %>
+        <% end %>
+
+        <p class="label">Institution</p>
+        <p class="field"><input type="text" name="institution" value="<%= h @post.institution %>" /></p>
+        <% if @post.errors.include?("institution") %>
+            <% @post.errors["institution"].each do |error| %>
+                <p class="error"><strong>Institution <%= error %></strong></p>
+            <% end %>
+        <% end %>
+
+        <p class="label">Sponsor</p>
+        <p class="field"><input type="text" name="sponsor" value="<%= h @post.sponsor %>" /></p>
+
+        <p class="label">Link</p>
+        <p class="field"><input type="text" name="link" value="<%= h @post.link %>" /></p>
+        <% if @post.errors.include?("link") %>
+            <% @post.errors["link"].each do |error| %>
+                <p class="error"><strong>Link <%= error %></strong></p>
+            <% end %>
+        <% end %>
+
+        <p class="label">Content</p>
+        <p class="field"><input type="text" name="content" value="<%= h @post.content %>" /></p>
+        <% if @post.errors.include?("content") %>
+            <% @post.errors["content"].each do |error| %>
+                <p class="error"><strong>Content <%= error %></strong></p>
+            <% end %>
+        <% end %>
+
+        <p class="submit"><input type="submit" value="Submit" /></p>
+        </form>
+
+<% end %>
+
+
+
+<%= erb :"common/footer" %>
