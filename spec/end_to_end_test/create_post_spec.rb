@@ -7,6 +7,7 @@ describe "Create Post Page" do
     fill_in "topic", with: "Test26_Topic"
     fill_in "institution", with: "Test26_Institution"
     fill_in "link", with: "Test26_Link"
+    fill_in "content" with: "Test26_Content"
     click_button "Submit"
 
     visit "/moderator"
@@ -14,10 +15,11 @@ describe "Create Post Page" do
     expect(page).to have_content "Test26_Topic"
     expect(page).to have_content "Test26_Institution"
     expect(page).to have_content "Test26_Link"
+    expect(page).to have_content "Test26_Content"
     (DB[:posts].where(title: "Test26_Title")).delete 
   end
 
-  it "will not create an account with no details" do
+  it "will not create a post with no details" do
     visit "/create_post"
     click_button "Submit"
     expect(page).to have_content "Create a Post"
@@ -28,6 +30,7 @@ describe "Create Post Page" do
     fill_in "topic", with: "Test26_Topic"
     fill_in "institution", with: "Test26_Institution"
     fill_in "link", with: "Test26_Link"
+    fill_in "content" with: "Test26_Content"
     click_button "Submit"
 
     expect(page).to have_content "Please enter a value for title"
@@ -38,6 +41,7 @@ describe "Create Post Page" do
     fill_in "title", with: "Test26_Title"
     fill_in "institution", with: "Test26_Institution"
     fill_in "link", with: "Test26_Link"
+    fill_in "content" with: "Test26_Content"
     click_button "Submit"
 
     expect(page).to have_content "Please enter a value for topic"
@@ -48,6 +52,7 @@ describe "Create Post Page" do
     fill_in "title", with: "Test26_Title"
     fill_in "topic", with: "Test26_Topic"
     fill_in "link", with: "Test26_Link"
+    fill_in "content" with: "Test26_Content"
     click_button "Submit"
 
     expect(page).to have_content "Please enter a value for institution"
@@ -58,9 +63,21 @@ describe "Create Post Page" do
     fill_in "title", with: "Test26_Title"
     fill_in "topic", with: "Test26_Topic"
     fill_in "institution", with: "Test26_Institution"
+    fill_in "content" with: "Test26_Content"
     click_button "Submit"
 
     expect(page).to have_content "Please enter a value for link"
+  end
+
+  it "checks that the content error message is displayed" do
+    visit "/create_post"
+    fill_in "title", with: "Test26_Title"
+    fill_in "topic", with: "Test26_Topic"
+    fill_in "institution", with: "Test26_Institution"
+    fill_in "link", with: "Test26_Link"
+    click_button "Submit"
+
+    expect(page).to have_content "Please enter a value for content"
   end
 
   it "can be accessed from the home page" do
