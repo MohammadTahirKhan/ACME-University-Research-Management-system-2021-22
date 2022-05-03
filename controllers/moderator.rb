@@ -21,13 +21,39 @@ end
 
 get "/moderator" do
 
-    @posts = Post.where(Sequel.like(:approved, "Not Approved"))
-    @post_search = params.fetch("post_search", "").strip
+  @post_search1 = params.fetch("post_search1", "").strip
+  @post_search2 = params.fetch("post_search2", "").strip
+  @post_search3 = params.fetch("post_search3", "").strip
+  @post = Post.where(Sequel.like(:approved, "Not Approved"))
   # shows the result according to the search bar 
-    @posts = if @post_search.empty?
-      @posts.all
-    else
-      @posts.where(Sequel.like(:institution, "%#{@post_search}%" ))
+    if @post_search1.empty? && @post_search2.empty? && @post_search3.empty?
+      @posts = @post.all
+    end
+    if !@post_search1.empty? && @post_search2.empty? && @post_search3.empty?
+      @posts = @post.where(Sequel.like(:institution, "%#{@post_search1}%" ))
+    end
+    if @post_search1.empty? && !@post_search2.empty? && @post_search3.empty?
+      @posts = @post.where(Sequel.like(:topic, "%#{@post_search2}%" ))
+    end
+    if @post_search1.empty? && @post_search2.empty? && !@post_search3.empty?
+      @posts = @post.where(Sequel.like(:sponsor, "%#{@post_search3}%" ))
+    end
+    if !@post_search1.empty? && !@post_search2.empty? && @post_search3.empty?
+      @postt = @post.where(Sequel.like(:institution, "%#{@post_search1}%"))
+      @posts = @postt.where(Sequel.like(:topic, "%#{@post_search2}%"))
+    end
+    if !@post_search1.empty? && @post_search2.empty? && !@post_search3.empty?
+      @postt = @post.where(Sequel.like(:institution, "%#{@post_search1}%"))
+      @posts = @postt.where(Sequel.like(:sponsor, "%#{@post_search3}%"))
+    end
+    if @post_search1.empty? && !@post_search2.empty? && !@post_search3.empty?
+      @postt = @post.where(Sequel.like(:topic, "%#{@post_search2}%"))
+      @posts = @postt.where(Sequel.like(:sponsor, "%#{@post_search3}%"))
+    end
+    if !@post_search1.empty? && !@post_search2.empty? && !@post_search3.empty?
+      @postt = @post.where(Sequel.like(:institution, "%#{@post_search1}%"))
+      @posttt = @postt.where(Sequel.like(:topic, "%#{@post_search2}%"))
+      @posts = @posttt.where(Sequel.like(:sponsor, "%#{@post_search3}%"))
     end
   erb :moderator
 end

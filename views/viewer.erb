@@ -2,10 +2,11 @@
 
     <h1>Viewer page :</h1>
     <form>
-        <p id="search_area">Search by University: 
-        <input type="text" id="search_area" name="post_search1" value="<%= h @post_search1 %>"/>
-        
-        <input type="submit" id="submit" value="Submit" /></p>
+        <p>
+        <input type="text" id="search_area" name="post_search1" value="<%= h @post_search1 %>" placeholder="Search by University"/>
+        <input type="text" id="search_area" name="post_search2" value="<%= h @post_search2 %>" placeholder="Search by Topic"/>
+        <input type="text" id="search_area" name="post_search3" value="<%= h @post_search3 %>" placeholder="Search by Sponsors"/>
+         <input type="submit" id="submit" value="Apply" /></p>
     </form>
 
         <% if @posts.count > 0 %>
@@ -31,11 +32,17 @@
                     <td class="row"><%=h post.sponsor %></td>
                     <td class="row"><a href="<%=h post.link %>"><%=h post.link %></td>
                     <% if session[:is_moderator]==true%>
-                        <td><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                        <td class="butn_row"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
                     <% end %>
                     <% if session[:is_admin]==true%>
-                        <td><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                        <td class="butn_row"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
                     <% end %>
+                    <td class="butn_row"> 
+                    <form method="post" action="/delete">
+                        <input type="hidden" name="id" value="<%= post.id %>" />
+                        <input type="submit" value="Delete" />
+                    </form>
+                    </td>  
                 </tr>
                 <tr>
                     <td colspan=6 class="content_col"><%=h post.content %></td>
