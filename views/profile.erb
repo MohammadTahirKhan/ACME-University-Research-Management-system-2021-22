@@ -19,7 +19,7 @@
             <td class="row"><%=h user.user_type %></td>
             <td class="row"><%=h user.institution %></td>
             <td class="row"><%=h user.password %></td>
-            
+            <td><a href="/edit_personal_user?id=<%= h user.id %>">Edit</a></td>
         </tr>
         <% end %> 
     <% end %> 
@@ -27,20 +27,20 @@
     <% end %>
 
      <h1> Your Posts: </h1>
-
+    <% if @posts.count > 0 %>
+    <table id="post_table">
     <% @posts.each do |post|%>
-     <% if @posts.count > 0 %>
-     <table id="post_table">
+    <% if post.poster_name == session[:username] %>
       <tr id="columns">
           <th>Posted by:</th>
           <th>ID</th>
           <th>Title</th>
           <th>Topic</th>
           <th>Institution</th>
+          <th>Sponsor</th>
           <th>Link</th>
       </tr>
     
-       <% if post.poster_name == session[:username] %>
       <tr>
           <td class="row"><%=h post.poster_name %></td>
           <td class="row"><%=h post.id %></td>

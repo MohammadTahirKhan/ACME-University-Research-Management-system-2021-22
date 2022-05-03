@@ -22,8 +22,6 @@ post "/login" do
     if @users.exist?
       if @users.not_suspended?
         session[:logged_in] = true
-        # @user_details = User.where(Sequel.like(:username, params["username"]))
-        # @user_email = User.select(:email).where(Sequel.like(:username, @users.username))
         session[:username] = @users.username
         session[:user] = @users.email
         session[:institution] = @users.institution

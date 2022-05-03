@@ -1,4 +1,5 @@
 <%= erb :"common/header" %>
+<%= erb :"common/uni_array" %>
     <h1>
       Create an Account
     </h1>
@@ -31,10 +32,11 @@
 
         <p>
           *Institution or University: <br />
-          <input type="text" name="institution" />
-          <% if @institution_error %>
-            <br /><strong class="error"><%= @institution_error %></strong>
-          <% end %>
+          <select name=institution id="myUL">
+            <% @uni.each do |uni|%>
+            <option value="<%= uni %>"><a href="#"><%= uni %></a></option>
+            <%end%>
+          </select>
         </p>
 
         <p>

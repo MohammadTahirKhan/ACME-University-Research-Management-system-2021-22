@@ -11,7 +11,7 @@ post "/create_post" do
   @content_field = params["content"]
 
   #submit the form if the fields are not empty.
-  @form_was_submitted = !@title_field.empty? && !@topic_field.empty? && !@institution_field.empty? && !@link_field.empty? && !@content_field.empty?
+  @form_was_submitted = !@title_field.empty? && !@topic_field.empty?  && !@link_field.empty? && !@content_field.empty?
   @submission_error = nil
 
 
@@ -41,7 +41,7 @@ post "/create_post" do
     # now proceed to validation
     @title_error = "Please enter a value for title" if @title_field.empty?
     @topic_error = "Please enter a value for topic" if @topic_field.empty?
-    @institution_error = "Please enter a value for institution" if @institution_field.empty?
+    # @institution_error = "Please enter a value for institution" if @institution_field.empty?
     # @sponsor_error ="Please enter a value for link" if @sponsor.empty?
     @link_error = "Please enter a value for link" if @link_field.empty?
     @content_error = "Please enter a value for content" if @content_field.empty?

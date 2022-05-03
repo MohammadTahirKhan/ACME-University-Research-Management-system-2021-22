@@ -1,0 +1,51 @@
+<% @subtitle = "Edit User" %>
+<%= erb :"common/header_with_nav_bar" %>
+
+<% if @user.nil? %>
+
+    <p class="error"><strong>Unknown post</strong></p>
+
+<% else %>    
+
+    <% unless @user.errors.size.zero? %>
+        <p><strong class="error">Please correct the errors below:</strong></p>
+    <% end %>
+
+    <form method="post">
+    
+        
+        <input type="hidden" name="id" value="<%= @user.id %>" />
+        `<p class="label">Username</p>
+        <p class="field"><input type="text" name="username" value="<%= h @user.username %>" required/></p>
+        <% if @user.errors.include?("username") %>
+            <% @user.errors["username"].each do |error| %>
+                <p class="error"><strong>Username <%= error %></strong></p>
+            <% end %>
+        <% end %>
+
+        <p class="label">Email</p>
+        <p class="field"><input type="text" name="email" value="<%= h @user.email %>" required/></p>
+        <% if @user.errors.include?("email") %>
+            <% @user.errors["email"].each do |error| %>
+                <p class="error"><strong>Email <%= error %></strong></p>
+            <% end %>
+        <% end %>
+
+        <p class="field"><input type="hidden" name="user_type" value="<%= h @user.user_type %>" /></p>
+
+        <p class="field"><input type="hidden" name="institution" value="<%= h @post.institution %>" /></p>
+
+        <p class="field"><input type="hidden" name="password" value="<%= h @user.password %>" /></p>
+
+        <p class="field"><input type="hidden" name="suspended" value="<%= h @user.suspended %>" /></p>
+
+        <p class="field"><input type="hidden" name="password_reset" value="<%= h @user.password_reset %>" /></p>
+
+        <p class="submit"><input type="submit" value="Submit" /></p>
+        </form>
+
+<% end %>
+
+
+
+<%= erb :"common/footer" %>
