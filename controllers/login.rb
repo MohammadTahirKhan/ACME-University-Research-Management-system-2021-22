@@ -13,7 +13,7 @@ end
   
 post "/login" do
   @users = User.new
-  @users.load(params)
+  @users.login_load(params)
   @error = nil
   
   #if the entry is valid and it exists in the database then redirect the user to the home page

@@ -8,9 +8,15 @@ class User < Sequel::Model
     self.email =  params.fetch("email", "").strip
     self.user_type =  params.fetch("user_type", "").strip
     self.institution =  params.fetch("institution", "")
-    self.password = params.fetch("password", "").strip
+    self.password =  params.fetch("password", "").strip
+    self.password = BCrypt::Password.create(password) unless password.empty?
     self.suspended = params.fetch("suspended", "").strip
     self.password_reset = params.fetch("password_reset", "").strip
+  end
+
+  def login_load(params)
+    self.username =  params.fetch("username", "").strip
+    self.password =  params.fetch("password", "").strip
   end
 
   def validate
@@ -21,27 +27,34 @@ class User < Sequel::Model
 
   def exist?
     other_user = User.first(username: username)
-    !other_user.nil? && other_user.password == password
+    puts(other_user.password)
+    puts(self.password)
+    puts(self.password == other_user.password)
+    puts(BCrypt::Password.new(other_user.password))
+    puts(BCrypt::Password.new(other_user.password) == password)
+
+    !other_user.nil? && BCrypt::Password.new(other_user.password) == password
   end
 
   def is_viewer?
     other_user = User.first(username: username)
-    !other_user.nil? && other_user.password == password && other_user.user_type == "viewer"
+    !other_user.nil? && BCrypt::Password.new(other_user.password) == password && other_user.user_type == "viewer"
   end
 
   def is_moderator?
     other_user = User.first(username: username)
-    !other_user.nil? && other_user.password == password && other_user.user_type == "moderator"
+    !other_user.nil? && BCrypt::Password.new(other_user.password) == password && other_user.user_type == "moderator"
   end
 
   def is_admin?
     other_user = User.first(username: username)
-    !other_user.nil? && other_user.password == password && other_user.user_type == "admin"
+    !other_user.nil? && BCrypt::Password.new(other_user.password) == password && other_user.user_type == "admin"
   end
 
   def not_suspended?
     other_user = User.first(username: username)
-    !other_user.nil? && other_user.password == password && other_user.suspended == "N"
+
+    !other_user.nil? && BCrypt::Password.new(other_user.password) == password && other_user.suspended == "N"
   end
 
   def self.id_exists?(id)
