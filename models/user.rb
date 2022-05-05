@@ -5,7 +5,7 @@ class User < Sequel::Model
     self.username =  params.fetch("username", "").strip
     self.email =  params.fetch("email", "").strip
     self.user_type =  params.fetch("user_type", "").strip
-    self.institution =  params.fetch("institution", "").strip
+    self.institution =  params.fetch("institution", "")
     self.password = params.fetch("password", "").strip
     self.suspended = params.fetch("suspended", "").strip
     self.password_reset = params.fetch("password_reset", "").strip

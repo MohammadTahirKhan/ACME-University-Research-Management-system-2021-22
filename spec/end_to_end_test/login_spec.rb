@@ -12,7 +12,6 @@ describe "Login Page" do
     visit "/create_account"
     fill_in "username", with: "Test25_Username"
     fill_in "email", with: "Test25_Email"
-    fill_in "institution", with: "Test25_Institution"
     fill_in "password", with: "Test25_Password"
     click_button "Submit"
 

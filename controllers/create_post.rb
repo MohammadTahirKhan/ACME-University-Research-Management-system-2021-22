@@ -27,7 +27,7 @@ post "/create_post" do
     # sanitise the values by removing whitespace
     @title_field.strip!
     @topic_field.strip!
-    @institution_field.strip!  
+    # @institution_field.strip!  
     @sponsor_field.strip!
     @link_field.strip!
     @content_field.strip!

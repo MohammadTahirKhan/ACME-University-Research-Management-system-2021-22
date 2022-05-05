@@ -24,7 +24,7 @@ post "/create_account" do
     #sanitise the values by removing whitespace
     @username_field.strip!
     @email_field.strip!
-    @institution_field.strip!
+    # @institution_field.strip!
     @password_field.strip!
     @users.suspended = "N"
     @users.save_changes

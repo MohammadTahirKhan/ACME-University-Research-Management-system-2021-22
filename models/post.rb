@@ -6,7 +6,7 @@ class Post < Sequel::Model
     self.id =  params.fetch("id", "").strip
     self.title =  params.fetch("title", "").strip
     self.topic =  params.fetch("topic", "").strip
-    self.institution =  params.fetch("institution", "").strip
+    self.institution =  params.fetch("institution", "")
     self.sponsor =  params.fetch("sponsor", "").strip
     self.link =  params.fetch("link", "").strip
     self.content = params.fetch("content", "").strip

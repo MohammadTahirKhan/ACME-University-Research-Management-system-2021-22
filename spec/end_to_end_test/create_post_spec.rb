@@ -5,17 +5,15 @@ describe "Create Post Page" do
     visit "/create_post"
     fill_in "title", with: "Test26_Title"
     fill_in "topic", with: "Test26_Topic"
-    fill_in "institution", with: "Test26_Institution"
+    fill_in "content", with: "Test26_Content"
     fill_in "link", with: "Test26_Link"
-    fill_in "content" with: "Test26_Content"
     click_button "Submit"
 
     visit "/moderator"
     expect(page).to have_content "Test26_Title"
     expect(page).to have_content "Test26_Topic"
-    expect(page).to have_content "Test26_Institution"
-    expect(page).to have_content "Test26_Link"
     expect(page).to have_content "Test26_Content"
+    expect(page).to have_content "Test26_Link"
     (DB[:posts].where(title: "Test26_Title")).delete 
   end
 
@@ -28,9 +26,8 @@ describe "Create Post Page" do
   it "checks that the title error message is displayed" do
     visit "/create_post"
     fill_in "topic", with: "Test26_Topic"
-    fill_in "institution", with: "Test26_Institution"
     fill_in "link", with: "Test26_Link"
-    fill_in "content" with: "Test26_Content"
+    fill_in "content", with: "Test26_Content"
     click_button "Submit"
 
     expect(page).to have_content "Please enter a value for title"
@@ -39,31 +36,29 @@ describe "Create Post Page" do
   it "checks that the topic error message is displayed" do
     visit "/create_post"
     fill_in "title", with: "Test26_Title"
-    fill_in "institution", with: "Test26_Institution"
     fill_in "link", with: "Test26_Link"
-    fill_in "content" with: "Test26_Content"
+    fill_in "content", with: "Test26_Content"
     click_button "Submit"
 
     expect(page).to have_content "Please enter a value for topic"
   end
 
-  it "checks that the institution error message is displayed" do
-    visit "/create_post"
-    fill_in "title", with: "Test26_Title"
-    fill_in "topic", with: "Test26_Topic"
-    fill_in "link", with: "Test26_Link"
-    fill_in "content" with: "Test26_Content"
-    click_button "Submit"
+  # it "checks that the institution error message is displayed" do
+  #   visit "/create_post"
+  #   fill_in "title", with: "Test26_Title"
+  #   fill_in "topic", with: "Test26_Topic"
+  #   fill_in "link", with: "Test26_Link"
+  #   fill_in "content" with: "Test26_Content"
+  #   click_button "Submit"
 
-    expect(page).to have_content "Please enter a value for institution"
-  end
+  #   expect(page).to have_content "Please enter a value for institution"
+  # end
 
   it "checks that the link error message is displayed" do
     visit "/create_post"
     fill_in "title", with: "Test26_Title"
     fill_in "topic", with: "Test26_Topic"
-    fill_in "institution", with: "Test26_Institution"
-    fill_in "content" with: "Test26_Content"
+    fill_in "content", with: "Test26_Content"
     click_button "Submit"
 
     expect(page).to have_content "Please enter a value for link"
@@ -73,13 +68,45 @@ describe "Create Post Page" do
     visit "/create_post"
     fill_in "title", with: "Test26_Title"
     fill_in "topic", with: "Test26_Topic"
-    fill_in "institution", with: "Test26_Institution"
     fill_in "link", with: "Test26_Link"
     click_button "Submit"
 
     expect(page).to have_content "Please enter a value for content"
   end
 
+  it "post is created with default sponsor Acme when sponsor is left empty " do 
+    visit "/create_post"
+    fill_in "title", with: "Test26_Title"
+    fill_in "topic", with: "Test26_Topic"
+    fill_in "content", with: "Test26_Content"
+    fill_in "link", with: "Test26_Link"
+    click_button "Submit"
+
+    visit "/moderator"
+    expect(page).to have_content "Test26_Title"
+    expect(page).to have_content "Test26_Topic"
+    expect(page).to have_content "Test26_Content"
+    expect(page).to have_content "Acme"
+    expect(page).to have_content "Test26_Link"
+    (DB[:posts].where(title: "Test26_Title")).delete 
+  end
+  it "checks if a post is created" do 
+    visit "/create_post"
+    fill_in "title", with: "Test26_Title"
+    fill_in "topic", with: "Test26_Topic"
+    fill_in "sponsor", with: "Test26_sponsor"
+    fill_in "content", with: "Test26_Content"
+    fill_in "link", with: "Test26_Link"
+    click_button "Submit"
+
+    visit "/moderator"
+    expect(page).to have_content "Test26_Title"
+    expect(page).to have_content "Test26_Topic"
+    expect(page).to have_content "Test26_Content"
+    expect(page).to have_content "Test26_sponsor"
+    expect(page).to have_content "Test26_Link"
+    (DB[:posts].where(title: "Test26_Title")).delete 
+  end
   it "can be accessed from the home page" do
     visit "/home"
     click_link "Post"
