@@ -67,13 +67,22 @@ end
 
 get "/admin" do
 
-  @user_search = params.fetch("user_search", "").strip
+  @user_search1 = params.fetch("user_search", "").strip
+  @user_search2 = params.fetch("user_search", "").strip
 
   # shows the result according to the search bar 
-  @users = if @user_search.empty?
-    User.all
-  else
-    User.where(Sequel.like(:username, "%#{@user_search}%"))
+  if @user_search1.empty? && @user_search2.empty?
+    @users = User.all
+  end
+  if !@user_search1.empty? && @user_search2.empty?
+    @users = User.where(Sequel.like(:username, "%#{@user_search1}%"))
+  end
+  if @user_search1.empty? && !@user_search2.empty?
+    @users = User.where(Sequel.like(:institution, "%#{@user_search2}%"))
+  end
+  if !@user_search1.empty? && !@user_search2.empty?
+    @user = User.where(Sequel.like(:username, "%#{@user_search1}%"))
+    @users = @user.where(Sequel.like(:institution, "%#{@user_search2}%"))
   end
   
   erb :admin

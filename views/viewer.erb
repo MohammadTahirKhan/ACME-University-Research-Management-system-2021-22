@@ -4,7 +4,7 @@
     <form>
         <div> Filter by University: </div>
         <div>
-        <select name=post_search1 id="myUL">
+        <select name="post_search1" id="myUL">
             <% @uni.each do |uni|%>
             <option value="<%= uni %>"><a href="#"><%= uni %></a></option>
             <%end%>

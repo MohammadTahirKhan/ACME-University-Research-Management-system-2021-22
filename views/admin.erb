@@ -1,13 +1,24 @@
 <%= erb :"common/header_with_nav_bar" %>
+<%= erb :"common/uni_array" %>
 
     <h1>Admin page :</h1>
 
   <p><a href="/password_reset" id="mod">Go To Password Reset Page</a></p>
-    
+    <p></p>
     <form>
-        <p id="search_area">Search by username: 
-        <input type="text" id="search_area" name="user_search" value="<%= h @user_search %>"/>
-        <input type="submit" id="submit" value="Submit" /></p>
+        <div> Filter by Institution: </div>
+        <div>
+        <select name="user_search2" id="myUL">
+            <% @uni.each do |uni|%>
+            <option value="<%= uni %>"><a href="#"><%= uni %></a></option>
+            <%end%>
+          </select>
+        </div>
+        <div>
+        <input type="text" id="search_area" name="user_search1" value="<%= h @user_search1 %>" placeholder="Search by Username"/>
+        </div>
+        <p>
+         <input type="submit" id="submit" value="Apply" /></p>
     </form>
 
 

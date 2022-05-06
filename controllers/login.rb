@@ -19,7 +19,7 @@ post "/login" do
   #if the entry is valid and it exists in the database then redirect the user to the home page
   #otherwise return appropriate errors
   if @users.valid?
-    if @users.exist?
+    if @users.exist? 
       if @users.not_suspended?
         session[:logged_in] = true
         session[:username] = @users.username
@@ -43,7 +43,7 @@ post "/login" do
       else
         @error = "User is suspended"
       end
-    else
+    else 
       @error = "Username/Password combination incorrect"
     end
   else

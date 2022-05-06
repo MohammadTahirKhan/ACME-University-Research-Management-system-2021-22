@@ -26,14 +26,18 @@ class User < Sequel::Model
   end
 
   def exist?
-    other_user = User.first(username: username)
-    puts(other_user.password)
-    puts(self.password)
-    puts(self.password == other_user.password)
-    puts(BCrypt::Password.new(other_user.password))
-    puts(BCrypt::Password.new(other_user.password) == password)
+    if (DB[:users].where(username: username)).count == 0
+      return false
+    else
+      other_user = User.first(username: username)
+      puts(other_user.password)
+      puts(self.password)
+      puts(self.password == other_user.password)
+      puts(BCrypt::Password.new(other_user.password))
+      puts(BCrypt::Password.new(other_user.password) == password)
 
-    !other_user.nil? && BCrypt::Password.new(other_user.password) == password
+      !other_user.nil? && BCrypt::Password.new(other_user.password) == password
+    end
   end
 
   def is_viewer?

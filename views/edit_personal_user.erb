@@ -46,13 +46,15 @@
             <% end %>
         <% end %>
 
-        <p class="label">Password</p>
-        <p class="field"><input type="text" name="password" value="<%= h @user.password %>" /></p>
+        <p class="label">Type your new Password</p>
+        <p> (Type your currant password if you don't want to change you password)
+        <p class="field"><input type="TEXT" name="password" /></p>
         <% if @user.errors.include?("password") %>
             <% @user.errors["password"].each do |error| %>
                 <p class="error"><strong>Password <%= error %></strong></p>
             <% end %>
         <% end %>
+
 
         <p class="field"><input type="hidden" name="suspended" value="<%= h @user.suspended %>" /></p>
 

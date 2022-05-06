@@ -3,14 +3,6 @@ require "sinatra"
 get "/viewer" do
 
 
-  # @post_search = params.fetch("post_search", "").strip
-  # @post = Post.where(Sequel.like(:approved, "Approved"))
-  # shows the result according to the search bar 
-    # @posts = if @post_search.empty? 
-    #   @post.all
-    # else
-    #   @post.where(Sequel.like(:institution, "%#{@post_search}%" ))
-    # end
   @post_search1 = params.fetch("post_search1", "").strip
   @post_search2 = params.fetch("post_search2", "").strip
   @post_search3 = params.fetch("post_search3", "").strip
