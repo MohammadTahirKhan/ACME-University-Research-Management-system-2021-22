@@ -4,8 +4,8 @@ describe "admin page" do
   context "with an empty database" do
     it "says the database is empty" do
         visit "/admin"
-        fill_in "user_search", with: "ashvcabms"
-        click_button "Submit"
+        fill_in "user_search1", with: "ashvcabms"
+        click_button "Apply"
         expect(page).to have_content "The database is empty!"
     end
   end
@@ -32,8 +32,8 @@ describe "admin page" do
         click_button "Submit"
 
         visit "/admin"
-        fill_in "user_search", with: "Test25_Username"
-        click_button "Submit"
+        fill_in "user_search1", with: "Test25_Username"
+        click_button "Apply"
         expect(page).to have_content "Test25_Username"
         expect(page).to have_content "Test25_Email"
         (DB[:users].where(username: "Test25_Username")).delete 
@@ -41,8 +41,8 @@ describe "admin page" do
 
     it "gives an error if the user searched does not exist" do
         visit "/admin"
-        fill_in "user_search", with: "ashvcabms"
-        click_button "Submit"
+        fill_in "user_search1", with: "ashvcabms"
+        click_button "Apply"
         expect(page).to have_content "The database is empty!"
         expect(page).to have_content "There are no users!"
     end

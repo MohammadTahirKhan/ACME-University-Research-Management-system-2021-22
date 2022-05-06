@@ -67,8 +67,8 @@ end
 
 get "/admin" do
 
-  @user_search1 = params.fetch("user_search", "").strip
-  @user_search2 = params.fetch("user_search", "").strip
+  @user_search1 = params.fetch("user_search1", "").strip
+  @user_search2 = params.fetch("user_search2", "").strip
 
   # shows the result according to the search bar 
   if @user_search1.empty? && @user_search2.empty?

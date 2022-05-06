@@ -1,8 +1,17 @@
 <%= erb :"common/header_with_nav_bar" %>
 <%= erb :"common/uni_array" %>
     <h1>Viewer page :</h1>
+    <% if session[:is_admin]==true%>
+         <p><a href="/post_summaries" id="mod">See Post Summaries</a></p>
+          <% end %>
+          <% if session[:is_viewer]==true%>
+         <p><a href="/post_summaries" id="mod">See Post Summaries</a></p>
+          <% end %>
+          <% if session[:is_moderator]==true%>
+         <p><a href="/post_summaries" id="mod">See Post Summaries</a></p>
+          <% end %>
     <form>
-        <div> Filter by University: </div>
+        <div> Filter by Institution: </div>
         <div>
         <select name="post_search1" id="myUL">
             <% @uni.each do |uni|%>
@@ -29,6 +38,8 @@
                     <th>Institution</th>
                     <th>Sponsor</th>
                     <th>Link</th>
+                    <th></th>
+                    <th></th>
                 </tr>
               
                 
@@ -41,12 +52,12 @@
                     <td class="row"><%=h post.sponsor %></td>
                     <td class="row"><a href="<%=h post.link %>"><%=h post.link %></td>
                     <% if session[:is_moderator]==true%>
-                        <td class="butn_row"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                        <td class="mod"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
                     <% end %>
                     <% if session[:is_admin]==true%>
-                        <td class="butn_row"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                        <td id="adm"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
                     <% end %>
-                    <td class="butn_row"> 
+                    <td class="mod"> 
                     <form method="post" action="/delete">
                         <input type="hidden" name="id" value="<%= post.id %>" />
                         <input type="submit" value="Delete" />
@@ -62,5 +73,7 @@
                 <p>The database is empty!</p>
                 <p>There are no posts!</p>
             <% end %>
-        <p></p>
+         <div> </div>   
+        
+
     <%= erb :"common/footer" %>

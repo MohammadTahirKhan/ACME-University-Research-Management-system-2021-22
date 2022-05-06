@@ -1,0 +1,25 @@
+<%= erb :"common/header_with_nav_bar" %>
+<%= erb :"common/uni_array" %>
+
+ <form>
+        <div> Filter by Institution: </div>
+        <div>
+        <select name="post_search1" id="myUL">
+            <% @uni.each do |uni|%>
+            <option value="<%= uni %>"><a href="#"><%= uni %></a></option>
+            <%end%>
+          </select>
+        </div>
+        <div>
+        <input type="text" id="search_area" name="post_search2" value="<%= h @post_search2 %>" placeholder="Search by Topic"/>
+        <input type="text" id="search_area" name="post_search3" value="<%= h @post_search3 %>" placeholder="Search by Sponsors"/>
+        </div>
+        <p>
+         <input type="submit" id="submit" value="Apply" /></p>
+    </form>
+    <p>Number of total posts according to the applied filters: 
+    <input type="number" name="id" value="<%= @posts.count %>" disabled/>
+        </p>
+
+
+<%= erb :"common/footer" %>

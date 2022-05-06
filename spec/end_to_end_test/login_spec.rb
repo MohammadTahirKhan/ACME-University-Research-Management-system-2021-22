@@ -79,4 +79,69 @@ describe "Login Page" do
 
     expect(page).to have_content "Create a Post"
   end
+
+  it "When logging in with an admin account type, all navigation buttons are available due to the power of the admin" do
+    visit "/login"
+    fill_in "username", with: "admin"
+    fill_in "password", with: "admin"
+    click_button "Submit"
+
+    expect(page).to have_content "Home"
+    expect(page).to have_content "Post"
+    expect(page).to have_content "Admin_Page"
+    expect(page).to have_content "Moderator_Page"
+    expect(page).to have_content "View_Posts"
+    expect(page).to have_content "Logout"
+  end
+  it "When logging in with an Moderator account type, fewer navigation buttons are available due
+   to the power of the Moderator(all except admin)" do
+    visit "/login"
+    fill_in "username", with: "moderator"
+    fill_in "password", with: "moderator"
+    click_button "Submit"
+
+    expect(page).to have_content "Home"
+    expect(page).to have_content "Post"
+    expect(page).to have_content "Moderator_Page"
+    expect(page).to have_content "View_Posts"
+    expect(page).to have_content "Logout"
+  end
+
+  it "When logging in with an Viewer account type, fewer navigation buttons are available due
+   to the power of the Viewer(all except admin and moderator)" do
+    visit "/login"
+    fill_in "username", with: "viewer1"
+    fill_in "password", with: "viewer1"
+    click_button "Submit"
+
+    expect(page).to have_content "Home"
+    expect(page).to have_content "Post"
+    expect(page).to have_content "View_Posts"
+    expect(page).to have_content "Logout"
+  end
+
+  it "When logging in with an Poster account type, fewer navigation buttons are available due
+   to the power of the Poster(all except admin and moderator)" do
+    visit "/login"
+    fill_in "username", with: "reporter1"
+    fill_in "password", with: "reporter1"
+    click_button "Submit"
+
+    expect(page).to have_content "Home"
+    expect(page).to have_content "Post"
+    expect(page).to have_content "View_Posts"
+    expect(page).to have_content "Logout"
+  end
+
+  it "When logging in with an Guest account type, fewer navigation buttons are available due
+   to the power of the Guest(all except admin and moderator)" do
+    visit "/login"
+    click_link "Log in as guest"
+
+    expect(page).to have_content "Home"
+    expect(page).to have_content "Post"
+    expect(page).to have_content "View_Posts"
+    expect(page).to have_content "Logout"
+  end
+  
 end

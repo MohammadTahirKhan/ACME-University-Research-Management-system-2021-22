@@ -4,7 +4,7 @@
     <h1>Admin page :</h1>
 
   <p><a href="/password_reset" id="mod">Go To Password Reset Page</a></p>
-    <p></p>
+    <div> </div> 
     <form>
         <div> Filter by Institution: </div>
         <div>
@@ -33,6 +33,7 @@
         <th colspan=4>change account type to:</th>
         <th>Suspended</th>
         <th></th>
+        
 
 
       </tr>
@@ -74,19 +75,19 @@
         <td class="butn_row">
         <form method="post" action="suspend_user">
             <input type="hidden" name="id" value="<%= user.id %>" /> 
-            <input type="submit" id="acc_change" value="suspend" />
+            <input type="submit" id="acc_change" value="Suspend" />
         </form>
         </td>
         <%else%>
         <td class="butn_row">
         <form method="post" action="restore_user">
             <input type="hidden" name="id" value="<%= user.id %>" /> 
-            <input type="submit" id="acc_change" value="restore" />
+            <input type="submit" id="acc_change" value="Restore" />
         </form>
         </td>
         <%end%>
 
-        <td><a href="/edit_user_from_admin?id=<%= h user.id %>">Edit</a></td>
+        <td id="adm"><a href="/edit_user_from_admin?id=<%= h user.id %>">Edit</a></td>
 
       </tr>
     <% end %> 

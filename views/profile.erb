@@ -8,7 +8,6 @@
         <th>email</th>
         <th>User_type</th>
         <th>Institution</th>
-        <th>Password</th>
 
       </tr>
     <% @users.each do |user|%>
@@ -18,7 +17,7 @@
             <td class="row"><%=h user.email %></td>
             <td class="row"><%=h user.user_type %></td>
             <td class="row"><%=h user.institution %></td>
-            <td><a href="/edit_personal_user?id=<%= h user.id %>">Edit</a></td>
+            <td class="edit"><a href="/edit_personal_user?id=<%= h user.id %>">Edit</a></td>
         </tr>
         <% end %> 
     <% end %> 
