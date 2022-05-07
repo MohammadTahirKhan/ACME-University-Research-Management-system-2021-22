@@ -11,19 +11,6 @@ RSpec.describe "Viewer page" do
     Sinatra::Application
   end
 
-#   describe "the link 'go to password reset page' on the admin page works correctly/takes admin 
-#     to password reset requests page" do
-# #     it "displays a table when the database contains a post" do
-# #       get "/viewer"
-# #       if ( Post.all.count == 0) 
-# #         expect(last_response.body).to include("The database is empty!")
-# #       else 
-# #         expect(last_response.body).to include("Title")
-
-# #       end
-# #     end
-# #   end
-
     describe "forgort password and assigninf a new password" do
         context "user can send a forgot password request" do
             (DB[:users].where(username: "Test25_Username")).delete 
@@ -43,6 +30,13 @@ RSpec.describe "Viewer page" do
                 click_button "Submit"
                 expect(page).to have_content "You will be emailed shortly with a replacement password!"
             end
+            it "if a user clicks on the submit button in the forgot password page without typing their username in,
+                an error message is displayed" do
+                visit "/login"
+                click_link "Forgot password"
+                click_button "Submit"
+                expect(page).to have_content "Please enter a value for username"
+            end
         end
 
         context "admin can reset password" do
@@ -50,6 +44,14 @@ RSpec.describe "Viewer page" do
                 visit "/admin"
                 click_link "Go To Password Reset Page"
                 expect(page).to have_content "Test25_Username"
+            end
+            it "if an admin clicks on the button 'assign' without typing in a password,
+                an error message is displayed" do
+                visit "/admin"
+                click_link "Go To Password Reset Page"
+                click_link "Assign Temporary Password"
+                click_button "Submit"
+                expect(page).to have_content "Password cannot be empty"
             end
             it "admin can assign new password" do
                 visit "/admin"
@@ -65,29 +67,14 @@ RSpec.describe "Viewer page" do
                 expect(page).to have_content "Welcome"
 
                 (DB[:users].where(username: "Test25_Username")).delete 
+            end
+            it "if there are no password reset requests" do
+                visit "/admin"
+                click_link "Go To Password Reset Page"
+                expect(page).to have_content "There are no password reset requests!"
                 DB[:users].where(password_reset: " ").update(password_reset: "Y")
             end
         end
     end
 end
 
-
-
-# describe "if an admin clicks on the button 'assign' without typing in a password,
-#     an error message is displayed" do
-
-# describe "once an admin has assigned a new password, there are links available to move to
-#     the other pages(admin or password reset page)" do
-
-# describe "if a user clicks on the forgot password link from the login page, they
-#     are taken to the forgot password page (MOVE THIS TEST TO A DIFFERENT FILE)" do
-
-# describe "from the forgot password page it is possible to 
-#     go back to the login page using the relevant link (MOVE THIS TEST TO A DIFFERENT FILE)" do
-
-# describe "if a user types their username and clicks on the submit button in the forgot password page
-#         a new password reset request is added to the admin page/admin password reset page" do
-     
-# describe "if a user clicks on the submit button in the forgot password page without typing their username in,
-#     an error message is displayed" do
-    

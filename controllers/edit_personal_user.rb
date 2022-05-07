@@ -6,7 +6,6 @@ end
   
 post "/edit_personal_user" do
     id = params["id"]
-
     if User.id_exists?(id)
         @user = User[id]
         @user.load(params)

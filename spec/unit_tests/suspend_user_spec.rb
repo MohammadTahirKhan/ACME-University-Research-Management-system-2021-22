@@ -36,7 +36,6 @@ RSpec.describe "Viewer page" do
 
     context "restore" do
         it "admin can restore suspended users" do
-
             visit "/create_account"
             fill_in "username", with: "Test26_Username"
             fill_in "email", with: "Test26_Email"

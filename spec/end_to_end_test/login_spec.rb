@@ -18,7 +18,7 @@ describe "Login Page" do
     visit "/login"
     fill_in "username", with: "Test25_Username"
     fill_in "password", with: "Test25_Username"
-
+    click_button "Submit"
     visit "/home"
     expect(page).to have_content "Welcome"
     (DB[:users].where(username: "Test25_Username")).delete 
@@ -88,8 +88,8 @@ describe "Login Page" do
 
     expect(page).to have_content "Home"
     expect(page).to have_content "Post"
-    expect(page).to have_content "Admin_Page"
-    expect(page).to have_content "Moderator_Page"
+    expect(page).to have_content "Admin"
+    expect(page).to have_content "Moderator"
     expect(page).to have_content "View_Posts"
     expect(page).to have_content "Logout"
   end
@@ -102,7 +102,7 @@ describe "Login Page" do
 
     expect(page).to have_content "Home"
     expect(page).to have_content "Post"
-    expect(page).to have_content "Moderator_Page"
+    expect(page).to have_content "Moderator"
     expect(page).to have_content "View_Posts"
     expect(page).to have_content "Logout"
   end

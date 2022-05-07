@@ -104,7 +104,67 @@ describe "viewer page" do
       click_button "Apply"
       expect(page).to have_content "The database is empty!"
       expect(page).to have_content "There are no posts!"
+    end
+
   end
+
+  context "shows post summaries" do
+    it "can go to the post summaries page" do
+    
+      #for test purposes, first removing all the posts that are waiting to be approved, to be retrieved later
+      DB[:posts].where(approved: "Not Approved").update(approved: "")
+      visit "/login"
+      fill_in "username", with: "admin"
+      fill_in "password", with: "admin"
+      click_button "Submit"
+      visit "/create_post"
+      fill_in "title", with: "Test26_Title"
+      fill_in "topic", with: "Test26_Topic"
+      fill_in "content", with: "Test26_Content"
+      fill_in "link", with: "Test26_Link"
+      click_button "Submit"
+
+      visit "/moderator"
+      click_button "Approve"
+
+      visit "/create_post"
+      fill_in "title", with: "Test27_Title"
+      fill_in "topic", with: "Test27_Topic"
+      fill_in "content", with: "Test27_Content"
+      fill_in "link", with: "Test27_Link"
+      click_button "Submit"
+      visit "/moderator"
+      click_button "Approve"
+
+      visit "/viewer"
+      click_link "See Post Summaries"
+      expect(page).to have_content "Number of total posts according to the applied filters:"
+    end
+    it "can show the number of total posts according to the applied filters(if no filters are applied)" do
+      visit "/login"
+      fill_in "username", with: "admin"
+      fill_in "password", with: "admin"
+      click_button "Submit"
+      visit "/viewer"
+      click_link "See Post Summaries"
+      expect(page).to have_content "2"
+    end
+    it "can show the number of total posts according to the applied filters" do
+      visit "/login"
+      fill_in "username", with: "admin"
+      fill_in "password", with: "admin"
+      click_button "Submit"
+      visit "/viewer"
+      click_link "See Post Summaries"
+      fill_in "post_search2", with: "Test27_Topic"
+      click_button "Apply"
+      expect(page).to have_content "1"
+
+      (DB[:posts].where(title: "Test26_Title")).delete
+      (DB[:posts].where(title: "Test27_Title")).delete
+
+      #retriving the posts that were removed previously
+      DB[:posts].where(approved: "").update(approved: "Not Approved")
+    end
   end
-  
 end

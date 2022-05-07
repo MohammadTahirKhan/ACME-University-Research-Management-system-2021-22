@@ -1,15 +1,5 @@
 require "sinatra"
 
-# post "/edit" do
-
-#   id = params["id"]
-
-#   user = User[id]
-#   # user.update(:user_type => "moderator") 
-
-#   erb :edit_user
-# end
-
 post "/edit_mod" do
 
   id = params["id"]

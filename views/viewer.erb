@@ -2,6 +2,7 @@
 <%= erb :"common/uni_array" %>
     <h1>Viewer page :</h1>
     <% if session[:is_admin]==true%>
+         <p>Click here to see Post metrics</p> 
          <p><a href="/post_summaries" id="mod">See Post Summaries</a></p>
           <% end %>
           <% if session[:is_viewer]==true%>
