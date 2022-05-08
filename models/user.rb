@@ -68,12 +68,4 @@ class User < Sequel::Model
     true # all checks are ok - the id exists
   end
   
-  # def validate
-  #   super
-  #   errors.add("username", "cannot be empty") if !username || username.empty?
-  #   errors.add("email", "cannot be empty") if !email || email.empty?
-  #   errors.add("user_type", "cannot be empty") if !user_type || user_type.empty?
-  #   errors.add("institution", "cannot be empty") if !institution || institution.empty?
-  #   errors.add("password", "cannot be empty") if !password || password.empty?
-  # end
 end

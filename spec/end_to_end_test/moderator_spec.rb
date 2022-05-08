@@ -26,7 +26,7 @@ describe "moderator page" do
     expect(page).to have_content "Test26_content"
     expect(page).to have_content "Test26_Link"
     (DB[:posts].where(title: "Test26_Title")).delete 
-end
+  end
 
   it "removes the post if disapproved" do
     #for test purposes, first removing all the posts that are waiting to be approved, to be retrieved later

@@ -1,10 +1,10 @@
-get "/edit_user_from_admin" do
+get "/edit_personal_details" do
     id = params["id"]
     @user = User[id] if User.id_exists?(id)
-    erb :edit_user_from_admin
+    erb :edit_personal_details
 end
   
-post "/edit_user_from_admin" do
+post "/edit_personal_details" do
     id = params["id"]
     #proceed to edit the user if the user id exist
     if User.id_exists?(id)
@@ -13,9 +13,9 @@ post "/edit_user_from_admin" do
 
         if @user.valid?
             @user.save_changes
-            redirect "/admin"
+            redirect "/logout"
         end
     end
 
-    erb :edit_user_from_admin 
+    erb :edit_personal_details 
 end

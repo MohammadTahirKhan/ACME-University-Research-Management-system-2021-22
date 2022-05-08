@@ -27,12 +27,12 @@ post "/create_post" do
     # sanitise the values by removing whitespace
     @title_field.strip!
     @topic_field.strip!
-    # @institution_field.strip!  
     @sponsor_field.strip!
     @link_field.strip!
     @content_field.strip!
     @posts.save_changes
 
+    # fill the sponsor as Acme on default if no sponsor is specified
     if @sponsor_field.empty?
       DB[:posts].where(sponsor: @sponsor_field).update(sponsor: "Acme")
     end
@@ -41,8 +41,6 @@ post "/create_post" do
     # now proceed to validation
     @title_error = "Please enter a value for title" if @title_field.empty?
     @topic_error = "Please enter a value for topic" if @topic_field.empty?
-    # @institution_error = "Please enter a value for institution" if @institution_field.empty?
-    # @sponsor_error ="Please enter a value for link" if @sponsor.empty?
     @link_error = "Please enter a value for link" if @link_field.empty?
     @content_error = "Please enter a value for content" if @content_field.empty?
   end

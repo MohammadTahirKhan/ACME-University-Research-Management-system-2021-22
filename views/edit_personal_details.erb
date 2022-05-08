@@ -37,14 +37,9 @@
             <option value="<%= uni %>"><a href="#"><%= uni %></a></option>
             <%end%>
           </select>
-        <% if @user.errors.include?("institution") %>
-            <% @user.errors["institution"].each do |error| %>
-                <p class="error"><strong>Institution <%= error %></strong></p>
-            <% end %>
-        <% end %>
 
         <p class="label">Type your new Password</p>
-        <p> (Type your currant password if you don't want to change you password)
+        <p> (Type your currant password if you don't want to change your password)
         <p class="field"><input type="TEXT" name="password" /></p>
         <% if @user.errors.include?("password") %>
             <% @user.errors["password"].each do |error| %>

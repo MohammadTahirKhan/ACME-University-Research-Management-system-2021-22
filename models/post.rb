@@ -28,7 +28,6 @@ class Post < Sequel::Model
     errors.add("title", "cannot be empty") if !title || title.empty?
     errors.add("topic", "cannot be empty") if !topic || topic.empty?
     errors.add("institution", "cannot be empty") if !institution || institution.empty?
-    # errors.add("sponsor", "cannot be empty") if !sponsor || sponsor.empty?
     errors.add("link", "cannot be empty") if !link || link.empty?
     errors.add("content", "cannot be empty") if !content || content.empty?
   end

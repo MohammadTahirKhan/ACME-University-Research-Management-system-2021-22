@@ -6,14 +6,14 @@ end
   
 post "/edit_from_mod_page" do
     id = params["id"]
-
+    #proceed to edit the post if the post id exist
     if Post.id_exists?(id)
         @post = Post[id]
         @post.load(params)
 
         if @post.valid?
-        @post.save_changes
-        redirect "/moderator"
+            @post.save_changes
+            redirect "/moderator"
         end
     end
 

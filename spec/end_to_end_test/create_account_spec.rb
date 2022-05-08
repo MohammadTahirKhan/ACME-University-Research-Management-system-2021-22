@@ -48,17 +48,6 @@ describe "Create Account Page" do
     expect(page).to have_content "Please enter a value for email"
   end
 
-  # it "Checks that the institution error message is displayed" do 
-  #   visit "/create_account"
-  #   fill_in "username", with: "Test2"
-  #   fill_in "email", with: "test_email"
-  #   #institution field
-  #   fill_in "password", with: "abc"
-  #   click_button "Submit"
-
-  #   expect(page).to have_content "Please enter a value for institution"
-  # end
-
   it "Checks that the password error message is displayed" do 
     visit "/create_account"
     fill_in "username", with: "Test2"

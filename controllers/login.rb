@@ -16,7 +16,7 @@ post "/login" do
   @users.login_load(params)
   @error = nil
   
-  #if the entry is valid and it exists in the database then redirect the user to the home page
+  #if the entry is valid, it exists in the database and is not suspended then redirect the user to the home page
   #otherwise return appropriate errors
   if @users.valid?
     if @users.exist? 

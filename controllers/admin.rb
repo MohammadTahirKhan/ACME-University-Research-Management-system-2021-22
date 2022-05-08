@@ -1,7 +1,7 @@
 require "sinatra"
 
 post "/edit_mod" do
-
+  #change account type to moderator
   id = params["id"]
 
   user = User[id]
@@ -11,6 +11,7 @@ post "/edit_mod" do
 end
 
 post "/edit_admin" do
+  #change account type to admin
   id = params["id"]
 
   user = User[id]
@@ -20,6 +21,7 @@ post "/edit_admin" do
 end
 
 post "/edit_poster" do
+  #change account type to poster
   id = params["id"]
   
   user = User[id]
@@ -29,6 +31,7 @@ post "/edit_poster" do
 end
   
 post "/edit_view" do
+  #change account type to viewer
   id = params["id"]
   
   user = User[id]
@@ -38,6 +41,7 @@ post "/edit_view" do
 end
 
 post "/suspend_user" do
+  #suspend user
   id = params["id"]
   
   user = User[id]
@@ -47,6 +51,7 @@ post "/suspend_user" do
 end
 
 post "/restore_user" do
+  #restore user
   id = params["id"]
   
   user = User[id]
@@ -60,7 +65,7 @@ get "/admin" do
   @user_search1 = params.fetch("user_search1", "").strip
   @user_search2 = params.fetch("user_search2", "").strip
 
-  # shows the result according to the search bar 
+  # shows the result according to the filters 
   if @user_search1.empty? && @user_search2.empty?
     @users = User.all
   end

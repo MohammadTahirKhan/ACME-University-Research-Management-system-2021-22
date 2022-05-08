@@ -93,6 +93,7 @@ describe "Login Page" do
     expect(page).to have_content "View_Posts"
     expect(page).to have_content "Logout"
   end
+  
   it "When logging in with an Moderator account type, fewer navigation buttons are available due
    to the power of the Moderator(all except admin)" do
     visit "/login"

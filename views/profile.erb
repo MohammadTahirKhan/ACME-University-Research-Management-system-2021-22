@@ -17,7 +17,7 @@
             <td class="row"><%=h user.email %></td>
             <td class="row"><%=h user.user_type %></td>
             <td class="row"><%=h user.institution %></td>
-            <td id="acc_change"><a href="/edit_personal_user?id=<%= h user.id %>">Edit</a></td>
+            <td id="acc_change"><a href="/edit_personal_details?id=<%= h user.id %>">Edit</a></td>
         </tr>
         <% end %> 
     <% end %> 
@@ -56,4 +56,4 @@
     </table>
     <% end %>
 
-    <%= erb :"common/footer" %>
+  <%= erb :"common/footer" %>
