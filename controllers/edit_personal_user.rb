@@ -12,7 +12,7 @@ post "/edit_personal_user" do
 
         if @user.valid?
         @user.save_changes
-        redirect "/profile"
+        redirect "/logout"
         end
     end
 

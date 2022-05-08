@@ -127,7 +127,9 @@ main #login_area,
 #create_account_area,
 #create_post_area,
 #post_table,
-#user_table {
+#user_table,
+#edit_account_area,
+#edit_post_area {
     width: 100%;
     background-color: rgb(25, 61, 102);
     color: white;

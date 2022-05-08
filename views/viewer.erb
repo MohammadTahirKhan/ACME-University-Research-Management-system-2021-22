@@ -53,17 +53,23 @@
                     <td class="row"><%=h post.sponsor %></td>
                     <td class="row"><a href="<%=h post.link %>"><%=h post.link %></td>
                     <% if session[:is_moderator]==true%>
-                        <td class="mod"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                        <td id="mod"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                        <td class="mod"> 
+                        <form method="post" action="/delete">
+                            <input type="hidden" name="id" value="<%= post.id %>" />
+                            <input type="submit" id="disapprove" value="Delete" />
+                        </form>
+                        </td>  
                     <% end %>
                     <% if session[:is_admin]==true%>
                         <td id="adm"><a href="/edit_from_viewer_page?id=<%= h post.id %>">Edit</a></td>
+                        <td class="mod"> 
+                        <form method="post" action="/delete">
+                            <input type="hidden" name="id" value="<%= post.id %>" />
+                            <input type="submit" id="disapprove" value="Delete" />
+                        </form>
+                        </td>  
                     <% end %>
-                    <td class="mod"> 
-                    <form method="post" action="/delete">
-                        <input type="hidden" name="id" value="<%= post.id %>" />
-                        <input type="submit" value="Delete" />
-                    </form>
-                    </td>  
                 </tr>
                 <tr>
                     <td colspan=6 class="content_col"><%=h post.content %></td>

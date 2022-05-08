@@ -17,7 +17,7 @@
             <td class="row"><%=h user.email %></td>
             <td class="row"><%=h user.user_type %></td>
             <td class="row"><%=h user.institution %></td>
-            <td class="edit"><a href="/edit_personal_user?id=<%= h user.id %>">Edit</a></td>
+            <td id="acc_change"><a href="/edit_personal_user?id=<%= h user.id %>">Edit</a></td>
         </tr>
         <% end %> 
     <% end %> 
@@ -49,7 +49,7 @@
           <td class="row"><a href="<%=h post.link %>"><%=h post.link %></td>
       </tr>
       <tr>
-          <td colspan=6><%=h post.content %></td>
+          <td colspan=6 class="content_col"><%=h post.content %></td>
       </tr> 
       <% end %>  
     <% end %> 

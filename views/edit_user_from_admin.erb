@@ -11,40 +11,43 @@
         <p><strong class="error">Please correct the errors below:</strong></p>
     <% end %>
 
+    <div id="edit_account_area">
     <form method="post">
     
         
         <input type="hidden" name="id" value="<%= @user.id %>" />
-        `<p class="label">Username</p>
-        <p class="field"><input type="text" name="username" value="<%= h @user.username %>" required/></p>
+        <p class="label">Username</p>
+        <p class="field"><input type="text" name="username" value="<%= h @user.username %>" /></p>
         <% if @user.errors.include?("username") %>
             <% @user.errors["username"].each do |error| %>
-                <p class="error"><strong>Username <%= error %></strong></p>
+                <p class="error"><strong>Password <%= error %></strong></p>
             <% end %>
         <% end %>
+        
 
         <p class="label">Email</p>
         <p class="field"><input type="text" name="email" value="<%= h @user.email %>" required/></p>
-        <% if @user.errors.include?("email") %>
-            <% @user.errors["email"].each do |error| %>
-                <p class="error"><strong>Email <%= error %></strong></p>
-            <% end %>
-        <% end %>
+        
 
         <p class="field"><input type="hidden" name="user_type" value="<%= h @user.user_type %>" /></p>
 
         <p class="field"><input type="hidden" name="institution" value="<%= h @user.institution %>" /></p>
 
-        <p class="field"><input type="hidden" name="password" value="<%= h @user.password %>" /></p>
-
+        <p class="label">Type a temporary password for the user to proceed</p>
+        <p class="field"><input type="text" name="password" /></p>
+        <% if @user.errors.include?("password") %>
+            <% @user.errors["password"].each do |error| %>
+                <p class="error"><strong>Password <%= error %></strong></p>
+            <% end %>
+        <% end %>
         <p class="field"><input type="hidden" name="suspended" value="<%= h @user.suspended %>" /></p>
 
         <p class="field"><input type="hidden" name="password_reset" value="<%= h @user.password_reset %>" /></p>
 
-        <p class="submit"><input type="submit" value="Submit" /></p>
-        <p class-"submit"><input type="reset" value="reset"/></p>
+        <p><input type="submit" value="Submit" id="submit"/></p>
+        <p><input type="reset" value="reset"  id="reset"/></p>
         </form>
-
+    </div>
 <% end %>
 
 

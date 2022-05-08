@@ -44,7 +44,7 @@ RSpec.describe "testing if all the pages are displayed" do
           (DB[:users].where(username: "Test26_Username")).delete 
       end
 
-      it "user can edit personal user details from admin page" do
+      it "admin can edit user details from admin page" do
         (DB[:users].where(username: "Test26_Username")).delete 
         visit "/create_account"
         fill_in "username", with: "Test26_Username"
@@ -53,8 +53,8 @@ RSpec.describe "testing if all the pages are displayed" do
         click_button "Submit"
 
         visit "/login"
-        fill_in "username", with: "Test26_Username"
-        fill_in "password", with: "Test25_Password"
+        fill_in "username", with: "admin"
+        fill_in "password", with: "admin"
 
         click_button "Submit"
 
@@ -66,6 +66,30 @@ RSpec.describe "testing if all the pages are displayed" do
         click_link "Edit"
         expect(page).to have_content "Username"
         expect(page).to have_content "Email"
+        (DB[:users].where(username: "Test26_Username")).delete 
+      end
+
+      it "gives an error if the fields are left empty when editing user details from profile page" do
+        visit "/create_account"
+        fill_in "username", with: "Test26_Username"
+        fill_in "email", with: "Test26_Email"
+        fill_in "password", with: "Test25_Password"
+        click_button "Submit"
+
+        visit "/login"
+        fill_in "username", with: "Test26_Username"
+        fill_in "password", with: "Test25_Password"
+
+        click_button "Submit"
+        visit "/profile"
+        click_link "Edit"
+        expect(page).to have_content "Username"
+        expect(page).to have_content "Email"
+        expect(page).to have_content "Institution"
+        expect(page).to have_content "Password"
+        click_button "Submit"
+        expect(page).to have_content "Password cannot be empty"
+        
         (DB[:users].where(username: "Test26_Username")).delete 
       end
     end
