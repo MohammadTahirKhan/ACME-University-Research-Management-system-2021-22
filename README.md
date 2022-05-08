@@ -2,21 +2,21 @@
 
 #Go to the terminal
 
-#To Clone the project directory, type:
+#To Clone the project directory, type:        
 git clone git@git.shefcompsci.org.uk:com1001-2021-22/team34/project.git
 
-#After cloning the project, Enter the project directory:
+#After cloning the project, Enter the project directory:        
 cd project
 
-#Retrieve the latest content from the repository:
+#Retrieve the latest content from the repository:        
 git pull
 
-#Install all the gems in the gemfile:
+#Install all the gems in the gemfile:        
 bundle install
 
-#To run and access the application, type the command below and click on the URL link that shows up:
+#To run and access the application, type the command below and click on the URL link that shows up:        
 Sinatra
 
-#To run the tests, type:
+#To run the tests, type:        
 rspec
    
