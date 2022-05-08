@@ -30132,3 +30132,762 @@ I, [2022-05-08T21:15:51.077943 #291]  INFO -- : (0.000215s) SELECT * FROM `users
 I, [2022-05-08T21:15:51.375912 #291]  INFO -- : (0.000240s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
 I, [2022-05-08T21:15:51.684422 #291]  INFO -- : (0.000370s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
 I, [2022-05-08T21:15:52.113321 #291]  INFO -- : (0.111306s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:25:31.037702 #324]  INFO -- : (0.000264s) PRAGMA foreign_keys = 1
+I, [2022-05-08T21:25:31.037867 #324]  INFO -- : (0.000030s) PRAGMA case_sensitive_like = 1
+I, [2022-05-08T21:25:31.038776 #324]  INFO -- : (0.000082s) SELECT sqlite_version()
+I, [2022-05-08T21:25:31.039185 #324]  INFO -- : (0.000171s) PRAGMA table_info('posts')
+I, [2022-05-08T21:25:31.044099 #324]  INFO -- : (0.000274s) PRAGMA table_info('users')
+I, [2022-05-08T21:26:00.793725 #324]  INFO -- : (0.000167s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:26:01.110195 #324]  INFO -- : (0.000046s) BEGIN
+I, [2022-05-08T21:26:01.110910 #324]  INFO -- : (0.000342s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'admin', 'admin@gmail.com', 'poster', 'Acme', '$2a$12$fusqjUmwGC/ojySzivgtZuEiivFtOW2iFcS8g/CyZu13faLz9AL7W', 'N', '')
+I, [2022-05-08T21:26:01.111209 #324]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE `id` = 1
+I, [2022-05-08T21:26:01.211763 #324]  INFO -- : (0.100442s) COMMIT
+I, [2022-05-08T21:26:19.690675 #324]  INFO -- : (0.000139s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:26:19.993678 #324]  INFO -- : (0.000056s) BEGIN
+I, [2022-05-08T21:26:19.994338 #324]  INFO -- : (0.000370s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'moderator', 'moderator@gmail.com', 'poster', 'Acme', '$2a$12$jOFqzuXE.xlXg52XOhgaH.usnREVV7ZOd7IVsN7gBp0JE9SPo.a6u', 'N', '')
+I, [2022-05-08T21:26:19.994728 #324]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE `id` = 2
+I, [2022-05-08T21:26:20.079734 #324]  INFO -- : (0.084890s) COMMIT
+I, [2022-05-08T21:26:52.523632 #324]  INFO -- : (0.000153s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'viewer1') LIMIT 1
+I, [2022-05-08T21:26:52.829671 #324]  INFO -- : (0.000053s) BEGIN
+I, [2022-05-08T21:26:52.830232 #324]  INFO -- : (0.000269s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'viewer1', 'viewer1@gmail.com', 'poster', 'Acme', '$2a$12$3K.lqq/O4QXlZ95/E1M/Z.56O.fcPpCcKZcLvACuCJh2xohfOr58a', 'N', '')
+I, [2022-05-08T21:26:52.830589 #324]  INFO -- : (0.000182s) SELECT * FROM `users` WHERE `id` = 3
+I, [2022-05-08T21:26:52.922726 #324]  INFO -- : (0.092008s) COMMIT
+I, [2022-05-08T21:27:56.708607 #337]  INFO -- : (0.000189s) PRAGMA foreign_keys = 1
+I, [2022-05-08T21:27:56.708741 #337]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2022-05-08T21:27:56.709561 #337]  INFO -- : (0.000102s) SELECT sqlite_version()
+I, [2022-05-08T21:27:56.709969 #337]  INFO -- : (0.000195s) PRAGMA table_info('posts')
+I, [2022-05-08T21:27:56.715528 #337]  INFO -- : (0.000199s) PRAGMA table_info('users')
+I, [2022-05-08T21:28:22.696354 #337]  INFO -- : (0.000145s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:28:22.996675 #337]  INFO -- : (0.000047s) BEGIN
+I, [2022-05-08T21:28:22.997351 #337]  INFO -- : (0.000331s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'admin', 'admin@gmail.com', 'poster', 'Acme', '$2a$12$ybpzH0zUC.U/CH4IIMEQx.4Glh.50d.wOeD.EWtaBaYVU5AiAwfR.', 'N', '')
+I, [2022-05-08T21:28:22.997635 #337]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE `id` = 1
+I, [2022-05-08T21:28:23.062914 #337]  INFO -- : (0.065169s) COMMIT
+I, [2022-05-08T21:28:53.336954 #337]  INFO -- : (0.000171s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:28:53.643491 #337]  INFO -- : (0.000054s) BEGIN
+I, [2022-05-08T21:28:53.644057 #337]  INFO -- : (0.000275s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'reporter1', 'reporter1@gmail.com', 'poster', 'Acme', '$2a$12$QSGesTjE0WOJPgiofec4WuED/xubPiRQlK.u/RDijqR3ZUsR0WXxy', 'N', '')
+I, [2022-05-08T21:28:53.644368 #337]  INFO -- : (0.000151s) SELECT * FROM `users` WHERE `id` = 2
+I, [2022-05-08T21:28:53.716480 #337]  INFO -- : (0.071978s) COMMIT
+I, [2022-05-08T21:29:18.015423 #337]  INFO -- : (0.000141s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'reporter2') LIMIT 1
+I, [2022-05-08T21:29:18.312928 #337]  INFO -- : (0.000042s) BEGIN
+I, [2022-05-08T21:29:18.313453 #337]  INFO -- : (0.000269s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'reporter2', 'reporter2@gmail.com', 'poster', 'Acme', '$2a$12$x8W3RXokNLCU1KpoD9iJROIC12nBTjszDrVDjUjnW56hKejkYmJvC', 'N', '')
+I, [2022-05-08T21:29:18.313720 #337]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE `id` = 3
+I, [2022-05-08T21:29:18.420538 #337]  INFO -- : (0.106713s) COMMIT
+I, [2022-05-08T21:29:38.005727 #337]  INFO -- : (0.000178s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:29:38.312981 #337]  INFO -- : (0.000048s) BEGIN
+I, [2022-05-08T21:29:38.313506 #337]  INFO -- : (0.000284s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'moderator', 'moderator@gmail.com', 'poster', 'Acme', '$2a$12$Ea7Qkc06ANtkzzP6prnvaerTsKfcJhigLqlxehnpQRRe0/ZSgwtnm', 'N', '')
+I, [2022-05-08T21:29:38.313762 #337]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE `id` = 4
+I, [2022-05-08T21:29:38.384298 #337]  INFO -- : (0.070435s) COMMIT
+I, [2022-05-08T21:30:03.099313 #337]  INFO -- : (0.000160s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'viewer1') LIMIT 1
+I, [2022-05-08T21:30:03.401057 #337]  INFO -- : (0.000061s) BEGIN
+I, [2022-05-08T21:30:03.401712 #337]  INFO -- : (0.000321s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'viewer1', 'viewer1@gmail.com', 'poster', 'Acme', '$2a$12$HZzh8zyfAkN9mziNiubT4.qeBkDnKvqgNvs2sL6bHCPScOUtExjgq', 'N', '')
+I, [2022-05-08T21:30:03.402008 #337]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE `id` = 5
+I, [2022-05-08T21:30:03.498652 #337]  INFO -- : (0.096535s) COMMIT
+I, [2022-05-08T21:30:21.300873 #337]  INFO -- : (0.000142s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'viewer2') LIMIT 1
+I, [2022-05-08T21:30:21.603297 #337]  INFO -- : (0.000082s) BEGIN
+I, [2022-05-08T21:30:21.604167 #337]  INFO -- : (0.000410s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'viewer2', 'viewer2@gmail.com', 'poster', 'Acme', '$2a$12$33b3m6xA3ugkJM49nqx94eZp12CgdxASAPbbz7fu3gmFV3kKyGYw2', 'N', '')
+I, [2022-05-08T21:30:21.604394 #337]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE `id` = 6
+I, [2022-05-08T21:30:21.673212 #337]  INFO -- : (0.068717s) COMMIT
+I, [2022-05-08T21:30:30.412862 #337]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:30:30.413205 #337]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:30:31.006310 #337]  INFO -- : (0.000226s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:30:31.304915 #337]  INFO -- : (0.000216s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:30:31.604168 #337]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:30:31.900587 #337]  INFO -- : (0.000212s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:30:37.451710 #337]  INFO -- : (0.000207s) SELECT * FROM `users`
+I, [2022-05-08T21:30:43.183013 #337]  INFO -- : (0.000247s) SELECT * FROM `users` WHERE `id` = '1'
+I, [2022-05-08T21:30:43.183371 #337]  INFO -- : (0.000021s) BEGIN
+I, [2022-05-08T21:30:43.183769 #337]  INFO -- : (0.000201s) UPDATE `users` SET `user_type` = 'admin' WHERE (`id` = 1)
+I, [2022-05-08T21:30:43.244651 #337]  INFO -- : (0.060784s) COMMIT
+I, [2022-05-08T21:30:45.181344 #337]  INFO -- : (0.000257s) SELECT * FROM `users`
+I, [2022-05-08T21:30:57.468238 #337]  INFO -- : (0.000321s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:30:57.468630 #337]  INFO -- : (0.000176s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:30:58.095804 #337]  INFO -- : (0.000412s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:30:58.415010 #337]  INFO -- : (0.000206s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:30:58.722580 #337]  INFO -- : (0.000218s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:30:59.027621 #337]  INFO -- : (0.000207s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:31:01.746382 #337]  INFO -- : (0.000211s) SELECT * FROM `users`
+I, [2022-05-08T21:31:09.335564 #337]  INFO -- : (0.000189s) SELECT * FROM `users` WHERE `id` = '4'
+I, [2022-05-08T21:31:09.335781 #337]  INFO -- : (0.000022s) BEGIN
+I, [2022-05-08T21:31:09.336412 #337]  INFO -- : (0.000279s) UPDATE `users` SET `user_type` = 'moderator' WHERE (`id` = 4)
+I, [2022-05-08T21:31:09.425997 #337]  INFO -- : (0.089483s) COMMIT
+I, [2022-05-08T21:31:11.345626 #337]  INFO -- : (0.000208s) SELECT * FROM `users`
+I, [2022-05-08T21:31:15.108321 #337]  INFO -- : (0.000168s) SELECT * FROM `users` WHERE `id` = '5'
+I, [2022-05-08T21:31:15.108542 #337]  INFO -- : (0.000023s) BEGIN
+I, [2022-05-08T21:31:15.108888 #337]  INFO -- : (0.000169s) UPDATE `users` SET `user_type` = 'viewer' WHERE (`id` = 5)
+I, [2022-05-08T21:31:15.182386 #337]  INFO -- : (0.073420s) COMMIT
+I, [2022-05-08T21:31:16.922188 #337]  INFO -- : (0.000203s) SELECT * FROM `users`
+I, [2022-05-08T21:31:20.178507 #337]  INFO -- : (0.000168s) SELECT * FROM `users` WHERE `id` = '6'
+I, [2022-05-08T21:31:20.178730 #337]  INFO -- : (0.000022s) BEGIN
+I, [2022-05-08T21:31:20.179146 #337]  INFO -- : (0.000229s) UPDATE `users` SET `user_type` = 'viewer' WHERE (`id` = 6)
+I, [2022-05-08T21:31:20.242406 #337]  INFO -- : (0.063163s) COMMIT
+I, [2022-05-08T21:31:22.370585 #337]  INFO -- : (0.000356s) SELECT * FROM `users`
+I, [2022-05-08T21:31:55.215319 #337]  INFO -- : (0.000147s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:31:55.215600 #337]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:31:55.827787 #337]  INFO -- : (0.000192s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:31:56.129267 #337]  INFO -- : (0.000193s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:31:56.426710 #337]  INFO -- : (0.000192s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:31:56.726063 #337]  INFO -- : (0.000198s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:33:34.923001 #337]  INFO -- : (0.000054s) BEGIN
+I, [2022-05-08T21:33:34.923662 #337]  INFO -- : (0.000313s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('reporter1', NULL, 'Artificial intelligence', 'Robotics', 'University of Sheffield', 'Microsoft', 'abc.abc.abc', 'Robotics is an interdisciplinary branch of computer science and engineering. Robotics involves design, construction, operation, and use of robots. The goal of robotics is to design machines that ca…......', 'Not Approved')
+I, [2022-05-08T21:33:34.924042 #337]  INFO -- : (0.000125s) SELECT * FROM `posts` WHERE `id` = 1
+I, [2022-05-08T21:33:34.998604 #337]  INFO -- : (0.074424s) COMMIT
+I, [2022-05-08T21:35:42.955742 #337]  INFO -- : (0.000040s) BEGIN
+I, [2022-05-08T21:35:42.956301 #337]  INFO -- : (0.000290s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('reporter1', NULL, 'Computers', 'Computer science', 'University of Glasgow', '', 'abb.abb.abb', 'Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines (such as algorithms, theory of computation, and information theory) to practical disciplines (including the design and implementation of hardware and software). Computer science is generally considered an area of academic research........', 'Not Approved')
+I, [2022-05-08T21:35:42.956571 #337]  INFO -- : (0.000112s) SELECT * FROM `posts` WHERE `id` = 2
+I, [2022-05-08T21:35:43.023438 #337]  INFO -- : (0.066761s) COMMIT
+I, [2022-05-08T21:35:43.088342 #337]  INFO -- : (0.064519s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:36:21.719225 #337]  INFO -- : (0.000144s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'reporter2') LIMIT 1
+I, [2022-05-08T21:36:21.719515 #337]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`username` = 'reporter2') LIMIT 1
+I, [2022-05-08T21:36:22.345836 #337]  INFO -- : (0.000198s) SELECT * FROM `users` WHERE (`username` = 'reporter2') LIMIT 1
+I, [2022-05-08T21:36:22.672881 #337]  INFO -- : (0.000259s) SELECT * FROM `users` WHERE (`username` = 'reporter2') LIMIT 1
+I, [2022-05-08T21:36:23.000130 #337]  INFO -- : (0.000304s) SELECT * FROM `users` WHERE (`username` = 'reporter2') LIMIT 1
+I, [2022-05-08T21:36:23.335886 #337]  INFO -- : (0.000265s) SELECT * FROM `users` WHERE (`username` = 'reporter2') LIMIT 1
+I, [2022-05-08T21:38:29.276355 #337]  INFO -- : (0.000040s) BEGIN
+I, [2022-05-08T21:38:29.276895 #337]  INFO -- : (0.000308s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('reporter2', NULL, 'Software engineering', 'Software engineering', 'University of Warwick', 'Google', 'aab.aab.aab', 'Students who want to focus on software engineering are expected to gain and integrate knowledge from various subject areas including computer programming, data structures, algorithms, numerical methods, statistics, design patterns, human-computer interaction, computer graphics, information visualization, database systems, web development.........', 'Not Approved')
+I, [2022-05-08T21:38:29.277188 #337]  INFO -- : (0.000134s) SELECT * FROM `posts` WHERE `id` = 3
+I, [2022-05-08T21:38:29.340506 #337]  INFO -- : (0.063187s) COMMIT
+I, [2022-05-08T21:38:40.127917 #337]  INFO -- : (0.000174s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:38:40.128294 #337]  INFO -- : (0.000150s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:38:40.728048 #337]  INFO -- : (0.000327s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:38:41.025277 #337]  INFO -- : (0.000234s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:38:41.326579 #337]  INFO -- : (0.000241s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:38:41.641126 #337]  INFO -- : (0.000217s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:38:44.741206 #337]  INFO -- : (0.000205s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:38:53.022973 #337]  INFO -- : (0.000221s) SELECT * FROM `users`
+I, [2022-05-08T21:38:53.023316 #337]  INFO -- : (0.000155s) SELECT * FROM `posts`
+I, [2022-05-08T21:38:54.221380 #337]  INFO -- : (0.000212s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:38:55.494369 #337]  INFO -- : (0.000231s) SELECT * FROM `users`
+I, [2022-05-08T21:39:07.454765 #337]  INFO -- : (0.000151s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:07.455070 #337]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:08.076738 #337]  INFO -- : (0.002219s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:08.406709 #337]  INFO -- : (0.000498s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:08.729159 #337]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:09.042031 #337]  INFO -- : (0.000261s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:11.647443 #337]  INFO -- : (0.000213s) SELECT * FROM `users`
+I, [2022-05-08T21:39:11.647712 #337]  INFO -- : (0.000132s) SELECT * FROM `posts`
+I, [2022-05-08T21:39:34.068987 #358]  INFO -- : (0.000156s) PRAGMA foreign_keys = 1
+I, [2022-05-08T21:39:34.069128 #358]  INFO -- : (0.000023s) PRAGMA case_sensitive_like = 1
+I, [2022-05-08T21:39:34.069915 #358]  INFO -- : (0.000086s) SELECT sqlite_version()
+I, [2022-05-08T21:39:34.070330 #358]  INFO -- : (0.000232s) PRAGMA table_info('posts')
+I, [2022-05-08T21:39:34.076290 #358]  INFO -- : (0.000256s) PRAGMA table_info('users')
+I, [2022-05-08T21:39:34.597223 #358]  INFO -- : (0.000139s) UPDATE `users` SET `password_reset` = ' ' WHERE (`password_reset` = 'Y')
+I, [2022-05-08T21:39:34.623143 #358]  INFO -- : (0.000265s) SELECT * FROM `users`
+I, [2022-05-08T21:39:34.650090 #358]  INFO -- : (0.000166s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:39:34.698135 #358]  INFO -- : (0.000164s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:39:35.031955 #358]  INFO -- : (0.000049s) BEGIN
+I, [2022-05-08T21:39:35.032824 #358]  INFO -- : (0.000403s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$8ip8xjJEwtxLPY1jPRRx1uQMP2HBNA2.zxpLuTcYsKPcyiTCPvkVe', 'N', '')
+I, [2022-05-08T21:39:35.033228 #358]  INFO -- : (0.000148s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:35.107341 #358]  INFO -- : (0.073965s) COMMIT
+I, [2022-05-08T21:39:35.112567 #358]  INFO -- : (0.000412s) SELECT * FROM `users`
+I, [2022-05-08T21:39:35.234759 #358]  INFO -- : (0.070017s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:39:35.259415 #358]  INFO -- : (0.000205s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:39:35.579098 #358]  INFO -- : (0.000059s) BEGIN
+I, [2022-05-08T21:39:35.579734 #358]  INFO -- : (0.000288s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$fDFKDZTIsVNCF4ANkmZ9rO38d1ooCQLDX8JAaBWI9Jr80BKrC4bP2', 'N', '')
+I, [2022-05-08T21:39:35.580108 #358]  INFO -- : (0.000164s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:35.642143 #358]  INFO -- : (0.061904s) COMMIT
+I, [2022-05-08T21:39:35.645919 #358]  INFO -- : (0.000403s) SELECT * FROM `users`
+I, [2022-05-08T21:39:35.660489 #358]  INFO -- : (0.000216s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:39:35.661078 #358]  INFO -- : (0.000224s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:39:35.753677 #358]  INFO -- : (0.059519s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:39:35.755518 #358]  INFO -- : (0.000303s) SELECT * FROM `users`
+I, [2022-05-08T21:39:35.767946 #358]  INFO -- : (0.000215s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%ashvcabms%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:39:35.861038 #358]  INFO -- : (0.000156s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:39:36.160636 #358]  INFO -- : (0.000048s) BEGIN
+I, [2022-05-08T21:39:36.161231 #358]  INFO -- : (0.000263s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$uaL5LCr.5wzX8tGkj4lmU.hsVvU/rFDtfb0W24NblAz1la0Ged/Jy', 'N', '')
+I, [2022-05-08T21:39:36.161553 #358]  INFO -- : (0.000137s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:36.233630 #358]  INFO -- : (0.071955s) COMMIT
+I, [2022-05-08T21:39:36.236516 #358]  INFO -- : (0.000319s) SELECT * FROM `users`
+I, [2022-05-08T21:39:36.345360 #358]  INFO -- : (0.067859s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:39:36.353872 #358]  INFO -- : (0.000160s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-05-08T21:39:36.693158 #358]  INFO -- : (0.000179s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = '') LIMIT 1
+I, [2022-05-08T21:39:37.019265 #358]  INFO -- : (0.000167s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-05-08T21:39:37.047556 #358]  INFO -- : (0.000151s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-05-08T21:39:37.076215 #358]  INFO -- : (0.000201s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-05-08T21:39:37.377081 #358]  INFO -- : (0.000047s) BEGIN
+I, [2022-05-08T21:39:37.377590 #358]  INFO -- : (0.000221s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test2', 'test_email', 'poster', ' ', '$2a$12$racojNz/SM83tobLDxOvlOD5nMF8ax.GGhfFNdDlQHZmq0E0.2ezG', 'N', '')
+I, [2022-05-08T21:39:37.377884 #358]  INFO -- : (0.000136s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:37.520546 #358]  INFO -- : (0.142551s) COMMIT
+I, [2022-05-08T21:39:37.534360 #358]  INFO -- : (0.000156s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-05-08T21:39:37.832398 #358]  INFO -- : (0.000188s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-05-08T21:39:37.987256 #358]  INFO -- : (0.142740s) DELETE FROM `users` WHERE (`username` = 'Test2')
+I, [2022-05-08T21:39:38.000428 #358]  INFO -- : (0.000202s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:39:38.300913 #358]  INFO -- : (0.000048s) BEGIN
+I, [2022-05-08T21:39:38.301516 #358]  INFO -- : (0.000303s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$N0cFnsU3wUy.Rbu.TlCe7OZHdXkGyL9uE0dxbnctpBGEmTYaEbxW2', 'N', '')
+I, [2022-05-08T21:39:38.301958 #358]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:38.365627 #358]  INFO -- : (0.063509s) COMMIT
+I, [2022-05-08T21:39:38.368464 #358]  INFO -- : (0.000292s) SELECT * FROM `users`
+I, [2022-05-08T21:39:38.385713 #358]  INFO -- : (0.000158s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:39:38.386052 #358]  INFO -- : (0.000161s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:39:38.562085 #358]  INFO -- : (0.118073s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:39:38.579668 #358]  INFO -- : (0.000184s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test2') LIMIT 1
+I, [2022-05-08T21:39:38.878028 #358]  INFO -- : (0.000047s) BEGIN
+I, [2022-05-08T21:39:38.878632 #358]  INFO -- : (0.000259s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test2', 'test_email', 'poster', ' ', '$2a$12$1CxrUEygnvFKrsYhEpxbIOPmQBUrw/4LEGICKO5PLQ.MTdi/cqI5W', 'N', '')
+I, [2022-05-08T21:39:38.878968 #358]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:38.941887 #358]  INFO -- : (0.062794s) COMMIT
+I, [2022-05-08T21:39:38.944501 #358]  INFO -- : (0.000262s) SELECT * FROM `users`
+I, [2022-05-08T21:39:39.124611 #358]  INFO -- : (0.123043s) DELETE FROM `users` WHERE (`username` = 'Test2')
+I, [2022-05-08T21:39:39.141509 #358]  INFO -- : (0.000042s) BEGIN
+I, [2022-05-08T21:39:39.142079 #358]  INFO -- : (0.000227s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_Content', 'Not Approved')
+I, [2022-05-08T21:39:39.142373 #358]  INFO -- : (0.000134s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:39.218100 #358]  INFO -- : (0.075590s) COMMIT
+I, [2022-05-08T21:39:39.289779 #358]  INFO -- : (0.071306s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:39.293067 #358]  INFO -- : (0.000260s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:39.465475 #358]  INFO -- : (0.072531s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:39.643561 #358]  INFO -- : (0.000045s) BEGIN
+I, [2022-05-08T21:39:39.644165 #358]  INFO -- : (0.000244s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_Content', 'Not Approved')
+I, [2022-05-08T21:39:39.644608 #358]  INFO -- : (0.000204s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:39.772394 #358]  INFO -- : (0.127626s) COMMIT
+I, [2022-05-08T21:39:39.842075 #358]  INFO -- : (0.069307s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:39.845716 #358]  INFO -- : (0.000264s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:40.048836 #358]  INFO -- : (0.065976s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:40.067683 #358]  INFO -- : (0.000061s) BEGIN
+I, [2022-05-08T21:39:40.068374 #358]  INFO -- : (0.000274s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', 'Test26_sponsor', 'Test26_Link', 'Test26_Content', 'Not Approved')
+I, [2022-05-08T21:39:40.068836 #358]  INFO -- : (0.000229s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:40.142439 #358]  INFO -- : (0.073463s) COMMIT
+I, [2022-05-08T21:39:40.145938 #358]  INFO -- : (0.000252s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:40.322424 #358]  INFO -- : (0.085694s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:40.358141 #358]  INFO -- : (0.000382s) SELECT * FROM `users`
+I, [2022-05-08T21:39:40.416311 #358]  INFO -- : (0.000334s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:40.460431 #358]  INFO -- : (0.000246s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:40.489506 #358]  INFO -- : (0.000354s) SELECT * FROM `users`
+I, [2022-05-08T21:39:40.489971 #358]  INFO -- : (0.000243s) SELECT * FROM `posts`
+I, [2022-05-08T21:39:40.574659 #358]  INFO -- : (0.000255s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:39:40.898169 #358]  INFO -- : (0.000058s) BEGIN
+I, [2022-05-08T21:39:40.898828 #358]  INFO -- : (0.000257s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$346Pb9p4w84.8ygqRyZS.Oq.pY5K0RyH/tAXILvM0jV97i7NZ3N4K', 'N', '')
+I, [2022-05-08T21:39:40.899227 #358]  INFO -- : (0.000176s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:40.966752 #358]  INFO -- : (0.067397s) COMMIT
+I, [2022-05-08T21:39:40.978611 #358]  INFO -- : (0.000178s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:39:40.979168 #358]  INFO -- : (0.000212s) SELECT * FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:39:41.760096 #358]  INFO -- : (0.131181s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:39:41.822974 #358]  INFO -- : (0.000159s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'abjzxncc') LIMIT 1
+I, [2022-05-08T21:39:41.873887 #358]  INFO -- : (0.000153s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:41.874252 #358]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:42.472012 #358]  INFO -- : (0.000340s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:42.771218 #358]  INFO -- : (0.000235s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:43.070364 #358]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:43.369367 #358]  INFO -- : (0.000274s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:43.689176 #358]  INFO -- : (0.000156s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:39:43.689530 #358]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:39:44.286598 #358]  INFO -- : (0.000268s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:39:44.585779 #358]  INFO -- : (0.000235s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:39:44.898202 #358]  INFO -- : (0.000245s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:39:45.216187 #358]  INFO -- : (0.000231s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:39:45.554880 #358]  INFO -- : (0.000189s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'viewer1') LIMIT 1
+I, [2022-05-08T21:39:45.555291 #358]  INFO -- : (0.000167s) SELECT * FROM `users` WHERE (`username` = 'viewer1') LIMIT 1
+I, [2022-05-08T21:39:46.153705 #358]  INFO -- : (0.000322s) SELECT * FROM `users` WHERE (`username` = 'viewer1') LIMIT 1
+I, [2022-05-08T21:39:46.451551 #358]  INFO -- : (0.000209s) SELECT * FROM `users` WHERE (`username` = 'viewer1') LIMIT 1
+I, [2022-05-08T21:39:46.752014 #358]  INFO -- : (0.000262s) SELECT * FROM `users` WHERE (`username` = 'viewer1') LIMIT 1
+I, [2022-05-08T21:39:47.052176 #358]  INFO -- : (0.000235s) SELECT * FROM `users` WHERE (`username` = 'viewer1') LIMIT 1
+I, [2022-05-08T21:39:47.370863 #358]  INFO -- : (0.000159s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:47.371196 #358]  INFO -- : (0.000138s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:47.969101 #358]  INFO -- : (0.000229s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:48.270882 #358]  INFO -- : (0.000233s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:48.569377 #358]  INFO -- : (0.000256s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:48.869326 #358]  INFO -- : (0.000227s) SELECT * FROM `users` WHERE (`username` = 'reporter1') LIMIT 1
+I, [2022-05-08T21:39:49.241369 #358]  INFO -- : (0.000042s) BEGIN
+I, [2022-05-08T21:39:49.241900 #358]  INFO -- : (0.000209s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_content', 'Not Approved')
+I, [2022-05-08T21:39:49.242195 #358]  INFO -- : (0.000128s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:49.324244 #358]  INFO -- : (0.081936s) COMMIT
+I, [2022-05-08T21:39:49.468802 #358]  INFO -- : (0.144202s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:49.476278 #358]  INFO -- : (0.000289s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:49.675701 #358]  INFO -- : (0.126936s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:49.739315 #358]  INFO -- : (0.062751s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Not Approved')
+I, [2022-05-08T21:39:49.766860 #358]  INFO -- : (0.000055s) BEGIN
+I, [2022-05-08T21:39:49.767973 #358]  INFO -- : (0.000631s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_content', 'Not Approved')
+I, [2022-05-08T21:39:49.768444 #358]  INFO -- : (0.000201s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:49.837673 #358]  INFO -- : (0.069054s) COMMIT
+I, [2022-05-08T21:39:49.905332 #358]  INFO -- : (0.067314s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:49.908761 #358]  INFO -- : (0.000207s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:49.914491 #358]  INFO -- : (0.000199s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:39:49.985835 #358]  INFO -- : (0.071150s) DELETE FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:49.988565 #358]  INFO -- : (0.000197s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:49.996844 #358]  INFO -- : (0.000168s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`topic` LIKE '%Test26_Topic%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:50.024800 #358]  INFO -- : (0.000178s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:50.033216 #358]  INFO -- : (0.000168s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test26_Topic%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:50.191723 #358]  INFO -- : (0.100980s) UPDATE `posts` SET `approved` = 'Not Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:39:50.366864 #358]  INFO -- : (0.172218s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Not Approved')
+I, [2022-05-08T21:39:50.382121 #358]  INFO -- : (0.000047s) BEGIN
+I, [2022-05-08T21:39:50.382656 #358]  INFO -- : (0.000260s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_content', 'Not Approved')
+I, [2022-05-08T21:39:50.383028 #358]  INFO -- : (0.000211s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:50.474805 #358]  INFO -- : (0.091659s) COMMIT
+I, [2022-05-08T21:39:50.537866 #358]  INFO -- : (0.062656s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:50.541473 #358]  INFO -- : (0.000205s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:50.547414 #358]  INFO -- : (0.000293s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:39:50.547993 #358]  INFO -- : (0.000037s) BEGIN
+I, [2022-05-08T21:39:50.548530 #358]  INFO -- : (0.000224s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 4)
+I, [2022-05-08T21:39:50.619438 #358]  INFO -- : (0.070783s) COMMIT
+I, [2022-05-08T21:39:50.622965 #358]  INFO -- : (0.000297s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:50.769486 #358]  INFO -- : (0.069013s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:50.840645 #358]  INFO -- : (0.070834s) UPDATE `posts` SET `approved` = 'Not Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:39:50.861991 #358]  INFO -- : (0.000059s) BEGIN
+I, [2022-05-08T21:39:50.862666 #358]  INFO -- : (0.000297s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_content', 'Not Approved')
+I, [2022-05-08T21:39:50.863023 #358]  INFO -- : (0.000154s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:50.932374 #358]  INFO -- : (0.069216s) COMMIT
+I, [2022-05-08T21:39:51.065692 #358]  INFO -- : (0.132886s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:51.068726 #358]  INFO -- : (0.000260s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:51.078991 #358]  INFO -- : (0.000180s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`topic` LIKE '%Test26_Topic%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:51.079365 #358]  INFO -- : (0.000170s) SELECT * FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`topic` LIKE '%Test26_Topic%' ESCAPE '\'))
+I, [2022-05-08T21:39:51.220822 #358]  INFO -- : (0.067123s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:51.252831 #358]  INFO -- : (0.000062s) BEGIN
+I, [2022-05-08T21:39:51.253548 #358]  INFO -- : (0.000290s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', 'Test26_sponsor', 'Test26_Link', 'Test26_content', 'Not Approved')
+I, [2022-05-08T21:39:51.253997 #358]  INFO -- : (0.000201s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:51.315481 #358]  INFO -- : (0.061340s) COMMIT
+I, [2022-05-08T21:39:51.319801 #358]  INFO -- : (0.000398s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:51.334664 #358]  INFO -- : (0.000278s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`sponsor` LIKE '%Test26_sponsor%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:51.335042 #358]  INFO -- : (0.000173s) SELECT * FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`sponsor` LIKE '%Test26_sponsor%' ESCAPE '\'))
+I, [2022-05-08T21:39:51.472763 #358]  INFO -- : (0.073212s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:51.474597 #358]  INFO -- : (0.000319s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:51.484595 #358]  INFO -- : (0.000197s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`topic` LIKE '%ashvcasxabms%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:51.512099 #358]  INFO -- : (0.000246s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:51.522348 #358]  INFO -- : (0.000166s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`sponsor` LIKE '%ashvasccabms%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:51.704660 #358]  INFO -- : (0.136723s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Not Approved')
+I, [2022-05-08T21:39:51.706823 #358]  INFO -- : (0.001019s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:51.798545 #358]  INFO -- : (0.070961s) UPDATE `posts` SET `approved` = 'Not Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:39:51.817478 #358]  INFO -- : (0.000211s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:52.134820 #358]  INFO -- : (0.000047s) BEGIN
+I, [2022-05-08T21:39:52.135399 #358]  INFO -- : (0.000261s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test26_Username', 'Test26_Email', 'poster', ' ', '$2a$12$8NZeavBaQkxeXy6g72BLwOrLp82vd6VH8siIX6GC9i6A1v7crsK66', 'N', '')
+I, [2022-05-08T21:39:52.135716 #358]  INFO -- : (0.000136s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:52.216398 #358]  INFO -- : (0.080535s) COMMIT
+I, [2022-05-08T21:39:52.224378 #358]  INFO -- : (0.000157s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:52.224752 #358]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:52.819403 #358]  INFO -- : (0.000259s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:53.116919 #358]  INFO -- : (0.000221s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:53.414849 #358]  INFO -- : (0.000224s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:53.716321 #358]  INFO -- : (0.000238s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:54.018682 #358]  INFO -- : (0.000351s) SELECT * FROM `users`
+I, [2022-05-08T21:39:54.018976 #358]  INFO -- : (0.000162s) SELECT * FROM `posts`
+I, [2022-05-08T21:39:54.088303 #358]  INFO -- : (0.065646s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:39:54.106439 #358]  INFO -- : (0.000158s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:54.411467 #358]  INFO -- : (0.000047s) BEGIN
+I, [2022-05-08T21:39:54.412137 #358]  INFO -- : (0.000237s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test26_Username', 'Test26_Email', 'poster', ' ', '$2a$12$cd9zjzDReKlX.ZuLuMy4Q.yi2zYpTF2rhinMZ.ycW7hScU.zuB2tW', 'N', '')
+I, [2022-05-08T21:39:54.412569 #358]  INFO -- : (0.000207s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:39:54.778814 #358]  INFO -- : (0.366087s) COMMIT
+I, [2022-05-08T21:39:54.790370 #358]  INFO -- : (0.000190s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:54.791093 #358]  INFO -- : (0.000220s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:55.431530 #358]  INFO -- : (0.000257s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:55.745030 #358]  INFO -- : (0.000229s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:56.048683 #358]  INFO -- : (0.000237s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:56.354401 #358]  INFO -- : (0.000260s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:39:56.678274 #358]  INFO -- : (0.000043s) BEGIN
+I, [2022-05-08T21:39:56.678920 #358]  INFO -- : (0.000259s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Test26_Username', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_Content', 'Not Approved')
+I, [2022-05-08T21:39:56.679285 #358]  INFO -- : (0.000155s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:56.781201 #358]  INFO -- : (0.101781s) COMMIT
+I, [2022-05-08T21:39:56.854920 #358]  INFO -- : (0.073365s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:56.857585 #358]  INFO -- : (0.000256s) SELECT * FROM `users`
+I, [2022-05-08T21:39:56.857898 #358]  INFO -- : (0.000189s) SELECT * FROM `posts`
+I, [2022-05-08T21:39:56.941116 #358]  INFO -- : (0.068740s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:39:57.008350 #358]  INFO -- : (0.066915s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:57.009542 #358]  INFO -- : (0.000137s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Approved')
+I, [2022-05-08T21:39:57.011185 #358]  INFO -- : (0.000197s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:57.033679 #358]  INFO -- : (0.000151s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:39:57.104368 #358]  INFO -- : (0.069788s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Not Approved')
+I, [2022-05-08T21:39:57.120299 #358]  INFO -- : (0.000043s) BEGIN
+I, [2022-05-08T21:39:57.120847 #358]  INFO -- : (0.000229s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_content', 'Not Approved')
+I, [2022-05-08T21:39:57.121170 #358]  INFO -- : (0.000139s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:57.263692 #358]  INFO -- : (0.142403s) COMMIT
+I, [2022-05-08T21:39:57.349983 #358]  INFO -- : (0.085903s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:57.353753 #358]  INFO -- : (0.000216s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:57.360612 #358]  INFO -- : (0.000277s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:39:57.360894 #358]  INFO -- : (0.000026s) BEGIN
+I, [2022-05-08T21:39:57.361345 #358]  INFO -- : (0.000201s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 4)
+I, [2022-05-08T21:39:57.427316 #358]  INFO -- : (0.065844s) COMMIT
+I, [2022-05-08T21:39:57.429834 #358]  INFO -- : (0.000268s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:57.577740 #358]  INFO -- : (0.073881s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:57.649742 #358]  INFO -- : (0.071642s) UPDATE `posts` SET `approved` = 'Not Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:39:57.728650 #358]  INFO -- : (0.075827s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Not Approved')
+I, [2022-05-08T21:39:57.742927 #358]  INFO -- : (0.000044s) BEGIN
+I, [2022-05-08T21:39:57.743408 #358]  INFO -- : (0.000205s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_content', 'Not Approved')
+I, [2022-05-08T21:39:57.743703 #358]  INFO -- : (0.000138s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:57.900663 #358]  INFO -- : (0.156694s) COMMIT
+I, [2022-05-08T21:39:57.975461 #358]  INFO -- : (0.074248s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:39:57.978990 #358]  INFO -- : (0.000259s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:57.986177 #358]  INFO -- : (0.000241s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:39:57.986500 #358]  INFO -- : (0.000055s) BEGIN
+I, [2022-05-08T21:39:57.987021 #358]  INFO -- : (0.000236s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 4)
+I, [2022-05-08T21:39:58.055577 #358]  INFO -- : (0.068416s) COMMIT
+I, [2022-05-08T21:39:58.057993 #358]  INFO -- : (0.000264s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:58.068691 #358]  INFO -- : (0.000198s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test26_Topic%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:58.069170 #358]  INFO -- : (0.000217s) SELECT * FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test26_Topic%' ESCAPE '\'))
+I, [2022-05-08T21:39:58.227557 #358]  INFO -- : (0.069591s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:58.301228 #358]  INFO -- : (0.073240s) UPDATE `posts` SET `approved` = 'Not Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:39:58.374426 #358]  INFO -- : (0.070654s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Not Approved')
+I, [2022-05-08T21:39:58.395876 #358]  INFO -- : (0.000056s) BEGIN
+I, [2022-05-08T21:39:58.396573 #358]  INFO -- : (0.000311s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Guest', NULL, 'Test26_Title', 'Test26_Topic', ' ', 'Test26_sponsor', 'Test26_Link', 'Test26_content', 'Not Approved')
+I, [2022-05-08T21:39:58.397003 #358]  INFO -- : (0.000195s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:39:58.506215 #358]  INFO -- : (0.109059s) COMMIT
+I, [2022-05-08T21:39:58.510086 #358]  INFO -- : (0.000306s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:39:58.516810 #358]  INFO -- : (0.000195s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:39:58.517095 #358]  INFO -- : (0.000026s) BEGIN
+I, [2022-05-08T21:39:58.517565 #358]  INFO -- : (0.000221s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 4)
+I, [2022-05-08T21:39:58.628561 #358]  INFO -- : (0.110858s) COMMIT
+I, [2022-05-08T21:39:58.631030 #358]  INFO -- : (0.000260s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:58.642508 #358]  INFO -- : (0.000246s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`sponsor` LIKE '%Test26_sponsor%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:58.643010 #358]  INFO -- : (0.000241s) SELECT * FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`sponsor` LIKE '%Test26_sponsor%' ESCAPE '\'))
+I, [2022-05-08T21:39:58.778399 #358]  INFO -- : (0.060644s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:39:58.850316 #358]  INFO -- : (0.071537s) UPDATE `posts` SET `approved` = 'Not Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:39:58.852321 #358]  INFO -- : (0.000214s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:58.861120 #358]  INFO -- : (0.000169s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%ashvcabms%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:58.899168 #358]  INFO -- : (0.000183s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:39:58.908751 #358]  INFO -- : (0.000165s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`sponsor` LIKE '%ashvcabms%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:39:59.005455 #358]  INFO -- : (0.069394s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Not Approved')
+I, [2022-05-08T21:39:59.013634 #358]  INFO -- : (0.000205s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:59.013967 #358]  INFO -- : (0.000137s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:59.619256 #358]  INFO -- : (0.000233s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:39:59.917913 #358]  INFO -- : (0.000221s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:00.215409 #358]  INFO -- : (0.000225s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:00.524135 #358]  INFO -- : (0.000275s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:00.865800 #358]  INFO -- : (0.000053s) BEGIN
+I, [2022-05-08T21:40:00.866479 #358]  INFO -- : (0.000274s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('admin', NULL, 'Test26_Title', 'Test26_Topic', ' ', '', 'Test26_Link', 'Test26_Content', 'Not Approved')
+I, [2022-05-08T21:40:00.866934 #358]  INFO -- : (0.000198s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:40:00.971171 #358]  INFO -- : (0.104094s) COMMIT
+I, [2022-05-08T21:40:01.039680 #358]  INFO -- : (0.068154s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:40:01.042916 #358]  INFO -- : (0.000223s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:40:01.049572 #358]  INFO -- : (0.000208s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:40:01.049867 #358]  INFO -- : (0.000026s) BEGIN
+I, [2022-05-08T21:40:01.050341 #358]  INFO -- : (0.000234s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 4)
+I, [2022-05-08T21:40:01.125623 #358]  INFO -- : (0.075152s) COMMIT
+I, [2022-05-08T21:40:01.148407 #358]  INFO -- : (0.000057s) BEGIN
+I, [2022-05-08T21:40:01.149040 #358]  INFO -- : (0.000271s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('admin', NULL, 'Test27_Title', 'Test27_Topic', ' ', '', 'Test27_Link', 'Test27_Content', 'Not Approved')
+I, [2022-05-08T21:40:01.149472 #358]  INFO -- : (0.000201s) SELECT * FROM `posts` WHERE `id` = 5
+I, [2022-05-08T21:40:01.218075 #358]  INFO -- : (0.068439s) COMMIT
+I, [2022-05-08T21:40:01.288796 #358]  INFO -- : (0.070334s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:40:01.293187 #358]  INFO -- : (0.000312s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:40:01.307052 #358]  INFO -- : (0.000288s) SELECT * FROM `posts` WHERE `id` = '5'
+I, [2022-05-08T21:40:01.307390 #358]  INFO -- : (0.000035s) BEGIN
+I, [2022-05-08T21:40:01.307996 #358]  INFO -- : (0.000287s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 5)
+I, [2022-05-08T21:40:01.393632 #358]  INFO -- : (0.085503s) COMMIT
+I, [2022-05-08T21:40:01.399644 #358]  INFO -- : (0.000263s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:01.413228 #358]  INFO -- : (0.001778s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:01.479249 #358]  INFO -- : (0.000236s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:01.479919 #358]  INFO -- : (0.000239s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:02.136301 #358]  INFO -- : (0.000225s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:02.448055 #358]  INFO -- : (0.000387s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:02.758795 #358]  INFO -- : (0.000336s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:03.067610 #358]  INFO -- : (0.000236s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:03.367810 #358]  INFO -- : (0.000253s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:03.373221 #358]  INFO -- : (0.000224s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:03.392967 #358]  INFO -- : (0.000156s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:03.393325 #358]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:03.988300 #358]  INFO -- : (0.000215s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:04.285015 #358]  INFO -- : (0.000242s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:04.585998 #358]  INFO -- : (0.000259s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:04.902289 #358]  INFO -- : (0.000283s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:05.219608 #358]  INFO -- : (0.000247s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:05.225355 #358]  INFO -- : (0.000245s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:05.240529 #358]  INFO -- : (0.000255s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test27_Topic%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:40:05.335072 #358]  INFO -- : (0.079593s) DELETE FROM `posts` WHERE (`title` = 'Test26_Title')
+I, [2022-05-08T21:40:05.399405 #358]  INFO -- : (0.064042s) DELETE FROM `posts` WHERE (`title` = 'Test27_Title')
+I, [2022-05-08T21:40:05.466342 #358]  INFO -- : (0.066608s) UPDATE `posts` SET `approved` = 'Not Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:40:05.468553 #358]  INFO -- : (0.000254s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:05.470343 #358]  INFO -- : (0.000371s) SELECT * FROM `posts`
+I, [2022-05-08T21:40:05.475501 #358]  INFO -- : (0.000305s) SELECT * FROM `users`
+I, [2022-05-08T21:40:05.477328 #358]  INFO -- : (0.000349s) SELECT * FROM `users`
+I, [2022-05-08T21:40:05.496918 #358]  INFO -- : (0.000197s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:05.803133 #358]  INFO -- : (0.000053s) BEGIN
+I, [2022-05-08T21:40:05.803675 #358]  INFO -- : (0.000221s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$7dAS45.gxrwtAOqmCBf1lu0D5zMvzy5dk0Vp.9uq2tfggSOQyxIdW', 'N', '')
+I, [2022-05-08T21:40:05.804143 #358]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:05.888330 #358]  INFO -- : (0.084070s) COMMIT
+I, [2022-05-08T21:40:05.899035 #358]  INFO -- : (0.000165s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:05.967224 #358]  INFO -- : (0.067872s) UPDATE `users` SET `password_reset` = 'Y' WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:40:05.984743 #358]  INFO -- : (0.000352s) SELECT * FROM `users`
+I, [2022-05-08T21:40:05.991591 #358]  INFO -- : (0.000269s) SELECT * FROM `users`
+I, [2022-05-08T21:40:05.997207 #358]  INFO -- : (0.000358s) SELECT * FROM `users`
+I, [2022-05-08T21:40:06.003462 #358]  INFO -- : (0.000314s) SELECT * FROM `users`
+I, [2022-05-08T21:40:06.006377 #358]  INFO -- : (0.000182s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:06.006722 #358]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:06.013098 #358]  INFO -- : (0.000224s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:06.013424 #358]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:06.019014 #358]  INFO -- : (0.000347s) SELECT * FROM `users`
+I, [2022-05-08T21:40:06.026199 #358]  INFO -- : (0.000297s) SELECT * FROM `users`
+I, [2022-05-08T21:40:06.028817 #358]  INFO -- : (0.000179s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:06.029136 #358]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:06.035653 #358]  INFO -- : (0.000188s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:06.036066 #358]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:06.338766 #358]  INFO -- : (0.000045s) BEGIN
+I, [2022-05-08T21:40:06.339290 #358]  INFO -- : (0.000212s) UPDATE `users` SET `password` = '$2a$12$kCR3hXWjC1mkjbw39zFVhOT/WOHcKPavPAE9z4qgMM1v1Z1CdRWqO', `password_reset` = 'N' WHERE (`id` = 7)
+I, [2022-05-08T21:40:06.470057 #358]  INFO -- : (0.130655s) COMMIT
+I, [2022-05-08T21:40:06.471694 #358]  INFO -- : (0.000259s) SELECT * FROM `users`
+I, [2022-05-08T21:40:06.483877 #358]  INFO -- : (0.000162s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:06.484211 #358]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:07.082141 #358]  INFO -- : (0.000236s) SELECT * FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:07.380090 #358]  INFO -- : (0.000229s) SELECT * FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:07.679264 #358]  INFO -- : (0.000242s) SELECT * FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:07.979695 #358]  INFO -- : (0.000230s) SELECT * FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:08.377436 #358]  INFO -- : (0.089293s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:40:08.379152 #358]  INFO -- : (0.000271s) SELECT * FROM `users`
+I, [2022-05-08T21:40:08.385955 #358]  INFO -- : (0.000271s) SELECT * FROM `users`
+I, [2022-05-08T21:40:08.388442 #358]  INFO -- : (0.000170s) UPDATE `users` SET `password_reset` = 'Y' WHERE (`password_reset` = ' ')
+I, [2022-05-08T21:40:08.402617 #358]  INFO -- : (0.000260s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:08.707601 #358]  INFO -- : (0.000067s) BEGIN
+I, [2022-05-08T21:40:08.708220 #358]  INFO -- : (0.000271s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$J1rKE3corVgyodNcrHxFUuZ/afkgzIQeOxojFqIzDDhDXOgs4l19q', 'N', '')
+I, [2022-05-08T21:40:08.708517 #358]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:08.858632 #358]  INFO -- : (0.150001s) COMMIT
+I, [2022-05-08T21:40:08.861569 #358]  INFO -- : (0.000345s) SELECT * FROM `users`
+I, [2022-05-08T21:40:08.875016 #358]  INFO -- : (0.000162s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:08.875393 #358]  INFO -- : (0.000184s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:08.950912 #358]  INFO -- : (0.000197s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:08.957895 #358]  INFO -- : (0.000050s) BEGIN
+I, [2022-05-08T21:40:08.959254 #358]  INFO -- : (0.001000s) UPDATE `users` SET `user_type` = 'moderator' WHERE (`id` = 7)
+I, [2022-05-08T21:40:09.050566 #358]  INFO -- : (0.091128s) COMMIT
+I, [2022-05-08T21:40:09.054187 #358]  INFO -- : (0.000400s) SELECT * FROM `users`
+I, [2022-05-08T21:40:09.075299 #358]  INFO -- : (0.000219s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:09.075810 #358]  INFO -- : (0.000264s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:09.167610 #358]  INFO -- : (0.070119s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:40:09.181429 #358]  INFO -- : (0.000154s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:09.482035 #358]  INFO -- : (0.000051s) BEGIN
+I, [2022-05-08T21:40:09.482639 #358]  INFO -- : (0.000272s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$DJeSYMFJTVFufokuBI0io.AdF9baCNXhKxxTh04AH5nw8WKTKGUJ6', 'N', '')
+I, [2022-05-08T21:40:09.482938 #358]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:09.568686 #358]  INFO -- : (0.085636s) COMMIT
+I, [2022-05-08T21:40:09.571556 #358]  INFO -- : (0.000390s) SELECT * FROM `users`
+I, [2022-05-08T21:40:09.584241 #358]  INFO -- : (0.000158s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:09.584618 #358]  INFO -- : (0.000168s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:09.633910 #358]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:09.634195 #358]  INFO -- : (0.000027s) BEGIN
+I, [2022-05-08T21:40:09.634765 #358]  INFO -- : (0.000222s) UPDATE `users` SET `user_type` = 'admin' WHERE (`id` = 7)
+I, [2022-05-08T21:40:09.696171 #358]  INFO -- : (0.061259s) COMMIT
+I, [2022-05-08T21:40:09.698855 #358]  INFO -- : (0.000436s) SELECT * FROM `users`
+I, [2022-05-08T21:40:09.717976 #358]  INFO -- : (0.000171s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:09.718363 #358]  INFO -- : (0.000197s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:09.789149 #358]  INFO -- : (0.057541s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:40:09.807497 #358]  INFO -- : (0.000213s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:10.136273 #358]  INFO -- : (0.000046s) BEGIN
+I, [2022-05-08T21:40:10.136773 #358]  INFO -- : (0.000218s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$d4sKgiXGXYx7s2XHESpDFuF0JwsO0NgQJ/Eu4ODEKozqrzrPiWoh.', 'N', '')
+I, [2022-05-08T21:40:10.137048 #358]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:10.200557 #358]  INFO -- : (0.063401s) COMMIT
+I, [2022-05-08T21:40:10.207376 #358]  INFO -- : (0.000271s) SELECT * FROM `users`
+I, [2022-05-08T21:40:10.220974 #358]  INFO -- : (0.000162s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:10.221385 #358]  INFO -- : (0.000186s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:10.293355 #358]  INFO -- : (0.000183s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:10.293586 #358]  INFO -- : (0.000022s) BEGIN
+I, [2022-05-08T21:40:10.294020 #358]  INFO -- : (0.000186s) UPDATE `users` SET `user_type` = 'viewer' WHERE (`id` = 7)
+I, [2022-05-08T21:40:10.353128 #358]  INFO -- : (0.059006s) COMMIT
+I, [2022-05-08T21:40:10.354930 #358]  INFO -- : (0.000259s) SELECT * FROM `users`
+I, [2022-05-08T21:40:10.368115 #358]  INFO -- : (0.000174s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:10.368455 #358]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:10.443896 #358]  INFO -- : (0.057312s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:40:10.459829 #358]  INFO -- : (0.000207s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:10.770639 #358]  INFO -- : (0.000049s) BEGIN
+I, [2022-05-08T21:40:10.771187 #358]  INFO -- : (0.000245s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$K.WbkB5YNZ9sM/fI/DFu5O6I6n8d2f/ls5IJQ547sw1M4kipZMJ8G', 'N', '')
+I, [2022-05-08T21:40:10.771482 #358]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:10.842136 #358]  INFO -- : (0.070543s) COMMIT
+I, [2022-05-08T21:40:10.844841 #358]  INFO -- : (0.000274s) SELECT * FROM `users`
+I, [2022-05-08T21:40:10.857930 #358]  INFO -- : (0.000160s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:10.858260 #358]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:10.899740 #358]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:10.900133 #358]  INFO -- : (0.000025s) BEGIN
+I, [2022-05-08T21:40:10.900708 #358]  INFO -- : (0.000278s) UPDATE `users` SET `user_type` = 'moderator' WHERE (`id` = 7)
+I, [2022-05-08T21:40:10.959884 #358]  INFO -- : (0.059004s) COMMIT
+I, [2022-05-08T21:40:10.961751 #358]  INFO -- : (0.000274s) SELECT * FROM `users`
+I, [2022-05-08T21:40:10.974897 #358]  INFO -- : (0.000160s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:10.975301 #358]  INFO -- : (0.000179s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:10.996508 #358]  INFO -- : (0.000184s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:10.996778 #358]  INFO -- : (0.000025s) BEGIN
+I, [2022-05-08T21:40:10.997251 #358]  INFO -- : (0.000219s) UPDATE `users` SET `user_type` = 'poster' WHERE (`id` = 7)
+I, [2022-05-08T21:40:11.056369 #358]  INFO -- : (0.058993s) COMMIT
+I, [2022-05-08T21:40:11.058924 #358]  INFO -- : (0.000460s) SELECT * FROM `users`
+I, [2022-05-08T21:40:11.080423 #358]  INFO -- : (0.000170s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:11.080841 #358]  INFO -- : (0.000235s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:11.190336 #358]  INFO -- : (0.070347s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:40:11.209254 #358]  INFO -- : (0.000255s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:40:11.211449 #358]  INFO -- : (0.000246s) SELECT * FROM `users`
+I, [2022-05-08T21:40:11.213629 #358]  INFO -- : (0.000152s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:11.216064 #358]  INFO -- : (0.000394s) SELECT * FROM `users`
+I, [2022-05-08T21:40:11.216357 #358]  INFO -- : (0.000162s) SELECT * FROM `posts`
+I, [2022-05-08T21:40:11.231800 #358]  INFO -- : (0.000185s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:11.531947 #358]  INFO -- : (0.000047s) BEGIN
+I, [2022-05-08T21:40:11.532449 #358]  INFO -- : (0.000218s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test26_Username', 'Test26_Email', 'poster', ' ', '$2a$12$VPrHuNsT1t2e5fiYC4f4yO.B.XGs/9VO8y8AmSC4eSsi7aOsm1Efu', 'N', '')
+I, [2022-05-08T21:40:11.532730 #358]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:11.594278 #358]  INFO -- : (0.061440s) COMMIT
+I, [2022-05-08T21:40:11.604139 #358]  INFO -- : (0.000153s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:11.604460 #358]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:12.200532 #358]  INFO -- : (0.000223s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:12.500453 #358]  INFO -- : (0.000246s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:12.818505 #358]  INFO -- : (0.000223s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:13.118953 #358]  INFO -- : (0.000220s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:13.432007 #358]  INFO -- : (0.000045s) BEGIN
+I, [2022-05-08T21:40:13.432558 #358]  INFO -- : (0.000234s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Test26_Username', NULL, 'Test27_Title', 'Test27_Topic37abcabc', ' ', '', 'Test27_Link', 'Test27_Content', 'Not Approved')
+I, [2022-05-08T21:40:13.432878 #358]  INFO -- : (0.000129s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:40:13.503384 #358]  INFO -- : (0.070375s) COMMIT
+I, [2022-05-08T21:40:13.574001 #358]  INFO -- : (0.070248s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:40:13.582127 #358]  INFO -- : (0.000152s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:13.582430 #358]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:14.201411 #358]  INFO -- : (0.000219s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:14.514008 #358]  INFO -- : (0.000234s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:14.847310 #358]  INFO -- : (0.000280s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:15.182780 #358]  INFO -- : (0.005765s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:15.507914 #358]  INFO -- : (0.000465s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:40:15.522949 #358]  INFO -- : (0.000233s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`topic` LIKE '%Test27_Topic37abcabc%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:40:15.523566 #358]  INFO -- : (0.000309s) SELECT * FROM `posts` WHERE ((`approved` LIKE 'Not Approved' ESCAPE '\') AND (`topic` LIKE '%Test27_Topic37abcabc%' ESCAPE '\'))
+I, [2022-05-08T21:40:15.531779 #358]  INFO -- : (0.000268s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:40:15.532097 #358]  INFO -- : (0.000030s) BEGIN
+I, [2022-05-08T21:40:15.532680 #358]  INFO -- : (0.000269s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 4)
+I, [2022-05-08T21:40:15.639495 #358]  INFO -- : (0.106665s) COMMIT
+I, [2022-05-08T21:40:15.642064 #358]  INFO -- : (0.000263s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:15.652355 #358]  INFO -- : (0.000216s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test27_Topic37abcabc%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:40:15.652842 #358]  INFO -- : (0.000219s) SELECT * FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test27_Topic37abcabc%' ESCAPE '\'))
+I, [2022-05-08T21:40:15.659081 #358]  INFO -- : (0.000244s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:40:15.743195 #358]  INFO -- : (0.083919s) DELETE FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:40:15.746067 #358]  INFO -- : (0.000257s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:15.759427 #358]  INFO -- : (0.000247s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test27_Topic37abcabc%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:40:15.787407 #358]  INFO -- : (0.000164s) DELETE FROM `posts` WHERE (`Title` = 'Test27_Title')
+I, [2022-05-08T21:40:15.863123 #358]  INFO -- : (0.075426s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:40:15.864250 #358]  INFO -- : (0.000126s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:40:15.877572 #358]  INFO -- : (0.000156s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:16.188949 #358]  INFO -- : (0.000059s) BEGIN
+I, [2022-05-08T21:40:16.189586 #358]  INFO -- : (0.000276s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test26_Username', 'Test26_Email', 'poster', ' ', '$2a$12$LnitHepliUSqKifx3fgFNuRH19fF//LigNCfH5tNP1EgGYonwkKcW', 'N', '')
+I, [2022-05-08T21:40:16.190233 #358]  INFO -- : (0.000377s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:16.266542 #358]  INFO -- : (0.076111s) COMMIT
+I, [2022-05-08T21:40:16.280026 #358]  INFO -- : (0.000221s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:16.280530 #358]  INFO -- : (0.000205s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:16.886508 #358]  INFO -- : (0.000310s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:17.185621 #358]  INFO -- : (0.000211s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:17.491485 #358]  INFO -- : (0.000236s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:17.791573 #358]  INFO -- : (0.000219s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:18.100024 #358]  INFO -- : (0.000314s) SELECT * FROM `users`
+I, [2022-05-08T21:40:18.100372 #358]  INFO -- : (0.000195s) SELECT * FROM `posts`
+I, [2022-05-08T21:40:18.103297 #358]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:18.103582 #358]  INFO -- : (0.000145s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:18.164220 #358]  INFO -- : (0.000233s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:18.164641 #358]  INFO -- : (0.000189s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:18.490207 #358]  INFO -- : (0.000062s) BEGIN
+I, [2022-05-08T21:40:18.490807 #358]  INFO -- : (0.000222s) UPDATE `users` SET `password` = '$2a$12$iFa6mmpz.rW2UT3UyMo5IOoBy9NpQPsnsXKqLwrHptg0x5Kg7mIFq' WHERE (`id` = 7)
+I, [2022-05-08T21:40:18.559701 #358]  INFO -- : (0.068766s) COMMIT
+I, [2022-05-08T21:40:18.569138 #358]  INFO -- : (0.000153s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:18.569449 #358]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:19.174095 #358]  INFO -- : (0.000302s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:19.484623 #358]  INFO -- : (0.000340s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:19.788095 #358]  INFO -- : (0.000280s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:20.120435 #358]  INFO -- : (0.000227s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:20.505897 #358]  INFO -- : (0.063499s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:40:20.506804 #358]  INFO -- : (0.000141s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:40:20.530673 #358]  INFO -- : (0.000217s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:20.842351 #358]  INFO -- : (0.000046s) BEGIN
+I, [2022-05-08T21:40:20.843000 #358]  INFO -- : (0.000260s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test26_Username', 'Test26_Email', 'poster', ' ', '$2a$12$5SDKDvVO9TXjk9t8ExchY.JiClExcJbvcDP/E1PGs2wyRJ4tALTNG', 'N', '')
+I, [2022-05-08T21:40:20.843302 #358]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:20.915385 #358]  INFO -- : (0.071960s) COMMIT
+I, [2022-05-08T21:40:20.932527 #358]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:20.932847 #358]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:21.536163 #358]  INFO -- : (0.001228s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:21.837430 #358]  INFO -- : (0.000247s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:22.137673 #358]  INFO -- : (0.000286s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:22.436619 #358]  INFO -- : (0.000221s) SELECT * FROM `users` WHERE (`username` = 'admin') LIMIT 1
+I, [2022-05-08T21:40:22.743200 #358]  INFO -- : (0.001420s) SELECT * FROM `users`
+I, [2022-05-08T21:40:22.767248 #358]  INFO -- : (0.000204s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test26_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:22.768701 #358]  INFO -- : (0.001216s) SELECT * FROM `users` WHERE (`username` LIKE '%Test26_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:22.792837 #358]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:22.793110 #358]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:22.867955 #358]  INFO -- : (0.067644s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:40:22.879918 #358]  INFO -- : (0.000185s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:23.182830 #358]  INFO -- : (0.000047s) BEGIN
+I, [2022-05-08T21:40:23.183327 #358]  INFO -- : (0.000215s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test26_Username', 'Test26_Email', 'poster', ' ', '$2a$12$LAr3HJTkSA3Ie5Cj.gXO2e981sQ1D6ON6HBrAVKQbZSejPvr1nJpW', 'N', '')
+I, [2022-05-08T21:40:23.183601 #358]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:23.249026 #358]  INFO -- : (0.065320s) COMMIT
+I, [2022-05-08T21:40:23.257509 #358]  INFO -- : (0.000151s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:23.257825 #358]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:23.863139 #358]  INFO -- : (0.000218s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:24.163324 #358]  INFO -- : (0.000226s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:24.463933 #358]  INFO -- : (0.000265s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:24.764131 #358]  INFO -- : (0.000287s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:25.090793 #358]  INFO -- : (0.005094s) SELECT * FROM `users`
+I, [2022-05-08T21:40:25.091564 #358]  INFO -- : (0.000543s) SELECT * FROM `posts`
+I, [2022-05-08T21:40:25.095162 #358]  INFO -- : (0.000240s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:25.095483 #358]  INFO -- : (0.000170s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:25.164646 #358]  INFO -- : (0.000436s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:25.165005 #358]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:25.667335 #358]  INFO -- : (0.473765s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:40:25.854687 #358]  INFO -- : (0.186257s) UPDATE `posts` SET `approved` = '' WHERE (`approved` = 'Not Approved')
+I, [2022-05-08T21:40:25.872527 #358]  INFO -- : (0.000188s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:26.191204 #358]  INFO -- : (0.000060s) BEGIN
+I, [2022-05-08T21:40:26.191857 #358]  INFO -- : (0.000260s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test26_Username', 'Test26_Email', 'poster', ' ', '$2a$12$JnHfG.CvFNjdGIpjrn2ZmuTDJY0Wtigu0PZpIIkTIFEOP96ZDMSHK', 'N', '')
+I, [2022-05-08T21:40:26.192174 #358]  INFO -- : (0.000147s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:26.260522 #358]  INFO -- : (0.068227s) COMMIT
+I, [2022-05-08T21:40:26.273514 #358]  INFO -- : (0.000198s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:26.273977 #358]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:26.948517 #358]  INFO -- : (0.000289s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:27.291683 #358]  INFO -- : (0.000265s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:27.646226 #358]  INFO -- : (0.000295s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:27.974177 #358]  INFO -- : (0.000253s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:28.326431 #358]  INFO -- : (0.000052s) BEGIN
+I, [2022-05-08T21:40:28.327076 #358]  INFO -- : (0.000253s) INSERT INTO `posts` (`poster_name`, `id`, `title`, `topic`, `institution`, `sponsor`, `link`, `content`, `approved`) VALUES ('Test26_Username', NULL, 'Test27_Title', 'Test27_Topic37abcabc', ' ', '', 'Test27_Link', 'Test27_Content', 'Not Approved')
+I, [2022-05-08T21:40:28.327449 #358]  INFO -- : (0.000165s) SELECT * FROM `posts` WHERE `id` = 4
+I, [2022-05-08T21:40:28.401684 #358]  INFO -- : (0.074100s) COMMIT
+I, [2022-05-08T21:40:28.512411 #358]  INFO -- : (0.110317s) UPDATE `posts` SET `sponsor` = 'Acme' WHERE (`sponsor` = '')
+I, [2022-05-08T21:40:28.520875 #358]  INFO -- : (0.000154s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:28.521228 #358]  INFO -- : (0.000173s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:29.156067 #358]  INFO -- : (0.000242s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:29.471190 #358]  INFO -- : (0.000232s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:29.781638 #358]  INFO -- : (0.000212s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:30.097242 #358]  INFO -- : (0.000214s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:30.408442 #358]  INFO -- : (0.000198s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:40:30.431609 #358]  INFO -- : (0.000249s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:40:30.431941 #358]  INFO -- : (0.000148s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:40:30.476268 #358]  INFO -- : (0.000160s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:30.476640 #358]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:31.095656 #358]  INFO -- : (0.000260s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:31.409229 #358]  INFO -- : (0.000246s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:31.721757 #358]  INFO -- : (0.000953s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:32.028142 #358]  INFO -- : (0.000215s) SELECT * FROM `users` WHERE (`username` = 'moderator') LIMIT 1
+I, [2022-05-08T21:40:32.339424 #358]  INFO -- : (0.000202s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:40:32.355551 #358]  INFO -- : (0.000246s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:40:32.355843 #358]  INFO -- : (0.000024s) BEGIN
+I, [2022-05-08T21:40:32.356448 #358]  INFO -- : (0.000210s) UPDATE `posts` SET `approved` = 'Approved' WHERE (`id` = 4)
+I, [2022-05-08T21:40:32.446682 #358]  INFO -- : (0.090110s) COMMIT
+I, [2022-05-08T21:40:32.448969 #358]  INFO -- : (0.000282s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:32.457978 #358]  INFO -- : (0.000228s) SELECT count(*) AS 'count' FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test27_Topic37abcabc%' ESCAPE '\')) LIMIT 1
+I, [2022-05-08T21:40:32.458351 #358]  INFO -- : (0.000182s) SELECT * FROM `posts` WHERE ((`approved` LIKE 'Approved' ESCAPE '\') AND (`topic` LIKE '%Test27_Topic37abcabc%' ESCAPE '\'))
+I, [2022-05-08T21:40:32.463300 #358]  INFO -- : (0.000191s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:40:32.463550 #358]  INFO -- : (0.000117s) SELECT * FROM `posts` WHERE `id` = '4'
+I, [2022-05-08T21:40:32.567038 #358]  INFO -- : (0.091633s) DELETE FROM `posts` WHERE (`Title` = 'Test27_Title')
+I, [2022-05-08T21:40:32.679183 #358]  INFO -- : (0.111787s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
+I, [2022-05-08T21:40:32.783450 #358]  INFO -- : (0.103953s) UPDATE `posts` SET `approved` = 'Not Approved' WHERE (`approved` = '')
+I, [2022-05-08T21:40:32.803333 #358]  INFO -- : (0.000236s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Approved' ESCAPE '\')
+I, [2022-05-08T21:40:32.812412 #358]  INFO -- : (0.000250s) SELECT * FROM `users`
+I, [2022-05-08T21:40:32.812699 #358]  INFO -- : (0.000155s) SELECT * FROM `posts`
+I, [2022-05-08T21:40:32.822933 #358]  INFO -- : (0.000225s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:40:32.832308 #358]  INFO -- : (0.000240s) SELECT * FROM `posts` WHERE (`approved` LIKE 'Not Approved' ESCAPE '\')
+I, [2022-05-08T21:40:32.841016 #358]  INFO -- : (0.000260s) SELECT * FROM `users`
+I, [2022-05-08T21:40:32.867522 #358]  INFO -- : (0.000174s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:33.172929 #358]  INFO -- : (0.000046s) BEGIN
+I, [2022-05-08T21:40:33.173428 #358]  INFO -- : (0.000211s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test25_Username', 'Test25_Email', 'poster', ' ', '$2a$12$8lsG2nc6B1dRcpzRGdgvD.NF0JYtdtUzpvepiVo3bJjNqAgzL3RnO', 'N', '')
+I, [2022-05-08T21:40:33.173706 #358]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:33.329399 #358]  INFO -- : (0.155585s) COMMIT
+I, [2022-05-08T21:40:33.332152 #358]  INFO -- : (0.000398s) SELECT * FROM `users`
+I, [2022-05-08T21:40:33.344995 #358]  INFO -- : (0.000152s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:33.345315 #358]  INFO -- : (0.000148s) SELECT * FROM `users` WHERE (`username` LIKE '%Test25_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:33.350565 #358]  INFO -- : (0.000215s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:33.350789 #358]  INFO -- : (0.000023s) BEGIN
+I, [2022-05-08T21:40:33.351185 #358]  INFO -- : (0.000183s) UPDATE `users` SET `suspended` = 'Y' WHERE (`id` = 7)
+I, [2022-05-08T21:40:33.420325 #358]  INFO -- : (0.068995s) COMMIT
+I, [2022-05-08T21:40:33.428419 #358]  INFO -- : (0.000150s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:33.428734 #358]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:34.039913 #358]  INFO -- : (0.000300s) SELECT * FROM `users` WHERE (`username` = 'Test25_Username') LIMIT 1
+I, [2022-05-08T21:40:34.475940 #358]  INFO -- : (0.094174s) DELETE FROM `users` WHERE (`username` = 'Test25_Username')
+I, [2022-05-08T21:40:34.489724 #358]  INFO -- : (0.000200s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:34.815605 #358]  INFO -- : (0.000061s) BEGIN
+I, [2022-05-08T21:40:34.816396 #358]  INFO -- : (0.000369s) INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `institution`, `password`, `suspended`, `password_reset`) VALUES (NULL, 'Test26_Username', 'Test26_Email', 'poster', ' ', '$2a$12$8geKlNMLAXmYW8zRwMZl3ORPOM2TNY22d0vqCZXWOZ3LM0JPPbKny', 'N', '')
+I, [2022-05-08T21:40:34.816875 #358]  INFO -- : (0.000207s) SELECT * FROM `users` WHERE `id` = 7
+I, [2022-05-08T21:40:34.887035 #358]  INFO -- : (0.069999s) COMMIT
+I, [2022-05-08T21:40:34.890855 #358]  INFO -- : (0.000670s) SELECT * FROM `users`
+I, [2022-05-08T21:40:34.908833 #358]  INFO -- : (0.000237s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test26_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:34.909366 #358]  INFO -- : (0.000253s) SELECT * FROM `users` WHERE (`username` LIKE '%Test26_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:34.916210 #358]  INFO -- : (0.000203s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:34.916482 #358]  INFO -- : (0.000025s) BEGIN
+I, [2022-05-08T21:40:34.917049 #358]  INFO -- : (0.000256s) UPDATE `users` SET `suspended` = 'Y' WHERE (`id` = 7)
+I, [2022-05-08T21:40:34.992147 #358]  INFO -- : (0.074962s) COMMIT
+I, [2022-05-08T21:40:35.001807 #358]  INFO -- : (0.000177s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:35.002301 #358]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:35.672472 #358]  INFO -- : (0.000268s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:35.985836 #358]  INFO -- : (0.000276s) SELECT * FROM `users`
+I, [2022-05-08T21:40:35.998548 #358]  INFO -- : (0.000219s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` LIKE '%Test26_Username%' ESCAPE '\') LIMIT 1
+I, [2022-05-08T21:40:35.998962 #358]  INFO -- : (0.000226s) SELECT * FROM `users` WHERE (`username` LIKE '%Test26_Username%' ESCAPE '\')
+I, [2022-05-08T21:40:36.004429 #358]  INFO -- : (0.000181s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2022-05-08T21:40:36.004656 #358]  INFO -- : (0.000021s) BEGIN
+I, [2022-05-08T21:40:36.005089 #358]  INFO -- : (0.000178s) UPDATE `users` SET `suspended` = 'N' WHERE (`id` = 7)
+I, [2022-05-08T21:40:36.078427 #358]  INFO -- : (0.073223s) COMMIT
+I, [2022-05-08T21:40:36.092688 #358]  INFO -- : (0.000165s) SELECT count(*) AS 'count' FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:36.093134 #358]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:36.701796 #358]  INFO -- : (0.000249s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:37.001638 #358]  INFO -- : (0.000259s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:37.301931 #358]  INFO -- : (0.000238s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:37.609347 #358]  INFO -- : (0.000232s) SELECT * FROM `users` WHERE (`username` = 'Test26_Username') LIMIT 1
+I, [2022-05-08T21:40:38.071948 #358]  INFO -- : (0.142299s) DELETE FROM `users` WHERE (`username` = 'Test26_Username')
