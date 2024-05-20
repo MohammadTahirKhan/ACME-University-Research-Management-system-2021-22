@@ -1,4 +1,4 @@
-# ACME
+# ACME- University research management system 
 
 A project to post, moderate, view and manage research done by individuals from universities and research institutions.
 
